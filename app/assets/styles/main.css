@@ -10,7 +10,17 @@ body, html {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
-    color: black;
+}
+
+section {
+    padding: 20px 0;
+}
+.btn-sticky {
+    position: fixed;
+    bottom: 0;
+    z-index: 15;
+    left: 0;
+    right: 0;
 }
 
 /* NAVEGACION */
@@ -27,9 +37,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 15px;
     position: fixed !important;
 }
-.navbar-nav{
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+
+.progress-step {
+    height: 5px;
+    background: #eaeaea;
+    width: 100%;
 }

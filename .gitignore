@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+.idea/$CACHE_FILE$
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/movie-group.iml
+.idea/vcs.xml
