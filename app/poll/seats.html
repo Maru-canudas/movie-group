@@ -18,7 +18,7 @@
     }
 
     .seatStructure{
-        width: 430px;
+        width: 700px;
     }
 
     .screen
@@ -34,8 +34,8 @@
     .smallBox::before
     {
         content:".";
-        width:15px;
-        height:15px;
+        width:25px;
+        height:25px;
         float:left;
         margin-right:10px;
     }
@@ -94,23 +94,26 @@
         background:transparent;
     }
 
-
-
     input[type=checkbox] {
-        width:0px;
-        margin-right:18px;
+        width: 20px;
+        height: 20px;
+        margin: 3px 5px;
+        border-radius: 3px;
     }
 
     input[type=checkbox]:before {
         content: "";
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         display: inline-block;
-        vertical-align:middle;
-        text-align: center;
         box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
         background-color:#ccc;
+        border-radius: 3px;
     }
+    /*
+    vertical-align:middle;
+    text-align: center;
+    */
 
     input[type=checkbox]:checked:before {
         background-color:Green;
