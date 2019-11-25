@@ -2,7 +2,7 @@
   "_args": [
     [
       "angular-mocks@1.7.5",
-      "/Users/Canudas/Projects/movie-group/angular-phonecat"
+      "/Users/mariela/Desktop/Projects/movie-group"
     ]
   ],
   "_development": true,
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/angular-mocks/-/angular-mocks-1.7.5.tgz",
   "_spec": "1.7.5",
-  "_where": "/Users/Canudas/Projects/movie-group/angular-phonecat",
+  "_where": "/Users/mariela/Desktop/Projects/movie-group",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
