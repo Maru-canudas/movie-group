@@ -9,6 +9,10 @@ angular.
             title: 'Grupos - Movie Group',
             templateUrl: 'groups/index.html'
         }).
+        when('/seats', {
+            title: 'Grupos - Movie Group',
+            templateUrl: 'poll/seats.html'
+        }).
         otherwise('/phones');
     }
   ]);
