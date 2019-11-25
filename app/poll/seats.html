@@ -125,6 +125,8 @@
     <div class="seatStructure">
 
         <table id="seatsBlock">
+            <caption class="sr-only">Selección de asientos</caption>
+            <summary class="sr-only">Se listan los asientos comenzando con los más cercanos a la pantalla de izquierda a derecha.</summary>
             <p id="notification"></p>
             <tr>
                 <td colspan="21"><div class="screen">PANTALLA</div></td>
@@ -137,7 +139,7 @@
                 <br/>
             </tr>
 
-            <tr>
+            <tr aria-hidden="true">
                 <td></td>
                 <td>1</td>
                 <td>2</td>
@@ -160,25 +162,25 @@
             </tr>
 
             <tr>
-                <td>A</td>
-                <td><input type="checkbox" class="seats" value="A1" aria-label="1A">
-                <td><input type="checkbox" class="seats" value="A2"></td>
-                <td><input type="checkbox" class="seats" value="A3"></td>
-                <td><input type="checkbox" class="seats" value="A4"></td>
+                <td aria-hidden="true">A</td>
+                <td><input type="checkbox" class="seats" value="A1" aria-label="1A izquierda">
+                <td><input type="checkbox" class="seats" value="A2" aria-label="2A izquierda"></td>
+                <td><input type="checkbox" class="seats" value="A3" aria-label="3A izquierda"></td>
+                <td><input type="checkbox" class="seats" value="A4" aria-label="4A izquierda"></td>
                 <td class="seatGap"></td>
-                <td><input type="checkbox" class="seats" value="A5"></td>
-                <td><input type="checkbox" class="seats" value="A6"></td>
-                <td><input type="checkbox" class="seats" value="A7"></td>
-                <td><input type="checkbox" class="seats" value="A8"></td>
-                <td><input type="checkbox" class="seats" value="A9"></td>
-                <td><input type="checkbox" class="seats" value="A10"></td>
-                <td><input type="checkbox" class="seats" value="A11"></td>
-                <td><input type="checkbox" class="seats" value="A12"></td>
+                <td><input type="checkbox" class="seats" value="A5" aria-label="5A centro"></td>
+                <td><input type="checkbox" class="seats" value="A6" aria-label="6A centro"></td>
+                <td><input type="checkbox" class="seats" value="A7" aria-label="7A centro"></td>
+                <td><input type="checkbox" class="seats" value="A8" aria-label="8A centro"></td>
+                <td><input type="checkbox" class="seats" value="A9" aria-label="9A centro"></td>
+                <td><input type="checkbox" class="seats" value="A10" aria-label="10A centro"></td>
+                <td><input type="checkbox" class="seats" value="A11" aria-label="11A centro"></td>
+                <td><input type="checkbox" class="seats" value="A12" aria-label="12A centro"></td>
                 <td class="seatGap"></td>
-                <td><input type="checkbox" class="seats" value="A13"></td>
-                <td><input type="checkbox" class="seats" value="A14"></td>
-                <td><input type="checkbox" class="seats" value="A15"></td>
-                <td><input type="checkbox" class="seats" value="A16"></td>
+                <td><input type="checkbox" class="seats" value="A13" aria-label="13A derecha"></td>
+                <td><input type="checkbox" class="seats" value="A14" aria-label="14A derecha"></td>
+                <td><input type="checkbox" class="seats" value="A15" aria-label="15A derecha"></td>
+                <td><input type="checkbox" class="seats" value="A16" aria-label="16A derecha"></td>
             </tr>
 
             <tr>
