@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "angular-route@1.7.9",
+      "/Users/Canudas/Projects/movie-group"
+    ]
+  ],
   "_from": "angular-route@1.7.9",
   "_id": "angular-route@1.7.9",
   "_inBundle": false,
@@ -16,13 +22,11 @@
     "fetchSpec": "1.7.9"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/angular-route/-/angular-route-1.7.9.tgz",
-  "_shasum": "f9910a2af0ba3ad7a969c5dd369b8360d0d5e4ef",
-  "_spec": "angular-route@1.7.9",
-  "_where": "/Users/mariela/Desktop/Projects/movie-group",
+  "_spec": "1.7.9",
+  "_where": "/Users/Canudas/Projects/movie-group",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
@@ -30,8 +34,6 @@
   "bugs": {
     "url": "https://github.com/angular/angular.js/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "AngularJS router module",
   "homepage": "http://angularjs.org",
   "jspm": {

@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "angular-animate@1.7.9",
+      "/Users/Canudas/Projects/movie-group"
+    ]
+  ],
   "_from": "angular-animate@1.7.9",
   "_id": "angular-animate@1.7.9",
   "_inBundle": false,
@@ -16,13 +22,11 @@
     "fetchSpec": "1.7.9"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/angular-animate/-/angular-animate-1.7.9.tgz",
-  "_shasum": "a397f82434c1e7ed5b7a298fa70fc3de989a6785",
-  "_spec": "angular-animate@1.7.9",
-  "_where": "/Users/mariela/Desktop/Projects/movie-group",
+  "_spec": "1.7.9",
+  "_where": "/Users/Canudas/Projects/movie-group",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
@@ -30,8 +34,6 @@
   "bugs": {
     "url": "https://github.com/angular/angular.js/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "AngularJS module for animations",
   "homepage": "http://angularjs.org",
   "jspm": {
