@@ -9,8 +9,8 @@
 <desc>Created with Sketch.</desc>
 <g id="Symbols">
 	<g id="ic_luna_full">
-		<path id="ic_brightness_2" class="st0" d="M9.5,8.8c0,0,7,6.4,7,11.2s-2.8,9-7,11.2c2.1,1.1,4.5,1.8,7,1.8c7.7,0,14-5.8,14-13
-			s-6.3-13-14-13C14,7,9.5,8.8,9.5,8.8z"/>
+		<path id="ic_brightness_2" class="st0" d="M23.5,7c-7.7,0-14,5.8-14,13s6.3,13,14,13c2.5,0,4.9-0.7,7-1.8c-4.2-2.2-7-6.4-7-11.2
+			s7-11.2,7-11.2S26,7,23.5,7z"/>
 	</g>
 </g>
 <title>ic_brightness_2</title>
