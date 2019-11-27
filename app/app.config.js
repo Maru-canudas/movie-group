@@ -23,7 +23,7 @@ angular.
         }).
         when('/seats', {
           title: 'Grupos - Movie Group',
-          templateUrl: 'poll/seats.html'
+          templateUrl: 'checkout/seats.html'
         }).
         otherwise('/');
     }

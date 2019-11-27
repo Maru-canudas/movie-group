@@ -43,3 +43,49 @@ section {
     background: #eaeaea;
     width: 100%;
 }
+
+/* ASIENTOS */
+
+.seatContainer{
+    width: 90%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 1em;
+}
+
+.seatStructure{
+    width: 320px;
+}
+
+.seatContainer input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 3px;
+}
+.seatContainer ol{
+    list-style: none;
+}
+.seatContainer input[type=checkbox]:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /*box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);*/
+    background-color:white;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.seatContainer input[type=checkbox]:checked:before {
+    background-color:#5856D6;
+    font-size: 15px;
+}
+
+.seatContainer input[type=checkbox]:disabled:before {
+    background-color:white;
+    background-image: url("../images/disabled.svg");
+    border: 1px solid #878787;
+    font-size: 15px;
+}

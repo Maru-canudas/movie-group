@@ -2,7 +2,7 @@
   "_args": [
     [
       "angular-aria@1.7.9",
-      "/Users/Canudas/Projects/movie-group"
+      "/Users/mariela/Desktop/Projects/movie-group"
     ]
   ],
   "_from": "angular-aria@1.7.9",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/angular-aria/-/angular-aria-1.7.9.tgz",
   "_spec": "1.7.9",
-  "_where": "/Users/Canudas/Projects/movie-group",
+  "_where": "/Users/mariela/Desktop/Projects/movie-group",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
