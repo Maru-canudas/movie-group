@@ -1,12 +1,17 @@
 'use strict';
 
 // Define the `movieGroupApp` module
-var app = angular.module('movieGroupApp', [
-  'ngAnimate',
-  'ngRoute',
-  'ngMaterial',
-  'ngMessages'
-]);
+let app;
+try {
+    app = angular.module('movieGroupApp', [
+        'ngAnimate',
+        'ngRoute',
+        'ngMaterial',
+        'ngMessages'
+    ]);
+} catch (e) {
+    app = angular.module('movieGroupApp', [ 'config']);
+}
 
 app.config(['$provide', function($provide) {
     // catch exceptions in angular
@@ -17,7 +22,6 @@ app.config(['$provide', function($provide) {
         };
     }]);
 }]);
-
 
     app.controller('appController', ['$scope',
     function ($scope) {
