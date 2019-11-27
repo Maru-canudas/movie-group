@@ -1,14 +1,35 @@
+<header class="header-form">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="../assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                </button>
+            </div>
+            <div class="col-8"><h1>Elefir funciones</h1></div>
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="../assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
 <main>
     <div class="container-fluid">
-        <!-- HEADER -->
-        <h2 class="text-center">Elegí tus funciones</h2>
-        <div class="form-group">
-            <label for="usr">Buscar</label>
-            <input type="text" class="form-control" id="usr">
+        <div class="row">
+            <div class="col-8">
+                <md-input-container class="md-block md-input-custom mt-5" flex-gt-sm>
+                    <label for="search">Buscar película</label>
+                    <input id="search" type="text">
+                    <md-icon md-svg-src="assets/images/search.svg" style="display:inline-block;"></md-icon>
+                </md-input-container>
+            </div>
+            <div class="col-4"></div>
         </div>
         <!-- DIA -->
-        <section>
-            <h3>¿Cuándo querés ir al cine?</h3>
+        <section class="movies pt-0">
+            <h3>¿Qué les gustaría ver?</h3>
             <!-- carousel -->
             <div class="owl-carousel owl-theme dates-carousel">
                 <div class="item">
@@ -73,7 +94,7 @@
             </div>
         </section>
         <!-- PELICULA -->
-        <section>
+        <section class="movies">
             <h3>¿Cuándo querés ir al cine?</h3>
             <!-- carousel -->
             <div class="owl-carousel owl-theme movies-carousel">
@@ -120,7 +141,7 @@
             </div>
         </section>
         <!-- HORARIOS -->
-        <section class="pb-5">
+        <section class="pb-5 movies">
             <h3>Elegí una o más funciones</h3>
             <!-- Cine -->
             <div>
@@ -342,7 +363,9 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-block btn-sticky mt-4">Iniciar sesión</button>
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="">
+            Continuar
+        </md-button>
     </div>
 </main>
 

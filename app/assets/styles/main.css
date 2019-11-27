@@ -172,7 +172,10 @@ ul.date-time-checks li input[type="checkbox"]:focus + label {
 }
 
 
-
+/* MOVIES */
+section.movies h3 {
+    font-size: 18px;
+}
 
 
 /* NAVEGACION */

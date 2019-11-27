@@ -19,7 +19,7 @@ angular.
         }).
         when('/onboarding/1', {
           title: 'Grupos - Movie Group',
-          templateUrl: 'onboarding/stepOne.html'
+          templateUrl: 'onboarding/unooo.html'
         }).
         when('/onboarding/2', {
           title: 'Grupos - Movie Group',
