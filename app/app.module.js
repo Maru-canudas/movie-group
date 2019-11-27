@@ -8,10 +8,3 @@ let movieGroupApp = angular.module('movieGroupApp', [
   'ngMessages'
 ]);
 
-movieGroupApp.controller('appController', ['$scope',
-  /*function ($scope) {
-      $scope.loginNext = function(){
-          window.location.href = '#!/seats';
-      };
-  }*/
-]);
