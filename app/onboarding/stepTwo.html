@@ -36,7 +36,7 @@
                     <div class="mt-5">
                         <md-input-container class="md-block md-input-custom mb-5" flex-gt-sm>
                             <label>Ciudad</label>
-                            <md-select ng-model="user.state">
+                            <md-select ng-model="user.city">
                                 <md-option ng-repeat="state in states" value="{{state.abbrev}}">
                                     {{state.abbrev}}
                                 </md-option>
@@ -44,7 +44,7 @@
                         </md-input-container>
                         <md-input-container class="md-block md-input-custom" >
                             <label>Barrios</label>
-                            <md-select ng-model="selectedVegetables"
+                            <md-select ng-model="user.town"
                                        md-on-close="clearSearchTerm()"
                                        data-md-container-class="selectdemoSelectHeader"
                                        multiple>
@@ -64,7 +64,7 @@
                         <md-chips ng-model="ctrl.fruitNames" readonly="ctrl.readonly" md-removable="ctrl.removable">
                         </md-chips>
                     </div>
-                    <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="">
+                    <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-click="step2Next()" ng-disabled="!user.city $$ ">
                         Continuar
                     </md-button>
                 </div>

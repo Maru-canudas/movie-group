@@ -28,5 +28,14 @@ app.config(['$provide', function($provide) {
         $scope.loginNext = function(){
             window.location.href = '#!/';
         };
+        $scope.startNext = function(){
+            window.location.href = '#!/onboarding/1';
+        };
+        $scope.step1Next = function(){
+            window.location.href = '#!/onboarding/2';
+        };
+        $scope.step2Next = function(){
+            window.location.href = '#!/onboarding/3';
+        };
     }
 ]);
