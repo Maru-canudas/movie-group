@@ -84,7 +84,7 @@ a {
 .progress-step.active {
     background: #3BC7B1;
 }
-.date-time h2 {
+.date-time h2, .places h2, .group-name h2 {
     font-size: 20px;
 }
 
@@ -100,8 +100,7 @@ ul.date-time-checks li label{
     background-color: rgba(255, 255, 255, .9);
     border: 2px solid rgba(229, 229, 234, .9);
     color: #000000;
-    border-radius: 5px;
-    white-space: nowrap;
+    border-radius: 15px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;

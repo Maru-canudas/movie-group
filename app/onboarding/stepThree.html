@@ -1,24 +1,48 @@
-<main>
+<header class="header-form">
     <div class="container-fluid">
-        <h2 class="text-center">Crear grupo</h2>
-        <div class="row mt-4">
-            <div class="col">
-                <div class="progress-step"></div>
+        <div class="row">
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="../assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                </button>
             </div>
-            <div class="col">
-                <div class="progress-step"></div>
-            </div>
-            <div class="col">
-                <div class="progress-step"></div>
+            <div class="col-8"><h1>Crear grupo</h1></div>
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="../assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
             </div>
         </div>
-        <form>
-            <h3 class="text-center mt-4">¿Querés ponerle un nombre a tu grupo?</h3>
-            <div class="form-group">
-                <label for="usr">Usuario</label>
-                <input type="text" class="form-control" id="usr">
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-4">
+            <div class="col-3">
+                <div class="progress-step active"></div>
             </div>
-            <button type="submit" class="btn btn-primary btn-block btn-sticky mt-4">Iniciar sesión</button>
+            <div class="col-3">
+                <div class="progress-step active"></div>
+            </div>
+            <div class="col-3">
+                <div class="progress-step active"></div>
+            </div>
+        </div>
+        <form class="group-name">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h2 class="text-center mt-5">¿Querés ponerle un nombre a tu grupo?</h2>
+                    <div class="mt-5">
+                        <md-input-container class="md-block md-input-custom" flex-gt-sm>
+                            <label for="usr">Nombre del grupo</label>
+                            <input id="usr" type="text" placeholder="Amigos">
+                        </md-input-container>
+                    </div>
+                    <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="">
+                        Terminar
+                    </md-button>
+                </div>
+            </div>
         </form>
     </div>
 </main>
