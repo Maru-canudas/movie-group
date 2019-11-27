@@ -9,9 +9,9 @@ let movieGroupApp = angular.module('movieGroupApp', [
 ]);
 
 movieGroupApp.controller('appController', ['$scope',
-  function ($scope) {
+  /*function ($scope) {
       $scope.loginNext = function(){
           window.location.href = '#!/seats';
       };
-  }
+  }*/
 ]);
