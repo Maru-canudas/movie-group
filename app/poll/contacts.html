@@ -1,0 +1,25 @@
+<main>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <h2 class="text-center">Seleccioná a tus amigos</h2>
+        <div class="form-group">
+            <label for="usr">Buscar</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+        <div>
+            <div><img src="" alt="ho"></div>
+        </div>
+    
+        <!-- CONTACT LIST -->
+        <div>
+            <md-list>
+                <md-list-item ng-repeat="person in people" ng-click="goToPerson(person.name, $event)" class="noright">
+                    <img alt="{{ person.name }}" ng-src="{{ person.img }}" class="md-avatar"/>
+                    <p>{{ person.name }}</p>
+                    <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
+                </md-list-item>
+            </md-list>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-sticky mt-4">Iniciar sesión</button>
+    </div>
+</main>

@@ -37,11 +37,20 @@ section {
     padding: 0 15px;
     position: fixed !important;
 }
-
 .progress-step {
     height: 5px;
     background: #eaeaea;
     width: 100%;
+}
+
+.details {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    background: #FFFFFF;
+    z-index: 12;
 }
 
 /* ASIENTOS */
@@ -102,4 +111,3 @@ section {
     background-image: url("../images/disabled.svg");
     border: 1px solid #878787;
     font-size: 15px;
-}

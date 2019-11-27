@@ -76,7 +76,7 @@
         <section>
             <h3>¿Cuándo querés ir al cine?</h3>
             <!-- carousel -->
-            <div class="owl-carousel owl-theme movie-carousel">
+            <div class="owl-carousel owl-theme movies-carousel">
                 <div class="item">
                     <div class="form-check">
                         <label class="form-check-label">
@@ -313,6 +313,35 @@
             </div>
             <hr>
         </section>
+        <!-- COLLAPSED DETAILS -->
+        <div class="details">
+            <div class="detail-header">
+                <div class="row">
+                    <div class="col-2">
+                        <div>1</div>
+                    </div>
+                    <div class="col-8">
+                        <h5>Funciones seleccionadas</h5>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn">a</button>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-content">
+                <div class="row">
+                    <div class="col-3"><img src="" alt=""></div>
+                    <div class="col-7">
+                        <p>The Joker</p>
+                        <p>21 Nov 22:00 - 2D SUB</p>
+                        <p>Showcase Belgrano</p>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn">e</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <button type="submit" class="btn btn-primary btn-block btn-sticky mt-4">Iniciar sesión</button>
     </div>
 </main>
@@ -332,7 +361,7 @@
                 },
             }
         });
-        $(".movie-carousel").owlCarousel({
+        $(".movies-carousel").owlCarousel({
             loop: false,
             responsiveClass: true,
             responsive: {

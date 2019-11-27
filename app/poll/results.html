@@ -1,0 +1,62 @@
+<main>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <h2 class="text-center">Votación</h2>
+        <p>Tiempo restante: <strong>0:05</strong></p>
+        <h3>La función ganadora es</h3>
+        
+        <section>
+            <!-- carousel -->
+            <div class="owl-carousel owl-theme movie-carousel">
+                <div class="item">
+                    <div class="">
+                        <img src="" alt="1">
+                        <div class="text-center">
+                            <p>The Joker</p>
+                            <p>21 Nov 22:00 - 2D SUB</p>
+                            <p>Showcase Belgrano</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="">
+                        <img src="" alt="1">
+                        <div class="text-center">
+                            <p>The Joker</p>
+                            <p>21 Nov 22:00 - 2D SUB</p>
+                            <p>Showcase Belgrano</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="">
+                        <img src="" alt="1">
+                        <div class="text-center">
+                            <p>The Joker</p>
+                            <p>21 Nov 22:00 - 2D SUB</p>
+                            <p>Showcase Belgrano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button type="submit" class="btn btn-primary btn-block btn-sticky mt-4">Iniciar sesión</button>
+    </div>
+</main>
+<script  type="text/javascript">
+    $(document).ready(function (){
+        $(".movie-carousel").owlCarousel({
+            loop: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                    dots: false,
+                    autoplay:false,
+                    stagePadding:20
+                },
+            }
+        });
+    });
+</script>
