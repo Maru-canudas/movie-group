@@ -26,7 +26,7 @@ app.config(['$provide', function($provide) {
     app.controller('appController', ['$scope',
     function ($scope) {
         $scope.loginNext = function(){
-            window.location.href = '#!/seats';
+            window.location.href = '#!/';
         };
     }
 ]);
