@@ -1,12 +1,25 @@
 'use strict';
 
 // Define the `movieGroupApp` module
-angular.module('movieGroupApp', [
+var app = angular.module('movieGroupApp', [
   'ngAnimate',
   'ngRoute',
   'ngMaterial',
   'ngMessages'
-]).controller('appController', ['$scope',
+]);
+
+app.config(['$provide', function($provide) {
+    // catch exceptions in angular
+    $provide.decorator('$exceptionHandler', ['$delegate', function ($delegate) {
+        return function (error, cause) {
+            var result = $delegate(error, cause);
+            return result;
+        };
+    }]);
+}]);
+
+
+    app.controller('appController', ['$scope',
     function ($scope) {
         $scope.loginNext = function(){
             window.location.href = '#!/seats';
