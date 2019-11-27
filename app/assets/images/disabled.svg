@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 36.66 35.5" style="enable-background:new 0 0 36.66 35.5;" xml:space="preserve">
+	 viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+	.st0{fill:none;}
 	.st1{fill:#878787;}
 </style>
 <g>
-	<line class="st0" x1="6.44" y1="5.46" x2="29.43" y2="28.45"/>
-	<path class="st1" d="M29.43,28.95c-0.13,0-0.26-0.05-0.35-0.15L6.09,5.81c-0.2-0.2-0.2-0.51,0-0.71s0.51-0.2,0.71,0L29.79,28.1
-		c0.2,0.2,0.2,0.51,0,0.71C29.69,28.9,29.56,28.95,29.43,28.95z"/>
+	<line class="st0" x1="5.6" y1="5.5" x2="28.6" y2="28.4"/>
+	<path class="st1" d="M28.6,28.9c-0.1,0-0.3,0-0.4-0.1l-23-23c-0.2-0.2-0.2-0.5,0-0.7s0.5-0.2,0.7,0l23,23c0.2,0.2,0.2,0.5,0,0.7
+		C28.9,28.9,28.7,28.9,28.6,28.9z"/>
 </g>
 <g>
-	<line class="st0" x1="29.43" y1="5.46" x2="6.44" y2="28.45"/>
-	<path class="st1" d="M6.44,28.95c-0.13,0-0.26-0.05-0.35-0.15c-0.2-0.2-0.2-0.51,0-0.71L29.08,5.1c0.2-0.2,0.51-0.2,0.71,0
-		s0.2,0.51,0,0.71L6.79,28.81C6.69,28.9,6.57,28.95,6.44,28.95z"/>
+	<line class="st0" x1="28.6" y1="5.5" x2="5.6" y2="28.4"/>
+	<path class="st1" d="M5.6,28.9c-0.1,0-0.3,0-0.3-0.1c-0.2-0.2-0.2-0.5,0-0.7l23-23c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7l-23,23
+		C5.9,28.9,5.7,28.9,5.6,28.9z"/>
 </g>
 </svg>
