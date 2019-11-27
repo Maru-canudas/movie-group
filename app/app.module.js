@@ -3,5 +3,8 @@
 // Define the `movieGroupApp` module
 angular.module('movieGroupApp', [
   'ngAnimate',
-  'ngRoute'
+  'ngRoute',
+  'ngMaterial',
+  'ngMessages'
 ]);
+
