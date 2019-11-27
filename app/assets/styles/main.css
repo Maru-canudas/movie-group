@@ -46,7 +46,14 @@ section {
 
 /* ASIENTOS */
 
+.screen{
+    color: #878787;
+    text-align: center
+}
 .seatContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     overflow-y: hidden;
     overflow-x: auto;
@@ -61,11 +68,17 @@ section {
 .seatContainer input[type=checkbox] {
     width: 30px;
     height: 30px;
-    margin: 2px;
+    margin: 5px;
     border-radius: 3px;
 }
 .seatContainer ol{
     list-style: none;
+    padding: 0;
+}
+.seatContainer ol li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .seatContainer input[type=checkbox]:before {
     content: "";
@@ -81,6 +94,7 @@ section {
 .seatContainer input[type=checkbox]:checked:before {
     background-color:#5856D6;
     font-size: 15px;
+    border: 2px solid #5856D6;
 }
 
 .seatContainer input[type=checkbox]:disabled:before {
