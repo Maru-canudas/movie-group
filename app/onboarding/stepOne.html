@@ -37,19 +37,19 @@
                         <fieldset>
                             <ul class="date-time-checks">
                                 <li class="day">
-                                    <input type="checkbox" id="checkboxOne" value="Day">
+                                    <input type="checkbox" id="checkboxOne" value="Day" ng-model="moment.day">
                                     <label for="checkboxOne">
                                         <span><b>De Día</b><br>12:00 a 16:00</span>
                                     </label>
                                 </li>
                                 <li class="set">
-                                    <input type="checkbox" id="checkboxTwo" value="Set">
+                                    <input type="checkbox" id="checkboxTwo" value="Set" ng-model="moment.afternoon">
                                     <label for="checkboxTwo">
                                         <span><b>De Tarde</b><br>16:00 a 20:00</span>
                                     </label>
                                 </li>
                                 <li class="night">
-                                    <input type="checkbox" id="checkboxThree" value="Night">
+                                    <input type="checkbox" id="checkboxThree" value="Night" ng-model="moment.night">
                                     <label for="checkboxThree">
                                         <span><b>De Noche</b><br>20:00 a 00:00</span>
                                     </label>
@@ -60,7 +60,7 @@
                 </div>
             </div>
     
-            <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="">
+            <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-click="step1Next()" ng-disabled="!moment.day && !moment.afternoon && !moment.night">
                 Continuar
             </md-button>
         </form>

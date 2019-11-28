@@ -36,35 +36,37 @@
                     <div class="mt-5">
                         <md-input-container class="md-block md-input-custom mb-5" flex-gt-sm>
                             <label>Ciudad</label>
-                            <md-select ng-model="user.state">
-                                <md-option ng-repeat="state in states" value="{{state.abbrev}}">
-                                    {{state.abbrev}}
+                            <md-select ng-model="user.city">
+                                <md-option ng-repeat="city in cities" ng-value="city">
+                                    {{city}}
                                 </md-option>
                             </md-select>
                         </md-input-container>
-                        <md-input-container class="md-block md-input-custom" >
+                        <md-input-container class="md-block md-input-custom" ng-controller="searchTown">
                             <label>Barrios</label>
-                            <md-select ng-model="selectedVegetables"
+                            <md-select ng-model="user.town"
                                        md-on-close="clearSearchTerm()"
                                        data-md-container-class="selectdemoSelectHeader"
-                                       multiple>
+                                       multiple="">
                                 <md-select-header class="demo-select-header">
                                     <input ng-model="searchTerm"
                                            type="search"
-                                           placeholder="Search for a vegetable.."
+                                           placeholder="Buscá tu barrio..."
                                            class="demo-header-searchbox md-text">
                                 </md-select-header>
-                                <md-optgroup label="vegetables">
-                                    <md-option ng-value="vegetable" >lll{{vegetable}}</md-option>
-                                    <md-option ng-value="vegetable" >lll{{vegetable}}</md-option>
+                                <md-optgroup label="Barrios">
+                                    <md-option ng-repeat="town in towns | filter:searchTerm" ng-value="town">
+                                        {{town}}
+                                    </md-option>
                                 </md-optgroup>
                             </md-select>
                         </md-input-container>
     
-                        <md-chips ng-model="ctrl.fruitNames" readonly="ctrl.readonly" md-removable="ctrl.removable">
+                        <md-chips class="movie-theme" ng-model="user.town" readonly="true" md-removable="true">
                         </md-chips>
                     </div>
-                    <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="">
+                    <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-click="step2Next()"
+                               ng-disabled="!user.city || !user.town">
                         Continuar
                     </md-button>
                 </div>
