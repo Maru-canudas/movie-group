@@ -92,3 +92,61 @@ app.controller('searchTown',['$scope', '$element',
             ev.stopPropagation();
         });
     }]);
+
+app.controller('seatsController',['$scope', '$element',
+    function ($scope, $element) {
+
+        $scope.onLoadSeatsFunc = function() {
+            $(document).ready(function () {
+                var outerContent = $('.seatContainer');
+                var innerContent = $('.seatStructure');
+
+                outerContent.scrollLeft((innerContent.width() - outerContent.width()) / 2);
+            });
+        };
+
+            /*$scope.updateTextArea = function() {
+
+                var numseats = 4;
+                if ($("input:checked").length == ($(numseats).val()))
+                {
+                    $(".seatStructure *").prop("disabled", true);
+
+                    var allNameVals = [];
+                    var allNumberVals = [];
+                    var allSeatsVals = [];
+
+                    //Storing in Array
+                    allNameVals.push($("#Username").val());
+                    allNumberVals.push($("#Numseats").val());
+                    $('#seatsBlock :checked').each(function() {
+                        allSeatsVals.push($(this).val());
+                    });
+
+                    //Displaying
+                    $('#nameDisplay').val(allNameVals);
+                    $('#NumberDisplay').val(allNumberVals);
+                    $('#seatsDisplay').val(allSeatsVals);
+                }
+                else
+                {
+                    alert("Please select " + ($("#Numseats").val()) + " seats")
+                }
+            };
+
+
+            $scope.myFunction = function() {
+                alert($("input:checked").length);
+            };
+
+            $(":checkbox").click(function() {
+                if ($("input:checked").length == ($("#Numseats").val())) {
+                    $(":checkbox").prop('disabled', true);
+                    $(':checked').prop('disabled', false);
+                }
+                else
+                {
+                    $(":checkbox").prop('disabled', false);
+                }
+            });*/
+    }]);
