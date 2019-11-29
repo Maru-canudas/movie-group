@@ -187,6 +187,9 @@ section.movies h2 {
     position: relative;
     overflow-x: auto;
 }
+ul.date-radio {
+    margin-bottom: 0;
+}
 ul.date-radio li label {
     width: 30% !important;
 }
@@ -194,15 +197,20 @@ ul.date-radio li label {
     padding: 15px;
     cursor: pointer;
     display: inline-flex;
-    height: 80px;
+    height: 70px;
     justify-content: center;
     text-align: center;
+    margin: 10px 20px 0 0;
 }
 ul.date-radio li label span,
 ul.date-radio li input[type="radio"]:checked + label span {
     padding-left: 0;
     display: inline-block;
     white-space: initial;
+    line-height: 17px;
+}
+.label-grey {
+    font-size: 12px;
 }
 
 
