@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2">
-                <button class="btn btn-icon">
+                <button class="btn btn-icon" ng-click="goback()">
                     <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
                 </button>
             </div>
@@ -35,10 +35,10 @@
                     <div class="mt-5">
                         <md-input-container class="md-block md-input-custom" flex-gt-sm>
                             <label for="usr">Nombre del grupo</label>
-                            <input id="usr" type="text" placeholder="Amigos">
+                            <input id="usr" type="text" placeholder="Amigos" ng-model="groupName">
                         </md-input-container>
                     </div>
-                    <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="">
+                    <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-click="step3Next()"ng-disabled="!groupName" || groupName = ''>
                         Terminar
                     </md-button>
                 </div>

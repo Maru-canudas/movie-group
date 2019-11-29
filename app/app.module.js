@@ -37,6 +37,27 @@ app.config(['$provide', function($provide) {
         $scope.step2Next = function () {
             window.location.href = '#!/onboarding/3';
         };
+        $scope.step3Next = function () {
+            window.location.href = '#!/onboarding/success';
+        };
+        $scope.stepStartPollNext = function () {
+            window.location.href = '#!/movies';
+        };
+        $scope.stepMoviesNext = function () {
+            window.location.href = '#!/share';
+        };
+        $scope.stepShareNext = function () {
+            window.location.href = '#!/contacts';
+        };
+        $scope.stepContactsNext = function () {
+            window.location.href = '#!/send';
+        };
+        $scope.stepSendNext = function () {
+            window.location.href = '#!/results';
+        };
+        $scope.goback = function (){
+            window.history.back();
+        };
 
         $scope.cities = [
             'CABA', 'Almirante Brown', 'Avellaneda', 'Berisso', 'Berazategui', 'Cañuelas', 'Ensenada', 'Escobar',
@@ -45,6 +66,8 @@ app.config(['$provide', function($provide) {
             'Marcos Paz', 'Merlo', 'Moreno', 'Morón', 'Pilar', 'Presidente Perón', 'Quilmes', 'San Fernando',
             'San Isidro', 'San Miguel', 'San Vicente', 'Tigre', 'Tres de Febrero', 'Vicente López'
         ];
+
+        $scope.groupName = 'Amigos';
     }]);
 
 app.controller('searchTown',['$scope', '$element',
