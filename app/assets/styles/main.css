@@ -89,17 +89,25 @@ a {
 .progress-step.active {
     background: #3BC7B1;
 }
-.date-time h2, .places h2, .group-name h2 {
+.date-time h2, .places h2, .group-name h2, .share h2 {
     font-size: 20px;
 }
-ul.date-time-checks, ul.date-radio, ul.movies-radio {
+
+/* CHECKBOX & RADIOBUTTON */
+ul.date-time-checks,
+ul.date-radio,
+ul.movies-radio {
     list-style: none;
     padding: 0;
 }
-ul.date-time-checks li, ul.date-radio li, ul.movies-radio li {
+ul.date-time-checks li,
+ul.date-radio li,
+ul.movies-radio li {
     display: inline;
 }
-ul.date-time-checks li label, ul.date-radio li label, ul.movies-radio li label {
+ul.date-time-checks li label,
+ul.date-radio li label,
+ul.movies-radio li label {
     display: inline-block;
     background-color: rgba(255, 255, 255, .9);
     border: 2px solid rgba(229, 229, 234, .9);
@@ -124,7 +132,9 @@ ul.date-time-checks li label {
     justify-content: flex-start;
     align-items: center;
 }
-ul.date-time-checks li label::before, ul.date-radio li label::before, ul.movies-radio li label::before {
+ul.date-time-checks li label::before,
+ul.date-radio li label::before,
+ul.movies-radio li label::before {
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     transition: transform .3s ease-in-out;
@@ -187,21 +197,6 @@ ul.date-radio li input[type="checkbox"]:focus + label,
 ul.movies-radio li input[type="radio"]:focus + label {
     border: 2px solid #e9a1ff;
 }
-
-
-/* MOVIES */
-section.movies h2 {
-    font-size: 18px;
-}
-section.movies h3 {
-    font-size: 16px;
-}
-.date-container {
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    overflow-x: auto;
-}
 ul.date-radio li label, ul.movies-radio li label  {
     width: 30% !important;
 }
@@ -224,23 +219,6 @@ ul.movies-radio li input[type="radio"]:checked + label span{
     display: block;
     white-space: initial;
     line-height: 17px;
-}
-.label-grey {
-    font-size: 12px;
-}
-.movies-radio {
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    overflow-x: auto;
-}
-ul.date-radio li label {
-    width: 30%;
-}
-.movie-elipsis {
-    display: -webkit-box !important;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
 }
 ul.movies-radio li label span {
     font-size: 14px;
@@ -275,6 +253,35 @@ ul.movies-radio li input[type="radio"]:checked + label span{
 }
 ul.date-radio li input[type="checkbox"] + label {
     padding: 10px!important;
+}
+
+
+/* MOVIES */
+section.movies h2 {
+    font-size: 18px;
+}
+section.movies h3 {
+    font-size: 16px;
+}
+.date-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    overflow-x: auto;
+}
+.label-grey {
+    font-size: 12px;
+}
+.movies-radio {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    overflow-x: auto;
+}
+.movie-elipsis {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .details {
     position: fixed;
@@ -317,7 +324,12 @@ ul.date-radio li input[type="checkbox"] + label {
 .detail-content p.movie {
     font-weight: 700;
     font-size: 18px;
-    margin-top: 10px;
+}
+
+
+/* SHARE */
+.share h3 {
+    font-size: 18px;
 }
 
 

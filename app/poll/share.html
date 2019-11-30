@@ -1,51 +1,91 @@
-<main>
+<header class="header-form">
     <div class="container-fluid">
-        <!-- HEADER -->
-        <h2 class="text-center">Compartir</h2>
-        <h2 class="text-center">¡Llegó el momento de votar!</h2>
-        <p class="text-center">Éstas son tu funciones seleaccionadas</p>
-    
-        <div class="detail-content">
-            <div class="row">
-                <div class="col-3"><img src="" alt=""></div>
-                <div class="col-7">
-                    <p>The Joker</p>
-                    <p>21 Nov 22:00 - 2D SUB</p>
-                    <p>Showcase Belgrano</p>
-                </div>
-                <div class="col-2">
-                    <button type="button" class="btn">e</button>
-                </div>
+        <div class="row align-items-center">
+            <div class="col-2">
+                <button class="btn btn-icon" ng-click="goback()">
+                    <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                </button>
+            </div>
+            <div class="col-8"><h1 class="m-0">Compartir</h1></div>
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
             </div>
         </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <section class="mt-3 share">
+            <h2 class="text-center">¡Llegó el momento de votar!</h2>
+            <p class="text-center mb-4">Éstas son tu funciones seleaccionadas</p>
         
-        <section>
-            <h3>¿Cuánto va a durar la votación?</h3>
-            <div class="row">
-                <div class="col">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">1 hora
-                        </label>
+            <div class="detail-content">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
                     </div>
-                </div>
-                <div class="col">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">6 horas
-                        </label>
+                    <div class="col-7">
+                        <p class="movie">The Joker</p>
+                        <p>21 Nov 22:00 - 2D SUB</p>
+                        <p>Showcase Belgrano</p>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">12 horas
-                        </label>
+                    <div class="col-2">
+                        <div>
+                            <button type="button" class="btn btn-icon">
+                                <img src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="detail-content">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
+                    </div>
+                    <div class="col-7">
+                        <p class="movie">The Joker</p>
+                        <p>21 Nov 22:00 - 2D SUB</p>
+                        <p>Showcase Belgrano</p>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-icon">
+                            <img src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mt-4">¿Cuánto va a durar la votación?</h3>
+            <div class="time-checks">
+                <fieldset>
+                    <ul class="time-checks">
+                        <li class="day">
+                            <input type="radio" id="hour1" value="1hour" name="optradio">
+                            <label for="hour1">
+                                <span>1 hora</span>
+                            </label>
+                        </li>
+                        <li class="set">
+                            <input type="radio" id="hour2" value="2hour" name="optradio">
+                            <label for="hour2">
+                                <span>6 horas</span>
+                            </label>
+                        </li>
+                        <li class="night">
+                            <input type="radio" id="hour3" value="3hour" name="optradio">
+                            <label for="hour3">
+                                <span>12 horas</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
         </section>
-        
-        <button type="submit" class="btn btn-primary btn-block btn-sticky mt-4" ng-click="stepShareNext()">Iniciar sesión</button>
+    
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="" ng-click="stepMoviesNext()">
+            Continuar
+        </md-button>
     </div>
 </main>
