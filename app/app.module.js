@@ -93,8 +93,8 @@ app.controller('searchTown',['$scope', '$element',
         });
     }]);
 
-app.controller('seatsController',['$scope', '$element',
-    function ($scope, $element) {
+app.controller('seatsController',['$scope', '$element', '$mdBottomSheet',
+    function ($scope, $element, $mdBottomSheet) {
 
         $scope.onLoadSeatsFunc = function() {
             $(document).ready(function () {
@@ -104,6 +104,13 @@ app.controller('seatsController',['$scope', '$element',
                 outerContent.scrollLeft((innerContent.width() - outerContent.width()) / 2);
             });
         };
+
+        $scope.showListBottomSheet = function() {
+            $mdBottomSheet.show({
+              templateUrl: 'bottom-sheet-grid-template.html',
+              controller: 'ListBottomSheetCtrl'
+            })
+          };
 
             /*$scope.updateTextArea = function() {
 
@@ -150,3 +157,10 @@ app.controller('seatsController',['$scope', '$element',
                 }
             });*/
     }]);
+
+app.controller('ListBottomSheetCtrl', function($scope, $mdBottomSheet) {
+    
+    $scope.hideBottomSheet = function() {
+        $mdBottomSheet.hide();
+    };
+})

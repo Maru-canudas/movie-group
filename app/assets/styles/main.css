@@ -18,6 +18,11 @@ section {
 a {
     color: #5856D6 !important;
 }
+.display-flex{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
 
 /* COLOR */
 .violet {
@@ -363,10 +368,63 @@ md-chips.movie-theme .md-chips{
     box-shadow: none;
 }
 
+/* SECCIÓN EXPANDIBLE */
+.btn-expand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    background-color: white;
+    border: none;
+}
+.btn-shadow{
+    box-shadow: -1px 0px 14px 4px #d4d4d4;
+}
+.icon-img{
+    margin: 15px 10px;
+}
+md-bottom-sheet.bottom-sheet-int{
+    padding: 0 0 78px 0!important;
+}
+
 /* ASIENTOS */
 .screen{
     color: #878787;
     text-align: center
+}
+ul.seat-status{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 0.8rem;
+}
+ul.seat-status li{
+    margin-right: 15px;
+}
+.available-seat{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color:white;
+    border-radius: 3px;
+    border: 2px solid black;
+    margin-right: 5px;
+}
+.unavailable-seat{
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color:white;
+    background-image: url("../images/disabled.svg");
+    border: 1px solid #878787;
+    margin-right: 5px;
 }
 .seatContainer{
     display: flex;
@@ -390,6 +448,14 @@ md-chips.movie-theme .md-chips{
 .seatContainer ol{
     list-style: none;
     padding: 0;
+}
+.seatContainer ol.seat-line{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .seatContainer ol li{
     display: flex;
@@ -416,6 +482,15 @@ md-chips.movie-theme .md-chips{
     background-image: url("../images/disabled.svg");
     border: 1px solid #878787;
     font-size: 15px;
+}
+.bubble{
+    background-color: #5856D6;
+    color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 10px;
 }
 
 

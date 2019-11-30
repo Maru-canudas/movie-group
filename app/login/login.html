@@ -12,16 +12,28 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-10">
-                <form>
+                <form name="loginForm">
                     <md-input-container class="md-block md-input-custom mb-4" flex-gt-sm>
                         <label for="usr">Usuario</label>
-                        <input id="usr" type="text">
+                        <input id="usr" name="usr" type="text" required>
+
+                        <div ng-messages="loginForm.usr.$error" role="alert">
+                            <div ng-message-exp="['required']">
+                                Usuario requerido
+                            </div>
+                        </div>
                     </md-input-container>
             
                     <md-input-container class="md-block md-input-custom" flex-gt-sm>
                         <label for="pwd">Contraseña</label>
-                        <input id="pwd" type="password">
+                        <input id="pwd" name="pwd" type="password" required>
                         <md-icon md-svg-src="assets/images/eye.svg" style="display:inline-block;"></md-icon>
+
+                        <div ng-messages="loginForm.pwd.$error" role="alert">
+                                <div ng-message-exp="['required']">
+                                    Contraseña requerida
+                                </div>
+                            </div>
                     </md-input-container>
                     <div class="text-center">
                         <a href="">Olvidé la contraseña</a>
