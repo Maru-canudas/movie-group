@@ -22,104 +22,108 @@
                     <md-icon md-svg-src="assets/images/search.svg" style="display:inline-block;"></md-icon>
                 </md-input-container>
             </div>
-            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="pt-5">
+                    <div class="float-left">3</div>
+                    <div class="float-right">
+                        <a href="">Filtros</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
         </div>
         <!-- DIA -->
         <section class="movies pt-0">
             <h2>¿Cuándo quieren ir al cine?</h2>
             <div class="date-container">
-                <ul class="date-radio">
-                    <li>
-                        <input type="radio" id="op1" value="today" name="schudule">
-                        <label for="op1">
-                            <span>Hoy</span>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="op2" value="mañana" name="schudule">
-                        <label for="op2">
-                            <span>Mañana</span>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="op3" value="miercoles" name="schudule">
-                        <label for="op3">
-                            <span><span class="label-grey">Miercoles</span> 27 Nov</span>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="op4" value="jueves" name="schudule">
-                        <label for="op4">
-                            <span><span class="label-grey">Jueves</span> 28 Nov</span>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="op5" value="viernes" name="schudule">
-                        <label for="op5">
-                            <span><span class="label-grey">Viernes</span> 29 Nov</span>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="op6" value="sabado" name="schudule">
-                        <label for="op6">
-                            <span><span class="label-grey">Sábado</span> 30 Nov</span>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="op7" value="domingo" name="schudule">
-                        <label for="op7">
-                            <span><span class="label-grey">Domingo</span> 01 Dic</span>
-                        </label>
-                    </li>
-                </ul>
+                <fieldset>
+                    <ul class="date-radio">
+                        <li>
+                            <input type="radio" id="op1" value="today" name="day">
+                            <label for="op1">
+                                <span><b>Hoy</b><span class="label-grey">25 Nov</span> </span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="op2" value="mañana" name="day">
+                            <label for="op2">
+                                <span><b>Mañana</b> <span class="label-grey">26 Nov</span></span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="op3" value="miercoles" name="day">
+                            <label for="op3">
+                                <span><span class="label-grey">Miercoles</span> <b>27 Nov</b></span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="op4" value="jueves" name="day">
+                            <label for="op4">
+                                <span><span class="label-grey">Jueves</span> <b>28 Nov</b></span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="op5" value="viernes" name="day">
+                            <label for="op5">
+                                <span><span class="label-grey">Viernes</span> <b>29 Nov</b></span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="op6" value="sabado" name="day">
+                            <label for="op6">
+                                <span><span class="label-grey">Sábado</span> <b>30 Nov</b></span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="op7" value="domingo" name="day">
+                            <label for="op7">
+                                <span><span class="label-grey">Domingo</span> <b>01 Dic</b></span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
             </div>
         </section>
         
         <!-- PELICULA -->
-        <section class="movies">
+        <section class="movies pt-0">
             <h2>¿Qué les gustaría ver?</h2>
             <!-- carousel -->
-            <div class="owl-carousel owl-theme movies-carousel">
-                <div class="item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">
-                            <span>Maleficent 2: Mistress of Evil</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">
-                            <span>The Joker</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">
-                            <span>Terminator Destino Oculto</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">
-                            <span>Proyecto Geminis </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optradio">
-                            <span>Contra lo imposible </span>
-                        </label>
-                    </div>
-                </div>
+            <div class="movies-radio">
+                <fieldset>
+                    <ul class="movies-radio">
+                        <li class="movie1">
+                            <input type="radio" id="movie1" value="Malefica" name="movie">
+                            <label for="movie1">
+                                <span class="movie-elipsis">Malefica 2: Dueña del mal</span>
+                            </label>
+                        </li>
+                        <li class="movie2">
+                            <input type="radio" id="movie2" value="Joker" name="movie">
+                            <label for="movie2">
+                                <span>The Joker</span>
+                            </label>
+                        </li>
+                        <li class="movie3">
+                            <input type="radio" id="movie3" value="Terminator" name="movie">
+                            <label for="movie3">
+                                <span>Terminator Destino Oculto</span>
+                            </label>
+                        </li>
+                        <li class="movie4">
+                            <input type="radio" id="movie4" value="Proyecto" name="movie">
+                            <label for="movie4">
+                                <span>Proyecto Geminis</span>
+                            </label>
+                        </li>
+                        <li class="movie5">
+                            <input type="radio" id="movie5" value="Contra" name="movie">
+                            <label for="movie5">
+                                <span>Contra lo imposible</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
             </div>
         </section>
         <!-- HORARIOS -->
@@ -327,11 +331,11 @@
                         <h5>Funciones seleccionadas</h5>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn">a</button>
+                        <button type="button" data-target="#details" data-toggle="collapse">a</button>
                     </div>
                 </div>
             </div>
-            <div class="detail-content">
+            <div class="detail-content collapse" id="details">
                 <div class="row">
                     <div class="col-3"><img src="" alt=""></div>
                     <div class="col-7">
