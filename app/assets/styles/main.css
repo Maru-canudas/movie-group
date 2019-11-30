@@ -150,6 +150,7 @@ ul.date-time-checks li input[type="checkbox"]:checked + label::before {
 }
 ul.date-time-checks li input[type="checkbox"]:checked + label,
 ul.date-radio li input[type="radio"]:checked + label,
+ul.date-radio li input[type="checkbox"]:checked + label,
 ul.movies-radio li input[type="radio"]:checked + label{
     border: 2px solid #5856D6;
     background-color: #5856D6;
@@ -164,17 +165,20 @@ ul.date-time-checks li input[type="checkbox"]:checked + label span {
 }
 ul.date-time-checks li input[type="checkbox"],
 ul.date-radio li input[type="radio"],
+ul.date-radio li input[type="checkbox"],
 ul.movies-radio li input[type="radio"]{
     display: absolute;
 }
 ul.date-time-checks li input[type="checkbox"],
 ul.date-radio li input[type="radio"],
+ul.date-radio li input[type="checkbox"],
 ul.movies-radio li input[type="radio"] {
     position: absolute;
     opacity: 0;
 }
 ul.date-time-checks li input[type="checkbox"]:focus + label,
 ul.date-radio li input[type="radio"]:focus + label,
+ul.date-radio li input[type="checkbox"]:focus + label,
 ul.movies-radio li input[type="radio"]:focus + label {
     border: 2px solid #e9a1ff;
 }
@@ -184,13 +188,15 @@ ul.movies-radio li input[type="radio"]:focus + label {
 section.movies h2 {
     font-size: 18px;
 }
+section.movies h3 {
+    font-size: 16px;
+}
 .date-container {
     white-space: nowrap;
     overflow: hidden;
     position: relative;
     overflow-x: auto;
 }
-
 ul.date-radio li label, ul.movies-radio li label  {
     width: 30% !important;
 }
@@ -205,6 +211,8 @@ ul.date-radio li label, ul.movies-radio li label  {
 }
 ul.date-radio li label span,
 ul.date-radio li input[type="radio"]:checked + label span,
+ul.date-radio li label span,
+ul.date-radio li input[type="checkbox"]:checked + label span,
 ul.movies-radio li label span,
 ul.movies-radio li input[type="radio"]:checked + label span{
     padding-left: 0;
@@ -258,7 +266,53 @@ ul.movies-radio li.movie5 label {
 }
 ul.movies-radio li label span,
 ul.movies-radio li input[type="radio"]:checked + label span{
-    display: inline-block !important;
+    display: inline-block;
+}
+ul.date-radio li input[type="checkbox"] + label {
+    padding: 10px!important;
+}
+.details {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    background: #FFFFFF;
+    z-index: 12;
+    box-shadow: 0 -2px 4px #E5E5EA;
+}
+.details h4 {
+    font-size: 18px;
+    padding-top: 3px;
+}
+.detail-header{
+    padding: 10px 0;
+}
+.detail-header .circle, .circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 3px 5px;
+    color: #ffffff;
+    background: #5856D6;
+    border-radius: 100%;
+    font-weight: 700;
+}
+.detail-content {
+    border-top: 2px solid #e5e5e5;
+    padding: 15px 0;
+}
+.detail-content img {
+    border-radius: 5px;
+}
+.detail-content p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.detail-content p.movie {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 
@@ -277,15 +331,7 @@ ul.movies-radio li input[type="radio"]:checked + label span{
     position: fixed !important;
 }
 
-.details {
-    position: fixed;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    padding: 0 15px;
-    background: #FFFFFF;
-    z-index: 12;
-}
+
 
 /* STEP 2 CIUDADES/BARRIOS */
 .selectdemoSelectHeader .demo-header-searchbox {
