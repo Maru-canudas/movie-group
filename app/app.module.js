@@ -112,6 +112,26 @@ app.controller('seatsController',['$scope', '$element', '$mdBottomSheet',
             })
           };
 
+          $scope.seats = {
+          };
+
+          var itemsLength = Object.keys($scope.seats).length;
+
+          $(".available").click(function() {
+              var seatsNumber = 4;
+            if ($("input:checked").length === seatsNumber) {
+                $(".available").prop('disabled', true);
+                $('.available:checked').prop('disabled', false);
+            }
+            else
+            {
+                $(".available").prop('disabled', false);
+            }
+        });
+
+        var selected = $("input:checked").length;
+
+
             /*$scope.updateTextArea = function() {
 
                 var numseats = 4;
@@ -146,16 +166,7 @@ app.controller('seatsController',['$scope', '$element', '$mdBottomSheet',
                 alert($("input:checked").length);
             };
 
-            $(":checkbox").click(function() {
-                if ($("input:checked").length == ($("#Numseats").val())) {
-                    $(":checkbox").prop('disabled', true);
-                    $(':checked').prop('disabled', false);
-                }
-                else
-                {
-                    $(":checkbox").prop('disabled', false);
-                }
-            });*/
+            */
     }]);
 
 app.controller('ListBottomSheetCtrl', function($scope, $mdBottomSheet) {

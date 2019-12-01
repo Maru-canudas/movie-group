@@ -44,8 +44,8 @@
                             <li><input type="checkbox" class="seats" value="2B" aria-label="2B izquierda asiento ocupado" disabled></li>
                             <li><input type="checkbox" class="seats" value="3B" aria-label="3B centro asiento ocupado" disabled></li>
                             <li><input type="checkbox" class="seats" value="4B" aria-label="4B centro asiento ocupado" disabled></li>
-                            <li><input type="checkbox" class="seats" value="5B" aria-label="5B centro"></li>
-                            <li><input type="checkbox" class="seats" value="6B" aria-label="6B centro"></li>
+                            <li><input ng-model="seats.value5b" type="checkbox" class="seats available" value="5B" aria-label="5B centro"></li>
+                            <li><input ng-model="seats.value6b" type="checkbox" class="seats available" value="6B" aria-label="6B centro"></li>
                             <li><input type="checkbox" class="seats" value="7B" aria-label="7B derecha asiento ocupado" disabled></li>
                             <li><input type="checkbox" class="seats" value="8B" aria-label="8B derecha asiento ocupado" disabled></li>
                         </ol>
@@ -62,12 +62,12 @@
                         <ol class="seat-line" aria-label="fila D">
                             <li><input type="checkbox" class="seats" value="1D" aria-label="1D izquierda asiento ocupado" disabled></li>
                             <li><input type="checkbox" class="seats" value="2D" aria-label="2D izquierda asiento ocupado" disabled></li>
-                            <li><input type="checkbox" class="seats" value="3D" aria-label="3D centro"></li>
-                            <li><input type="checkbox" class="seats" value="4D" aria-label="4D centro"></li>
-                            <li><input type="checkbox" class="seats" value="5D" aria-label="5D centro"></li>
-                            <li><input type="checkbox" class="seats" value="6D" aria-label="6D centro"></li>
-                            <li><input type="checkbox" class="seats" value="7D" aria-label="7D derecha"></li>
-                            <li><input type="checkbox" class="seats" value="8D" aria-label="8D derecha"></li>
+                            <li><input ng-model="seats.value3d" type="checkbox" class="seats available" value="3D" aria-label="3D centro"></li>
+                            <li><input ng-model="seats.value4d" type="checkbox" class="seats available" value="4D" aria-label="4D centro"></li>
+                            <li><input ng-model="seats.value5d" type="checkbox" class="seats available" value="5D" aria-label="5D centro"></li>
+                            <li><input ng-model="seats.value6d" type="checkbox" class="seats available" value="6D" aria-label="6D centro"></li>
+                            <li><input ng-model="seats.value7d" type="checkbox" class="seats available" value="7D" aria-label="7D derecha"></li>
+                            <li><input ng-model="seats.value8d" type="checkbox" class="seats available" value="8D" aria-label="8D derecha"></li>
                         </ol>
                         <ol class="seat-line" aria-label="fila E">
                             <li><input type="checkbox" class="seats" value="1E" aria-label="1E izquierda asiento ocupado" disabled></li>
@@ -76,25 +76,25 @@
                             <li><input type="checkbox" class="seats" value="4E" aria-label="4E centro asiento ocupado" disabled></li>
                             <li><input type="checkbox" class="seats" value="5E" aria-label="5E centro asiento ocupado" disabled></li>
                             <li><input type="checkbox" class="seats" value="6E" aria-label="6E centro asiento ocupado" disabled></li>
-                            <li><input type="checkbox" class="seats" value="7E" aria-label="7E derecha"></li>
-                            <li><input type="checkbox" class="seats" value="8E" aria-label="8E derecha"></li>
+                            <li><input ng-model="seats.value7e" type="checkbox" class="seats available" value="7E" aria-label="7E derecha"></li>
+                            <li><input ng-model="seats.value8e" type="checkbox" class="seats available" value="8E" aria-label="8E derecha"></li>
                         </ol>
                         <ol class="seat-line" aria-label="fila F">
-                            <li><input type="checkbox" class="seats" value="1F" aria-label="1F izquierda"></li>
-                            <li><input type="checkbox" class="seats" value="2F" aria-label="2F izquierda"></li>
-                            <li><input type="checkbox" class="seats" value="3F" aria-label="3F centro"></li>
-                            <li><input type="checkbox" class="seats" value="4F" aria-label="4F centro"></li>
+                            <li><input ng-model="seats.value1f" type="checkbox" class="seats available" value="1F" aria-label="1F izquierda"></li>
+                            <li><input ng-model="seats.value2f" type="checkbox" class="seats available" value="2F" aria-label="2F izquierda"></li>
+                            <li><input ng-model="seats.value3f" type="checkbox" class="seats available" value="3F" aria-label="3F centro"></li>
+                            <li><input ng-model="seats.value4f" type="checkbox" class="seats available" value="4F" aria-label="4F centro"></li>
                             <li><input type="checkbox" class="seats" value="5F" aria-label="5F centro asiento ocupado" disabled></li>
                             <li><input type="checkbox" class="seats" value="6F" aria-label="6F centro asiento ocupado" disabled></li>
                             <li><input type="checkbox" class="seats" value="7F" aria-label="7F derecha asiento ocupado" disabled></li>
-                            <li><input type="checkbox" class="seats" value="8F" aria-label="8F derecha"></li>
+                            <li><input ng-model="seats.value8f" type="checkbox" class="seats available" value="8F" aria-label="8F derecha"></li>
                         </ol>
                         <ol class="seat-line" aria-label="fila G">
-                            <li><input type="checkbox" class="seats" value="2G" aria-label="1G izquierda"></li>
-                            <li><input type="checkbox" class="seats" value="3G" aria-label="2G centro"></li>
-                            <li><input type="checkbox" class="seats" value="4G" aria-label="3G centro"></li>
-                            <li><input type="checkbox" class="seats" value="5G" aria-label="4G centro"></li>
-                            <li><input type="checkbox" class="seats" value="6G" aria-label="5G centro"></li>
+                            <li><input ng-model="seats.value1g" type="checkbox" class="seats available" value="2G" aria-label="1G izquierda"></li>
+                            <li><input ng-model="seats.value2g" type="checkbox" class="seats available" value="3G" aria-label="2G centro"></li>
+                            <li><input ng-model="seats.value3g" type="checkbox" class="seats available" value="4G" aria-label="3G centro"></li>
+                            <li><input ng-model="seats.value4g" type="checkbox" class="seats available" value="5G" aria-label="4G centro"></li>
+                            <li><input ng-model="seats.value5g" type="checkbox" class="seats available" value="6G" aria-label="5G centro"></li>
                             <li><input type="checkbox" class="seats" value="7G" aria-label="6G derecha asiento ocupado" disabled></li>
                         </ol>
                         <ol class="seat-line" aria-label="fila H. Todos los asientos ocupados">
@@ -107,30 +107,19 @@
                 </div>
             </div>
 
-            <!--script type="text/ng-template" id="bottom-sheet-grid-template.html">
-                <md-bottom-sheet class="md-grid bottom-sheet-int" layout="column">
-                        <button class="btn-expand" ng-click="hideBottomSheet()">
-                                <span class="display-flex"><span class="display-flex bubble"><b>1</b></span>Asientos seleccionados</span><img class="icon-img" src="assets/images/arrow_down.svg" width="20px" alt="">
-                        </button>
-                        <p> Acá va toda la info</p>
-                        <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="step1Next()" ng-disabled="!moment.day && !moment.afternoon && !moment.night">
-                                Continuar
-                        </md-button>
-                </md-bottom-sheet>
-            </script-->
-
             <!-- COLLAPSED DETAILS -->
         <div class="details">
                 <button class="detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
                     <div class="">
                         <div style="display: flex; align-items: center; justify-content: space-between;">
                             <div class="flex-start">
-                                <div class="circle mr-3">1</div>
-                                <h4 class="mb-0">Asientos seleccionados</h4>
+                                <div class="circle mr-3">{{selected}}</div>
+                                <h4 class="mb-0">Asiento seleccionado</h4><!--ng-if="seats.lenght === 1"-->
+                                <h4 class="mb-0" ng-if="seats.lenght > 1 || seats.lenght === 0">Asientos seleccionados</h4>
                             </div>
                             <div class="">
-                                <img ng-if="!collapsed" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
-                                <img ng-if="collapsed" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+                                <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
+                                <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
                             </div>
                         </div>
                     </div>
@@ -138,16 +127,13 @@
                 <div class="collapse" id="details">
                     <div class="detail-content">
                         <div class="row">
-                            Acá van los asientos?
+                            Acá van los asientos? {{seats.lenght}}
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="btn-sticky">
-                <!--button class="btn-expand btn-shadow" ng-click="showListBottomSheet()">
-                    <span class="display-flex"><span class="display-flex bubble"><b>1</b></span>Asientos seleccionados</span><img class="icon-img" src="assets/images/arrow_up.svg" width="20px" alt="">
-                </button-->
                 <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="step1Next()" ng-disabled="!moment.day && !moment.afternoon && !moment.night">
                     Continuar
                 </md-button>

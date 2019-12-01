@@ -1,0 +1,57 @@
+<header class="header-form">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <button class="btn btn-icon" ng-click="goback()">
+                        <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                    </button>
+                </div>
+                <div class="col-8"><h1>Elegir asientos</h1></div>
+                <div class="col-2">
+                    <button class="btn btn-icon">
+                        <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main ng-controller="seatsController" onload="onLoadSeatsFunc()" style="margin-bottom: 120px;">
+        <div class="container-fluid">
+            <form class="date-time">
+                
+    
+                <!-- COLLAPSED DETAILS -->
+            <div class="details">
+                    <button class="detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
+                        <div class="">
+                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                <div class="flex-start">
+                                    <div class="circle mr-3">1</div>
+                                    <h4 class="mb-0">Asiento seleccionado</h4><!--ng-if="seats.lenght === 1"-->
+                                    <h4 class="mb-0" ng-if="seats.lenght > 1 || seats.lenght === 0">Asientos seleccionados</h4>
+                                </div>
+                                <div class="">
+                                    <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
+                                    <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse" id="details">
+                        <div class="detail-content">
+                            <div class="row">
+                                Acá van los asientos? {{seats}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="btn-sticky">
+                    <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="step1Next()" ng-disabled="!moment.day && !moment.afternoon && !moment.night">
+                        Continuar
+                    </md-button>
+                </div>
+            </form>
+        </div>
+    </main>
