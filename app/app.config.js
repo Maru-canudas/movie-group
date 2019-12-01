@@ -54,7 +54,7 @@ angular.
           templateUrl: 'poll/results.html'
         }).
         when('/tickets-selection', {
-          title: 'Grupos - Movie Group',
+          title: 'Elegir entradas - Movie Group',
           templateUrl: 'checkout/ticketsSelection.html'
         }).
         when('/seats', {
@@ -70,15 +70,11 @@ angular.
           templateUrl: 'checkout/resume.html'
         }).
         when('/payment', {
-          title: 'Grupos - Movie Group',
+          title: 'Pago de entradas - Movie Group',
           templateUrl: 'checkout/payment.html'
         }).
-        when('/security', {
-          title: 'Grupos - Movie Group',
-          templateUrl: 'checkout/security.html'
-        }).
         when('/ticket', {
-          title: 'Grupos - Movie Group',
+          title: 'Entradas - Movie Group',
           templateUrl: 'checkout/ticket.html'
         }).
         otherwise('/');
