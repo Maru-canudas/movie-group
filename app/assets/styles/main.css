@@ -96,18 +96,21 @@ a {
 /* CHECKBOX & RADIOBUTTON */
 ul.date-time-checks,
 ul.date-radio,
-ul.movies-radio {
+ul.movies-radio,
+ul.time-checks {
     list-style: none;
     padding: 0;
 }
 ul.date-time-checks li,
 ul.date-radio li,
-ul.movies-radio li {
+ul.movies-radio li,
+ul.time-checks li{
     display: inline;
 }
 ul.date-time-checks li label,
 ul.date-radio li label,
-ul.movies-radio li label {
+ul.movies-radio li label,
+ul.time-checks li label{
     display: inline-block;
     background-color: rgba(255, 255, 255, .9);
     border: 2px solid rgba(229, 229, 234, .9);
@@ -124,7 +127,8 @@ ul.movies-radio li label {
     margin-bottom: 20px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
 }
-ul.date-time-checks li label {
+ul.date-time-checks li label,
+ul.time-checks li label{
     padding: 15px;
     cursor: pointer;
     display: flex;
@@ -134,7 +138,8 @@ ul.date-time-checks li label {
 }
 ul.date-time-checks li label::before,
 ul.date-radio li label::before,
-ul.movies-radio li label::before {
+ul.movies-radio li label::before,
+ul.time-checks li label::before {
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     transition: transform .3s ease-in-out;
@@ -166,7 +171,8 @@ ul.date-time-checks li input[type="checkbox"]:checked + label::before {
 ul.date-time-checks li input[type="checkbox"]:checked + label,
 ul.date-radio li input[type="radio"]:checked + label,
 ul.date-radio li input[type="checkbox"]:checked + label,
-ul.movies-radio li input[type="radio"]:checked + label{
+ul.movies-radio li input[type="radio"]:checked + label,
+ul.time-checks li input[type="radio"]:checked + label {
     border: 2px solid #5856D6;
     background-color: #5856D6;
     color: #fff;
@@ -174,33 +180,34 @@ ul.movies-radio li input[type="radio"]:checked + label{
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 ul.date-time-checks li label span,
-ul.date-time-checks li input[type="checkbox"]:checked + label span {
+ul.date-time-checks li input[type="checkbox"]:checked + label span,
+ul.time-checks li label span,
+ul.time-checks li input[type="radio"]:checked + label span{
     padding-left: 15px;
     display: inline-block;
 }
 ul.date-time-checks li input[type="checkbox"],
 ul.date-radio li input[type="radio"],
 ul.date-radio li input[type="checkbox"],
-ul.movies-radio li input[type="radio"]{
-    display: absolute;
-}
-ul.date-time-checks li input[type="checkbox"],
-ul.date-radio li input[type="radio"],
-ul.date-radio li input[type="checkbox"],
-ul.movies-radio li input[type="radio"] {
+ul.movies-radio li input[type="radio"],
+ul.time-checks li input[type="radio"] {
     position: absolute;
     opacity: 0;
 }
 ul.date-time-checks li input[type="checkbox"]:focus + label,
 ul.date-radio li input[type="radio"]:focus + label,
 ul.date-radio li input[type="checkbox"]:focus + label,
-ul.movies-radio li input[type="radio"]:focus + label {
+ul.movies-radio li input[type="radio"]:focus + label,
+ul.time-checks li input[type="radio"]:focus + label {
     border: 2px solid #e9a1ff;
 }
-ul.date-radio li label, ul.movies-radio li label  {
+ul.date-radio li label,
+ul.movies-radio li label {
     width: 30% !important;
 }
-ul.date-radio li label, ul.movies-radio li label  {
+ul.date-radio li label,
+ul.movies-radio li label,
+ul.time-checks li label {
     padding: 10px 15px;
     cursor: pointer;
     display: inline-flex;
@@ -253,6 +260,16 @@ ul.movies-radio li input[type="radio"]:checked + label span{
 }
 ul.date-radio li input[type="checkbox"] + label {
     padding: 10px!important;
+}
+ul.time-checks li label{
+    width: 29% !important;
+    margin: 10px 10px 0 0;
+}
+ul.time-checks li label span,
+ul.time-checks li input[type="radio"]:checked + label span{
+    padding-left: 0;
+    display: block;
+    white-space: initial;
 }
 
 
