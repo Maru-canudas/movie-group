@@ -1,0 +1,84 @@
+<header class="header-form">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <button class="btn btn-icon" ng-click="goback()">
+                    <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                </button>
+            </div>
+            <div class="col-8"><h1>Resumen</h1></div>
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <section class="resume">
+            <div class="detail-content">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
+                    </div>
+                    <div class="col-9">
+                        <p class="movie">The Joker</p>
+                        <p>21 Nov 22:00 - 2D SUB</p>
+                        <p>Showcase Belgrano</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-content">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h3>Entradas</h3>
+                    </div>
+                    <div class="col text-right">
+                        <p class="m-0"><span>$720.00</span> $340.00</p>
+                    </div>
+                </div>
+                <p class="m-0 resume"><span class="font-700">2</span> Promociones BBVA 2x1</p>
+                <p class="m-0 resume">Asientos: <span class="font-700">{{seats}}</span></p>
+            </div>
+            <div class="snacks-content">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h3>Snacks</h3>
+                    </div>
+                    <div class="col text-right">
+                        <p class="m-0"> $340.00</p>
+                    </div>
+                </div>
+                <p class="m-0 resume"><span class="font-700">4</span> Gaseosas 500 ml.</p>
+    
+            </div>
+            <div class="creditcard-content">
+                <h3>Elegir medio de pago</h3>
+                <md-list>
+                    <md-list-item class="noright">
+                        <img alt="visa" src="assets/images/visa.svg" class="md-avatar"/>
+                        <p>BBVA ….5464</p>
+                        <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
+                    </md-list-item>
+                </md-list>
+                <md-list>
+                    <md-list-item class="noright">
+                        <img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/>
+                        <p>Galicia ….5464</p>
+                        <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
+                    </md-list-item>
+                </md-list>
+                
+                <div class=" ">
+                    <a href="">Agregar nueva tarjeta</a>
+                </div>
+            </div>
+        </section>
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled=""
+                   ng-click="stepMoviesNext()">
+            Pagar
+        </md-button>
+    </div>
+</main>

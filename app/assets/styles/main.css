@@ -522,6 +522,10 @@ input.tickets::-webkit-inner-spin-button {
     background: url("../images/minus.svg") center center no-repeat;
     background-size: contain;
 }
+.input-group.tickets .button-minus.disabled {
+    background: url("../images/minus-disable.svg") center center no-repeat;
+    background-size: contain;
+}
 .input-group.tickets .button-minus,
 .input-group.tickets .button-plus {
     height: 38px;
@@ -734,6 +738,38 @@ ul.seat-status li{
     display: inline-block;
     border-radius: 100%;
     margin-right: 10px;
+}
+
+
+/* RESUME */
+.resume .detail-content{
+    border-top: 0;
+}
+.ticket-content, .snacks-content, .creditcard-content {
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+}
+.ticket-content .col  p, .snacks-content .col p {
+    color: #4A00BD;
+    font-weight: 700;
+}
+.ticket-content .col p span {
+    text-decoration: line-through;
+    color: #A09FA2;
+    font-weight: 400;
+}
+p.resume {
+    font-size: 14px;
+}
+.creditcard-content md-list {
+    border-top: 0;
+}
+.creditcard-content md-list md-list-item, md-list-item .md-list-item-inner {
+    padding: 0 !important;
+}
+.creditcard-content md-list md-list-item .md-avatar, md-list-item .md-avatar-icon, md-list-item .md-list-item-inner .md-avatar, md-list-item .md-list-item-inner .md-avatar-icon {
+    border-radius: 0;
+    margin: 0 16px 0 0;
 }
 
 
