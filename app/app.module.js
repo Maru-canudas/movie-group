@@ -10,10 +10,10 @@ try {
         'ngMessages'
     ]);
 } catch (e) {
-    app = angular.module('movieGroupApp', [ 'config']);
+    app = angular.module('movieGroupApp', ['config']);
 }
 
-app.config(['$provide', function($provide) {
+app.config(['$provide', function ($provide) {
     // catch exceptions in angular
     $provide.decorator('$exceptionHandler', ['$delegate', function ($delegate) {
         return function (error, cause) {
@@ -23,7 +23,7 @@ app.config(['$provide', function($provide) {
     }]);
 }]);
 
-    app.controller('appController', ['$scope', '$element',
+app.controller('appController', ['$scope', '$element',
     function ($scope, $element) {
         $scope.loginNext = function () {
             window.location.href = '#!/';
@@ -55,7 +55,7 @@ app.config(['$provide', function($provide) {
         $scope.stepSendNext = function () {
             window.location.href = '#!/results';
         };
-        $scope.goback = function (){
+        $scope.goback = function () {
             window.history.back();
         };
 
@@ -70,7 +70,7 @@ app.config(['$provide', function($provide) {
         $scope.groupName = 'Amigos';
     }]);
 
-app.controller('searchTown',['$scope', '$element',
+app.controller('searchTown', ['$scope', '$element',
     function ($scope, $element) {
         $scope.towns = [
             'Agronomía', 'Almagro', 'Balvanera', 'Barracas', 'Belgrano', 'Boedo', 'Caballito', 'Chacarita', 'Coghlan',
@@ -93,10 +93,10 @@ app.controller('searchTown',['$scope', '$element',
         });
     }]);
 
-app.controller('seatsController',['$scope', '$element', '$mdBottomSheet',
+app.controller('seatsController', ['$scope', '$element', '$mdBottomSheet',
     function ($scope, $element, $mdBottomSheet) {
 
-        $scope.onLoadSeatsFunc = function() {
+        $scope.onLoadSeatsFunc = function () {
             $(document).ready(function () {
                 var outerContent = $('.seatContainer');
                 var innerContent = $('.seatStructure');
@@ -105,73 +105,63 @@ app.controller('seatsController',['$scope', '$element', '$mdBottomSheet',
             });
         };
 
-        $scope.showListBottomSheet = function() {
-            $mdBottomSheet.show({
-              templateUrl: 'bottom-sheet-grid-template.html',
-              controller: 'ListBottomSheetCtrl'
-            })
-          };
+        $scope.selected = 0;
 
-          $scope.seats = {
-          };
-
-          var itemsLength = Object.keys($scope.seats).length;
-
-          $(".available").click(function() {
-              var seatsNumber = 4;
+        $(".available").click(function () {
+            var seatsNumber = 4;
+            $scope.selected = $("input:checked").length;
             if ($("input:checked").length === seatsNumber) {
                 $(".available").prop('disabled', true);
                 $('.available:checked').prop('disabled', false);
             }
-            else
-            {
+            else {
                 $(".available").prop('disabled', false);
             }
         });
 
-        var selected = $("input:checked").length;
 
 
-            /*$scope.updateTextArea = function() {
 
-                var numseats = 4;
-                if ($("input:checked").length == ($(numseats).val()))
-                {
-                    $(".seatStructure *").prop("disabled", true);
+        /*$scope.updateTextArea = function() {
 
-                    var allNameVals = [];
-                    var allNumberVals = [];
-                    var allSeatsVals = [];
+            var numseats = 4;
+            if ($("input:checked").length == ($(numseats).val()))
+            {
+                $(".seatStructure *").prop("disabled", true);
 
-                    //Storing in Array
-                    allNameVals.push($("#Username").val());
-                    allNumberVals.push($("#Numseats").val());
-                    $('#seatsBlock :checked').each(function() {
-                        allSeatsVals.push($(this).val());
-                    });
+                var allNameVals = [];
+                var allNumberVals = [];
+                var allSeatsVals = [];
 
-                    //Displaying
-                    $('#nameDisplay').val(allNameVals);
-                    $('#NumberDisplay').val(allNumberVals);
-                    $('#seatsDisplay').val(allSeatsVals);
-                }
-                else
-                {
-                    alert("Please select " + ($("#Numseats").val()) + " seats")
-                }
-            };
+                //Storing in Array
+                allNameVals.push($("#Username").val());
+                allNumberVals.push($("#Numseats").val());
+                $('#seatsBlock :checked').each(function() {
+                    allSeatsVals.push($(this).val());
+                });
+
+                //Displaying
+                $('#nameDisplay').val(allNameVals);
+                $('#NumberDisplay').val(allNumberVals);
+                $('#seatsDisplay').val(allSeatsVals);
+            }
+            else
+            {
+                alert("Please select " + ($("#Numseats").val()) + " seats")
+            }
+        };
 
 
-            $scope.myFunction = function() {
-                alert($("input:checked").length);
-            };
+        $scope.myFunction = function() {
+            alert($("input:checked").length);
+        };
 
-            */
+        */
     }]);
 
-app.controller('ListBottomSheetCtrl', function($scope, $mdBottomSheet) {
-    
-    $scope.hideBottomSheet = function() {
+app.controller('ListBottomSheetCtrl', function ($scope, $mdBottomSheet) {
+
+    $scope.hideBottomSheet = function () {
         $mdBottomSheet.hide();
     };
 })
