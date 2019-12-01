@@ -27,7 +27,16 @@
             </div>
             <div>
                 <div class="float-left mr-2 contact">
-                    <img src="assets/images/user.svg" alt="{{ person.name }}">
+                    <img src="assets/images/user.svg" alt="{{ person.name }}" style="width: 100%;">
+                    <button type="button" class="btn btn-icon"><img src="assets/images/clear.svg" alt="eliminar" style="width: 20px;"></button>
+                </div>
+                <div class="float-left mr-2 contact">
+                    <img src="assets/images/user.svg" alt="{{ person.name }}" style="width: 100%;">
+                    <button type="button" class="btn btn-icon"><img src="assets/images/clear.svg" alt="eliminar" style="width: 20px;"></button>
+                </div>
+                <div class="float-left mr-2 contact">
+                    <img src="assets/images/user.svg" alt="{{ person.name }}" style="width: 100%;">
+                    <button type="button" class="btn btn-icon"><img src="assets/images/clear.svg" alt="eliminar" style="width: 20px;"></button>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -38,14 +47,18 @@
             <md-list>
                 <md-list-item class="noright">
                     <img alt="{{ person.name }}" src="assets/images/user.svg" class="md-avatar"/>
-                    <p>{{ person.name }}</p>
+                    <p><span class="font-700">Lucia</span><br>
+                        <span class="label-grey">11 4040 2323</span>
+                    </p>
                     <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
                 </md-list-item>
             </md-list>
             <md-list>
                 <md-list-item class="noright">
                     <img alt="{{ person.name }}" src="assets/images/user.svg" class="md-avatar"/>
-                    <p>{{ person.name }}</p>
+                    <p><span class="font-700">Lucia</span><br>
+                        <span class="label-grey">11 4040 2323</span>
+                    </p>
                     <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
                 </md-list-item>
             </md-list>
