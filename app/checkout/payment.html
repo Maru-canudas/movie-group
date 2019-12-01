@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<header class="header-form">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <button class="btn btn-icon" ng-click="goback()">
+                    <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                </button>
+            </div>
+            <div class="col-8"><h1>Pago de entradas</h1></div>
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <form>
+            <section>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <h2>Por favor ingresá el código de seguridad de tu tarjeta</h2>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <md-input-container class="md-block md-input-custom" >
+                        <label for="cod">Código de seguridad</label>
+                        <input id="cod" type="text" maxlength="3">
+                    </md-input-container>
+                </div>
+                <div class="text-center">
+                    <a href="">¿Dónde está el código?</a>
+                </div>
+            </section>
+        
+            <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled=""
+                       ng-click="stepMoviesNext()">
+                Continuar
+            </md-button>
+        </form>
+    </div>
+</main>
