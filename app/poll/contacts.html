@@ -1,25 +1,57 @@
+<header class="header-form">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <button class="btn btn-icon" ng-click="goback()">
+                    <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                </button>
+            </div>
+            <div class="col-8"><h1 class="m-0">Seleccioná a tus amigos</h1></div>
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
 <main>
     <div class="container-fluid">
-        <!-- HEADER -->
-        <h2 class="text-center">Seleccioná a tus amigos</h2>
-        <div class="form-group">
-            <label for="usr">Buscar</label>
-            <input type="text" class="form-control" id="usr">
-        </div>
-        <div>
-            <div><img src="" alt="ho"></div>
-        </div>
+        <section class="pb-0">
+            <div>
+                <md-input-container class="md-block md-input-custom mt-4" flex-gt-sm>
+                    <label for="search">Buscar película</label>
+                    <input id="search" type="text">
+                    <md-icon md-svg-src="assets/images/search.svg" style="display:inline-block;"></md-icon>
+                </md-input-container>
+            </div>
+            <div>
+                <div class="float-left mr-2 contact">
+                    <img src="assets/images/user.svg" alt="{{ person.name }}">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
     
         <!-- CONTACT LIST -->
-        <div>
+        <section class="pb-5">
             <md-list>
-                <md-list-item ng-repeat="person in people" ng-click="goToPerson(person.name, $event)" class="noright">
-                    <img alt="{{ person.name }}" ng-src="{{ person.img }}" class="md-avatar"/>
+                <md-list-item class="noright">
+                    <img alt="{{ person.name }}" src="assets/images/user.svg" class="md-avatar"/>
                     <p>{{ person.name }}</p>
                     <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
                 </md-list-item>
             </md-list>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block btn-sticky mt-4" ng-click="stepContactsNext()">Iniciar sesión</button>
+            <md-list>
+                <md-list-item class="noright">
+                    <img alt="{{ person.name }}" src="assets/images/user.svg" class="md-avatar"/>
+                    <p>{{ person.name }}</p>
+                    <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
+                </md-list-item>
+            </md-list>
+        </section>
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="" ng-click="stepMoviesNext()">
+            Continuar
+        </md-button>
     </div>
 </main>

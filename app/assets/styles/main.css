@@ -83,7 +83,7 @@ a {
     box-shadow: 0 2px 4px #E5E5EA;
 }
 .header-form h1 {
-    font-size: 22px;
+    font-size: 20px;
 }
 .progress-step {
     height: 7px;
@@ -94,7 +94,7 @@ a {
     background: #3BC7B1;
 }
 .date-time h2, .places h2, .group-name h2, .share h2 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* CHECKBOX & RADIOBUTTON */
@@ -350,9 +350,15 @@ section.movies h3 {
 
 /* SHARE */
 .share h3 {
-    font-size: 18px;
+    font-size: 16px;
 }
-
+.contact {
+    width: 40px;
+    height: 40px;
+}
+md-list {
+    border-top: 1px solid #e5e5ea;
+}
 
 /* NAVEGACION */
 .app-navbar .navbar-nav {
