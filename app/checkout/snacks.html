@@ -20,17 +20,65 @@
         <div class="container-fluid">
             <h2 class="text-center mt-5">¿Te gustaría agregar comida?</h2>
             <form class="date-time">
-                <div>
-                    <label><span>Pochoclo grande</span> <span>$250,00</span></label>
+                <div class="mt-4">
+                    <div class="item-colapse">
+                        <div class="row align-items-center">
+                            <div class="col-4 pr-0">
+                                <p class="m-0">Pochoclo grande</p>
+                            </div>
+                            <div class="col-3 pr-0">
+                                <p class="m-0 text-right">$250.00</p>
+                            </div>
+                            <div class="col-5">
+                                <div class="input-group tickets">
+                                    <input type="button" value="" class="button-minus tickets" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity"
+                                           class="quantity-field tickets">
+                                    <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-colapse">
+                        <div class="row align-items-center">
+                            <div class="col-4 pr-0">
+                                <p class="m-0">Nachos con queso</p>
+                            </div>
+                            <div class="col-3 pr-0">
+                                <p class="m-0 text-right">$250.00</p>
+                            </div>
+                            <div class="col-5">
+                                <div class="input-group tickets">
+                                    <input type="button" value="" class="button-minus tickets" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity"
+                                           class="quantity-field tickets">
+                                    <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-colapse">
+                        <div class="row align-items-center">
+                            <div class="col-4 pr-0">
+                                <p class="m-0">Gaseosa 500ml.</p>
+                            </div>
+                            <div class="col-3 pr-0">
+                                <p class="m-0 text-right">$250.00</p>
+                            </div>
+                            <div class="col-5">
+                                <div class="input-group tickets">
+                                    <input type="button" value="" class="button-minus tickets" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity"
+                                           class="quantity-field tickets">
+                                    <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label><span>Nachos con queso</span> <span>$150,00</span></label>
-                </div>
-                <div>
-                    <label><span>Gaseosa 500ml.</span> <span>$100,00</span></label>
-                </div>
+                
                 <!-- COLLAPSED DETAILS -->
-            <div class="details">
+                <div class="details">
                     <button class="detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
                         <div class="">
                             <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -49,7 +97,9 @@
                     <div class="collapse" id="details">
                         <div class="detail-content">
                             <div class="row">
-                                Acá van los asientos? {{seats}}
+                                <div class="col">
+                                    <p><span class="font-700">4</span> Gaseosas 500 ml.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
