@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {font-size: 20px !important;}
 h2 {font-size: 18px !important;}
 h3 {font-size: 16px !important;}
+h4 {font-size: 14px !important;}
 section {
     padding: 20px 0;
 }
@@ -313,7 +314,7 @@ ul.time-checks li input[type="radio"]:checked + label span{
     box-shadow: 0 -2px 4px #E5E5EA;
 }
 .details h4 {
-    font-size: 18px;
+    font-size: 18px !important;
     padding-top: 3px;
 }
 .detail-header{
@@ -484,6 +485,78 @@ a.feed {
     font-size: 14px;
     line-height: 18px;
 }
+
+
+/* INPUTS ENTRADAS */
+input.tickets,
+textarea {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 10px;
+}
+input.tickets[type="button"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+input.tickets::-webkit-outer-spin-button,
+input.tickets::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.input-group.tickets {
+    clear: both;
+    position: relative;
+    flex-wrap: inherit;
+}
+.input-group.tickets input.tickets[type='button'] {
+    min-width: 38px;
+    width: auto;
+    transition: all 300ms ease;
+}
+.input-group.tickets .button-plus {
+    background: url("../images/plus.svg") center center no-repeat;
+    background-size: contain;
+}
+.input-group.tickets .button-minus {
+    background: url("../images/minus.svg") center center no-repeat;
+    background-size: contain;
+}
+.input-group.tickets .button-minus,
+.input-group.tickets .button-plus {
+    height: 38px;
+    padding: 0;
+    width: 38px;
+    position: relative;
+    border: 0;
+}
+.input-group.tickets .quantity-field {
+    position: relative;
+    height: 38px;
+    left: -6px;
+    text-align: center;
+    width: 62px;
+    display: inline-block;
+    font-size: 13px;
+    resize: vertical;
+    border: 0;
+    background: transparent;
+}
+.button-plus {
+    left: -13px;
+}
+input.tickets[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+}
+.item-colapse {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.item-colapse p {
+    font-size: 14px;
+}
+
 
 
 /* STEP 2 CIUDADES/BARRIOS */
