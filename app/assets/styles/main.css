@@ -72,6 +72,7 @@ a {
     color: #FFFFFF !important;
     background: #4A00BD !important;
     font-weight: 700 !important;
+    border-radius: 5px !important;
 }
 .btn-icon {
     padding: 0 !important;
@@ -447,8 +448,42 @@ md-list md-list-item p {
     background: url("../images/ticket-bg.svg") center center no-repeat;
     background-size: contain;
 }
+a.feed {
+    color:#4a4a4a !important;
+    text-decoration: none !important;
+}
 
-
+/* RESULLTADOS */
+.win-movie img {
+    border-radius: 5px;
+}
+.win-movie {
+    position: relative;
+    margin:10px;
+}
+.vote-number {
+    background: #4A00BD;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 320px;
+    text-align: center;
+    font-size: 14px;
+}
+.win-movie p.movie {
+    font-size: 16px;
+    font-weight: 700;
+}
+.win-movie p {
+    font-size: 14px;
+    line-height: 18px;
+}
 
 
 /* STEP 2 CIUDADES/BARRIOS */

@@ -1,46 +1,78 @@
+<header class="header-form">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <button class="btn btn-icon" ng-click="goback()">
+                    <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                </button>
+            </div>
+            <div class="col-8"><h1 class="m-0">Votación</h1></div>
+            <div class="col-2">
+            
+            </div>
+        </div>
+    </div>
+</header>
 <main>
     <div class="container-fluid">
-        <!-- HEADER -->
-        <h2 class="text-center">Votación</h2>
-        <p>Tiempo restante: <strong>0:05</strong></p>
-        <h3>La función ganadora es</h3>
-        
-        <section>
-            <!-- carousel -->
-            <div class="owl-carousel owl-theme movie-carousel">
-                <div class="item">
-                    <div class="">
-                        <img src="" alt="1">
-                        <div class="text-center">
-                            <p>The Joker</p>
-                            <p>21 Nov 22:00 - 2D SUB</p>
-                            <p>Showcase Belgrano</p>
-                        </div>
-                    </div>
+        <section class="text-center">
+            <div class="row mb-2 justify-content-center">
+                <div class="col-7">
+                    <p><img src="assets/images/time.svg" alt=""
+                            style="width: 20px;" class="float-left mr-2"> Tiempo restante: <strong>0:05</strong></p>
+                    <h2>La función ganadora es</h2>
                 </div>
-                <div class="item">
-                    <div class="">
-                        <img src="" alt="1">
-                        <div class="text-center">
-                            <p>The Joker</p>
-                            <p>21 Nov 22:00 - 2D SUB</p>
-                            <p>Showcase Belgrano</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- carousel -->
+                    <div class="owl-carousel owl-theme movie-carousel">
+                        <div class="item">
+                            <div class="win-movie">
+                                <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
+                                <div class="vote-number">
+                                    <p class="m-0">90% (2 votos)</p>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <p class="m-0 movie">The Joker</p>
+                                    <p class="m-0">21 Nov 22:00 - 2D SUB</p>
+                                    <p class="m-0">Showcase Belgrano</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="">
-                        <img src="" alt="1">
-                        <div class="text-center">
-                            <p>The Joker</p>
-                            <p>21 Nov 22:00 - 2D SUB</p>
-                            <p>Showcase Belgrano</p>
+                        <div class="item">
+                            <div class="win-movie">
+                                <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
+                                <div class="vote-number">
+                                    <p class="m-0">90% (2 votos)</p>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <p class="m-0 movie">The Joker</p>
+                                    <p class="m-0">21 Nov 22:00 - 2D SUB</p>
+                                    <p class="m-0">Showcase Belgrano</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="win-movie">
+                                <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
+                                <div class="vote-number">
+                                    <p class="m-0">90% (2 votos)</p>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <p class="m-0 movie">The Joker</p>
+                                    <p class="m-0">21 Nov 22:00 - 2D SUB</p>
+                                    <p class="m-0">Showcase Belgrano</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <button type="submit" class="btn btn-primary btn-block btn-sticky mt-4" ng-click="stepSendNext()">Iniciar sesión</button>
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" >
+            Comprar entradas
+        </md-button>
     </div>
 </main>
 <script  type="text/javascript">
@@ -54,7 +86,9 @@
                     nav: false,
                     dots: false,
                     autoplay:false,
-                    stagePadding:20
+                    center:true,
+                    margin:20,
+                    stagePadding:50
                 },
             }
         });
