@@ -12,11 +12,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 700 !important;
 }
+h1 {font-size: 20px !important;}
+h2 {font-size: 18px !important;}
+h3 {font-size: 16px !important;}
 section {
     padding: 20px 0;
 }
 a {
-    color: #5856D6 !important;
+    color: #4A00BD !important;
 }
 .display-flex{
     display: flex !important;
@@ -30,16 +33,16 @@ a {
 
 /* COLOR */
 .violet {
-    color: #5856D6;
+    color: #4A00BD;
 }
 .light-violet {
     color: #ABAAEA;
 }
 .green {
-    color: #3BC7B1;
+    color: #00A696;
 }
 .light-green {
-    color: #9DE3D8;
+    color: #8CD7D0;
 }
 .red{
     color: #DF0025;
@@ -59,11 +62,16 @@ a {
 }
 .btn-custom-primary {
     color: #FFFFFF !important;
-    background: #3BC7B1 !important;
+    background: #00A696 !important;
     font-weight: 700 !important;
 }
 .btn-custom-primary:disabled {
-    background: #9DE3D8!important;
+    background: #8CD7D0!important;
+}
+.btn-custom-secondary {
+    color: #FFFFFF !important;
+    background: #4A00BD !important;
+    font-weight: 700 !important;
 }
 .btn-icon {
     padding: 0 !important;
@@ -82,20 +90,15 @@ a {
     text-align: center;
     box-shadow: 0 2px 4px #E5E5EA;
 }
-.header-form h1 {
-    font-size: 20px;
-}
 .progress-step {
     height: 7px;
     background: #eaeaea;
     width: 100%;
 }
 .progress-step.active {
-    background: #3BC7B1;
+    background: #00A696;
 }
-.date-time h2, .places h2, .group-name h2, .share h2 {
-    font-size: 18px;
-}
+
 
 /* CHECKBOX & RADIOBUTTON */
 ul.date-time-checks,
@@ -177,8 +180,8 @@ ul.date-radio li input[type="radio"]:checked + label,
 ul.date-radio li input[type="checkbox"]:checked + label,
 ul.movies-radio li input[type="radio"]:checked + label,
 ul.time-checks li input[type="radio"]:checked + label {
-    border: 2px solid #5856D6;
-    background-color: #5856D6;
+    border: 2px solid #4A00BD;
+    background-color: #4A00BD;
     color: #fff;
     transition: all .2s;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
@@ -278,12 +281,6 @@ ul.time-checks li input[type="radio"]:checked + label span{
 
 
 /* MOVIES */
-section.movies h2 {
-    font-size: 18px;
-}
-section.movies h3 {
-    font-size: 16px;
-}
 .date-container {
     white-space: nowrap;
     overflow: hidden;
@@ -327,7 +324,7 @@ section.movies h3 {
     text-align: center;
     padding: 3px 5px;
     color: #ffffff;
-    background: #5856D6;
+    background: #4A00BD;
     border-radius: 100%;
     font-weight: 700;
 }
@@ -349,9 +346,6 @@ section.movies h3 {
 
 
 /* SHARE */
-.share h3 {
-    font-size: 16px;
-}
 .contact {
     width: 50px;
     height: 50px;
@@ -382,7 +376,78 @@ md-list md-list-item p {
     top: unset;
     padding: 0 15px;
     position: fixed !important;
+    box-shadow: 0 -2px 4px 1px #e5e5ea;
+    background: #f5f5f5;
 }
+.nav-link.home {
+    width: 36px;
+    height: 50px;
+    background: url("../images/ticket.svg") no-repeat center center;
+}
+.nav-link.home.active, .nav-link.home:hover {
+    background: url("../images/ticket-active.svg") no-repeat center center;
+}
+.nav-link.group {
+    width: 36px;
+    height: 50px;
+    background: url("../images/group.svg") no-repeat center center;
+}
+.nav-link.group.active, .nav-link.group:hover {
+    background: url("../images/group-active.svg") no-repeat center center;
+}
+.nav-link.billboard {
+    width: 36px;
+    height: 50px;
+    background: url("../images/movies.svg") no-repeat center center;
+}
+.nav-link.billboard.active, .nav-link.billboard:hover {
+    background: url("../images/movies-active.svg") no-repeat center center;
+}
+.nav-link.account {
+    width: 36px;
+    height: 50px;
+    background: url("../images/config.svg") no-repeat center center;
+}
+.nav-link.account.active, .nav-link.account:hover {
+    background: url("../images/config-active.svg") no-repeat center center;
+}
+
+
+/* HOME */
+.feed-card {
+    padding: 15px;
+    box-shadow: 0 0 4px 2px #e5e5e5;
+    border-radius: 5px;
+    margin: 10px 20px 10px 0;
+}
+.vote-carousel.owl-carousel .owl-stage, .tickets-carousel.owl-carousel .owl-stage {
+    padding-left: 15px !important;
+}
+.vote .detail-content {
+    border-top: 0;
+    padding: 0 0 15px;
+}
+.vote .detail-content p, .tickets-content p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.detail-content p.movie {
+    font-weight: 700;
+    font-size: 18px;
+    color: #4A00BD;
+}
+.tickets-content .movie {
+    font-weight: 700;
+    font-size: 18px;
+}
+.tickets-content .ticket-number {
+    color: #4A00BD;
+    text-align: center;
+    background: url("../images/ticket-bg.svg") center center no-repeat;
+    background-size: contain;
+}
+
 
 
 
@@ -406,7 +471,7 @@ md-list md-list-item p {
     max-height: 240px; }
 
 md-chips.movie-theme md-chip{
-    background-color: #5856D6;
+    background-color: #4A00BD;
     color: white;
 }
 md-chips.movie-theme md-chip md-icon{
@@ -440,13 +505,13 @@ md-bottom-sheet.bottom-sheet-int{
  }
 .detail-header[aria-expanded=false] .carret-down {
     display: none;
- }
+}
 .detail-header[aria-expanded=true] .carret-up {
     display: none;
- }
- .detail-header[aria-expanded=true] .carret-down {
-     display: inline-block;
- }
+}
+.detail-header[aria-expanded=true] .carret-down {
+    display: inline-block;
+}
 
 /* ASIENTOS */
 .screen{
@@ -533,9 +598,9 @@ ul.seat-status li{
     border: 2px solid black;
 }
 .seatContainer input[type=checkbox]:checked:before {
-    background-color:#5856D6;
+    background-color:#4A00BD;
     font-size: 15px;
-    border: 2px solid #5856D6;
+    border: 2px solid #4A00BD;
 }
 .seatContainer input[type=checkbox]:disabled:before {
     background-color:white;
@@ -554,7 +619,7 @@ ul.seat-status li{
     border: 2px solid black;
 }
 .bubble{
-    background-color: #5856D6;
+    background-color: #4A00BD;
     color: #FFFFFF;
     width: 30px;
     height: 30px;
@@ -567,5 +632,11 @@ ul.seat-status li{
 /* MATERIAL */
 md-input-container.md-input-custom:not(.md-input-invalid).md-input-focused .md-input,
 md-select:not([disabled]):focus .md-select-value {
-    border-color: #3BC7B1;
+    border-color: #00A696;
+}
+md-progress-linear.md-default-theme .md-bar, md-progress-linear .md-bar {
+    background-color: rgb(0, 166, 150);
+}
+md-progress-linear.md-default-theme .md-container, md-progress-linear .md-container {
+    background-color: rgb(229, 229, 229);
 }
