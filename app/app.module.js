@@ -55,6 +55,9 @@ app.controller('appController', ['$scope', '$element',
         $scope.stepSendNext = function () {
             window.location.href = '#!/results';
         };
+        $scope.stepSeatsNext = function () {
+            window.location.href = '#!/snacks';
+        };
         $scope.goback = function () {
             window.history.back();
         };

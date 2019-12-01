@@ -6,7 +6,7 @@
                         <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
                     </button>
                 </div>
-                <div class="col-8"><h1>Elegir asientos</h1></div>
+                <div class="col-8"><h1>Comida & Snacks</h1></div>
                 <div class="col-2">
                     <button class="btn btn-icon">
                         <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
@@ -16,11 +16,19 @@
         </div>
     </header>
     
-    <main ng-controller="seatsController" onload="onLoadSeatsFunc()" style="margin-bottom: 120px;">
+    <main style="margin-bottom: 120px;">
         <div class="container-fluid">
+            <h2 class="text-center mt-5">¿Te gustaría agregar comida?</h2>
             <form class="date-time">
-                
-    
+                <div>
+                    <label><span>Pochoclo grande</span> <span>$250,00</span></label>
+                </div>
+                <div>
+                    <label><span>Nachos con queso</span> <span>$150,00</span></label>
+                </div>
+                <div>
+                    <label><span>Gaseosa 500ml.</span> <span>$100,00</span></label>
+                </div>
                 <!-- COLLAPSED DETAILS -->
             <div class="details">
                     <button class="detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
@@ -48,7 +56,13 @@
                 </div>
     
                 <div class="btn-sticky">
-                    <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="step1Next()" ng-disabled="!moment.day && !moment.afternoon && !moment.night">
+                    <div class="text-center" style="background-color: white;">
+                        <md-button class="md-primary font-700">
+                            No quiero agregar comida 
+                        </md-button>
+                    </div>
+
+                    <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="stepSnacksNext()" ng-disabled="!moment.day && !moment.afternoon && !moment.night">
                         Continuar
                     </md-button>
                 </div>

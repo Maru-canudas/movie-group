@@ -14,48 +14,56 @@ angular.
           templateUrl: 'login/login.html'
         }).
         when('/onboarding/start', {
-          title: 'Grupos - Movie Group',
+          title: 'Crear grupo - Movie Group',
           templateUrl: 'onboarding/start.html'
         }).
         when('/onboarding/1', {
-          title: 'Grupos - Movie Group',
+          title: 'Crear grupo - Movie Group',
           templateUrl: 'onboarding/stepOne.html'
         }).
         when('/onboarding/2', {
-          title: 'Grupos - Movie Group',
+          title: 'Crear grupo - Movie Group',
           templateUrl: 'onboarding/stepTwo.html'
         }).
         when('/onboarding/3', {
-          title: 'Grupos - Movie Group',
+          title: 'Crear grupo - Movie Group',
           templateUrl: 'onboarding/stepThree.html'
         }).
         when('/onboarding/success', {
-          title: 'Grupos - Movie Group',
+          title: 'Grupo creado - Movie Group',
           templateUrl: 'onboarding/success.html'
         }).
         when('/movies', {
-          title: 'Grupos - Movie Group',
+          title: 'Elegir funciones - Movie Group',
           templateUrl: 'poll/movies.html'
         }).
         when('/movies/share', {
-          title: 'Grupos - Movie Group',
+          title: 'Compartir votación - Movie Group',
           templateUrl: 'poll/share.html'
         }).
         when('/movies/contacts', {
-          title: 'Grupos - Movie Group',
+          title: 'Elegir amigos - Movie Group',
           templateUrl: 'poll/contacts.html'
         }).
         when('/movies/send', {
-          title: 'Grupos - Movie Group',
+          title: 'Enviar votación - Movie Group',
           templateUrl: 'poll/send.html'
         }).
         when('/movies/results', {
-          title: 'Grupos - Movie Group',
+          title: 'Resultados - Movie Group',
           templateUrl: 'poll/results.html'
         }).
         when('/seats', {
-          title: 'Grupos - Movie Group',
+          title: 'Elegir asientos - Movie Group',
           templateUrl: 'checkout/seats.html'
+        }).
+        when('/snacks', {
+          title: 'Elegir Snacks - Movie Group',
+          templateUrl: 'checkout/snacks.html'
+        }).
+        when('/resume', {
+          title: 'Resumen de compra - Movie Group',
+          templateUrl: 'checkout/resume.html'
         }).
         otherwise('/');
     }
