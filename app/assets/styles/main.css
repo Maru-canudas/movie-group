@@ -23,6 +23,10 @@ a {
     align-items: center;
     justify-content: center;
 }
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
 
 /* COLOR */
 .violet {
