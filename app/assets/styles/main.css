@@ -319,6 +319,8 @@ ul.time-checks li input[type="radio"]:checked + label span{
 }
 .detail-header{
     padding: 10px 0;
+    background-color: white !important;
+    min-height: 55px !important;
 }
 .detail-header .circle, .circle {
     width: 30px;
