@@ -23,6 +23,18 @@ app.config(['$provide', function ($provide) {
     }]);
 }]);
 
+app.run(['$locale', '$location', '$rootScope',
+    function($locale, $location, $rootScope) {
+        // title change
+        $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
+            // test for current route
+            if (current.$$route) {
+                $rootScope.title = current.$$route.title;
+            }
+        });
+
+    }]);
+
 app.controller('appController', ['$scope', '$element',
     function ($scope, $element) {
         $scope.loginNext = function () {
