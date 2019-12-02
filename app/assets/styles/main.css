@@ -644,6 +644,43 @@ md-bottom-sheet.bottom-sheet-int{
     display: inline-block;
 }
 
+.promo-div{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.promo .carret-down {
+    display: none;
+}
+.promo[aria-expanded=false] .carret-up {
+    display: none;
+}
+.promo[aria-expanded=false] .carret-down {
+    display: inline-block;
+}
+.promo[aria-expanded=true] .carret-down {
+    display: none;
+}
+.promo[aria-expanded=true] .carret-up {
+    display: inline-block;
+}
+
+.general .carret-up {
+    display: none;
+}
+.general[aria-expanded=false] .carret-down {
+    display: inline-block;
+}
+.general[aria-expanded=false] .carret-up {
+    display: none;
+}
+.general[aria-expanded=true] .carret-down {
+    display: none;
+}
+.general[aria-expanded=true] .carret-up {
+    display: inline-block;
+}
+
 /* ASIENTOS */
 .screen{
     color: #878787;
