@@ -62,19 +62,19 @@
                 <fieldset>
                     <ul class="time-checks">
                         <li class="day">
-                            <input type="radio" id="hour1" value="1hour" name="optradio">
+                            <input type="radio" id="hour1" value="1hour" name="optradio" ng-model="timeValue">
                             <label for="hour1">
                                 <span>1 hora</span>
                             </label>
                         </li>
                         <li class="set">
-                            <input type="radio" id="hour2" value="2hour" name="optradio">
+                            <input type="radio" id="hour2" value="6hour" name="optradio" ng-model="timeValue">
                             <label for="hour2">
                                 <span>6 horas</span>
                             </label>
                         </li>
                         <li class="night">
-                            <input type="radio" id="hour3" value="3hour" name="optradio">
+                            <input type="radio" id="hour3" value="12hour" name="optradio" ng-model="timeValue">
                             <label for="hour3">
                                 <span>12 horas</span>
                             </label>
@@ -84,7 +84,7 @@
             </div>
         </section>
     
-        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="" ng-click="stepMoviesNext()">
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-disabled="!timeValue || timeValue === ''" ng-click="stepShareNext()">
             Continuar
         </md-button>
     </div>

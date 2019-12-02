@@ -352,6 +352,9 @@ ul.time-checks li input[type="radio"]:checked + label span{
     width: 50px;
     height: 50px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact button {
     position: absolute;
@@ -454,7 +457,7 @@ a.feed {
     text-decoration: none !important;
 }
 
-/* RESULLTADOS */
+/* RESULTADOS */
 .win-movie img {
     border-radius: 5px;
 }
@@ -485,7 +488,12 @@ a.feed {
     font-size: 14px;
     line-height: 18px;
 }
-
+md-checkbox.md-checked .md-ink-ripple{
+    color: #4A00BD !important;
+}
+md-checkbox.md-checked .md-icon{
+    background-color: #4A00BD !important;
+}
 
 /* INPUTS ENTRADAS */
 input.tickets,

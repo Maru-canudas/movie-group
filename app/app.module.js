@@ -44,19 +44,34 @@ app.controller('appController', ['$scope', '$element',
             window.location.href = '#!/movies';
         };
         $scope.stepMoviesNext = function () {
-            window.location.href = '#!/share';
+            window.location.href = '#!/movies/share';
         };
         $scope.stepShareNext = function () {
-            window.location.href = '#!/contacts';
+            window.location.href = '#!/movies/contacts';
         };
         $scope.stepContactsNext = function () {
-            window.location.href = '#!/send';
+            window.location.href = '#!/movies/send';
         };
         $scope.stepSendNext = function () {
-            window.location.href = '#!/results';
+            window.location.href = '#!/movies/results';
         };
         $scope.stepSeatsNext = function () {
             window.location.href = '#!/snacks';
+        };
+        $scope.homeResultNext = function (){
+            window.location.href = '#!/movies/results';
+        };
+        $scope.newPollNext = function (){
+            window.location.href = '#!/onboarding/1';
+        };
+        $scope.stepResultNext = function () {
+            window.location.href = '#!/tickets-selection';
+        };
+        $scope.stepSelectionNext = function () {
+            window.location.href = '#!/seats';
+        };
+        $scope.stepSnacksNext = function () {
+            window.location.href = '#!/resume';
         };
         $scope.goback = function () {
             window.history.back();
@@ -71,6 +86,7 @@ app.controller('appController', ['$scope', '$element',
         ];
 
         $scope.groupName = 'Amigos';
+
     }]);
 
 app.controller('searchTown', ['$scope', '$element',

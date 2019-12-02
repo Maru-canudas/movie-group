@@ -20,7 +20,6 @@
                 <div class="col-7">
                     <p><img src="assets/images/time.svg" alt=""
                             style="width: 20px;" class="float-left mr-2"> Tiempo restante: <strong>0:05</strong></p>
-                    <h2>La función ganadora es</h2>
                 </div>
             </div>
             <div class="row">
@@ -28,10 +27,11 @@
                     <!-- carousel -->
                     <div class="owl-carousel owl-theme movie-carousel">
                         <div class="item">
+                            <h2 class="mb-3">La función ganadora es</h2>
                             <div class="win-movie">
                                 <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
                                 <div class="vote-number">
-                                    <p class="m-0">90% (2 votos)</p>
+                                    <p class="m-0">75% (3 votos)</p>
                                 </div>
                                 <div class="text-center mt-4">
                                     <p class="m-0 movie">The Joker</p>
@@ -41,10 +41,11 @@
                             </div>
                         </div>
                         <div class="item">
+                            <h2 class="mb-3">No fue la ganadora</h2>
                             <div class="win-movie">
                                 <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
                                 <div class="vote-number">
-                                    <p class="m-0">90% (2 votos)</p>
+                                    <p class="m-0">25% (1 voto)</p>
                                 </div>
                                 <div class="text-center mt-4">
                                     <p class="m-0 movie">The Joker</p>
@@ -54,10 +55,11 @@
                             </div>
                         </div>
                         <div class="item">
+                            <h2 class="mb-3">No fue la ganadora</h2>
                             <div class="win-movie">
                                 <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
                                 <div class="vote-number">
-                                    <p class="m-0">90% (2 votos)</p>
+                                    <p class="m-0">0% (0 votos)</p>
                                 </div>
                                 <div class="text-center mt-4">
                                     <p class="m-0 movie">The Joker</p>
@@ -70,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" >
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-click="stepResultNext()">
             Comprar entradas
         </md-button>
     </div>

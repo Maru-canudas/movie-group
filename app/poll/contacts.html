@@ -19,23 +19,26 @@
     <div class="container-fluid">
         <section class="pb-0">
             <div>
-                <md-input-container class="md-block md-input-custom mt-4" flex-gt-sm>
-                    <label for="search">Buscar película</label>
+                <md-input-container class="md-block md-input-custom mt-4 mb-0" flex-gt-sm>
+                    <label for="search">Buscar amigos</label>
                     <input id="search" type="text">
                     <md-icon md-svg-src="assets/images/search.svg" style="display:inline-block;"></md-icon>
                 </md-input-container>
             </div>
-            <div>
-                <div class="float-left mr-2 contact">
-                    <img src="assets/images/user.svg" alt="{{ person.name }}" style="width: 100%;">
+            <div class="mb-3" ng-if="person">
+                <div class="float-left mr-4 contact" ng-if="person.selectedAgus || person.selectedAna || person.selectedDaniel">
+                    <img src="assets/images/user.svg" alt="" style="width: 100%;">
+                    <p>Agus...</p>
                     <button type="button" class="btn btn-icon"><img src="assets/images/clear.svg" alt="eliminar" style="width: 20px;"></button>
                 </div>
-                <div class="float-left mr-2 contact">
-                    <img src="assets/images/user.svg" alt="{{ person.name }}" style="width: 100%;">
+                <div class="float-left mr-4 contact" ng-if="person.selectedBea || person.selectedBar">
+                    <img src="assets/images/user.svg" alt="" style="width: 100%;">
+                    <p>Bea</p>
                     <button type="button" class="btn btn-icon"><img src="assets/images/clear.svg" alt="eliminar" style="width: 20px;"></button>
                 </div>
-                <div class="float-left mr-2 contact">
-                    <img src="assets/images/user.svg" alt="{{ person.name }}" style="width: 100%;">
+                <div class="float-left mr-4 contact" ng-if="person.selectedClari || person.selectedClau">
+                    <img src="assets/images/user.svg" alt="" style="width: 100%;">
+                    <p>Clari</p>
                     <button type="button" class="btn btn-icon"><img src="assets/images/clear.svg" alt="eliminar" style="width: 20px;"></button>
                 </div>
                 <div class="clearfix"></div>
@@ -46,24 +49,69 @@
         <section class="pb-5">
             <md-list>
                 <md-list-item class="noright">
-                    <img alt="{{ person.name }}" src="assets/images/user.svg" class="md-avatar"/>
-                    <p><span class="font-700">Lucia</span><br>
-                        <span class="label-grey">11 4040 2323</span>
+                    <img alt="" src="assets/images/user.svg" class="md-avatar"/>
+                    <p><span class="font-700">Agus Fernandez</span><br>
+                        <span class="label-grey">+54 911 4040 2323</span>
                     </p>
-                    <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
+                    <md-checkbox class="md-secondary person-check" ng-model="person.selectedAgus"></md-checkbox>
                 </md-list-item>
             </md-list>
             <md-list>
                 <md-list-item class="noright">
-                    <img alt="{{ person.name }}" src="assets/images/user.svg" class="md-avatar"/>
-                    <p><span class="font-700">Lucia</span><br>
-                        <span class="label-grey">11 4040 2323</span>
+                    <img alt="" src="assets/images/user.svg" class="md-avatar"/>
+                    <p><span class="font-700">Ana Facu</span><br>
+                        <span class="label-grey">+54 911 1235 6133</span>
                     </p>
-                    <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
+                    <md-checkbox class="md-secondary person-check" ng-model="person.selectedAna"></md-checkbox>
                 </md-list-item>
             </md-list>
+            <md-list>
+                <md-list-item class="noright">
+                    <img alt="" src="assets/images/user.svg" class="md-avatar"/>
+                    <p><span class="font-700">Bea</span><br>
+                        <span class="label-grey">+54 911 1224 5678</span>
+                    </p>
+                    <md-checkbox class="md-secondary person-check" ng-model="person.selectedBea"></md-checkbox>
+                </md-list-item>
+            </md-list>
+            <md-list>
+                <md-list-item class="noright">
+                    <img alt="" src="assets/images/user.svg" class="md-avatar"/>
+                    <p><span class="font-700">Bárbara Club</span><br>
+                        <span class="label-grey">+54 911 1256 3653</span>
+                    </p>
+                    <md-checkbox class="md-secondary person-check" ng-model="person.selectedBar"></md-checkbox>
+                </md-list-item>
+            </md-list>
+            <md-list>
+                <md-list-item class="noright">
+                    <img alt="" src="assets/images/user.svg" class="md-avatar"/>
+                    <p><span class="font-700">Clari</span><br>
+                        <span class="label-grey">+54 911 1244 1567</span>
+                    </p>
+                    <md-checkbox class="md-secondary person-check" ng-model="person.selectedClari"></md-checkbox>
+                </md-list-item>
+            </md-list>
+            <md-list>
+                    <md-list-item class="noright">
+                        <img alt="" src="assets/images/user.svg" class="md-avatar"/>
+                        <p><span class="font-700">Clau</span><br>
+                            <span class="label-grey">+54 911 3653 1256</span>
+                        </p>
+                        <md-checkbox class="md-secondary person-check" ng-model="person.selectedClau"></md-checkbox>
+                    </md-list-item>
+                </md-list>
+                <md-list>
+                    <md-list-item class="noright">
+                        <img alt="" src="assets/images/user.svg" class="md-avatar"/>
+                        <p><span class="font-700">Daniel</span><br>
+                            <span class="label-grey">+54 911 1244 1224</span>
+                        </p>
+                        <md-checkbox class="md-secondary person-check" ng-model="person.selectedDaniel"></md-checkbox>
+                    </md-list-item>
+                </md-list>
         </section>
-        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled="" ng-click="stepMoviesNext()">
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-disabled="!person" ng-click="stepContactsNext()">
             Continuar
         </md-button>
     </div>
