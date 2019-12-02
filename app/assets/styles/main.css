@@ -800,6 +800,10 @@ ul.seat-status li{
 .text-notransform{
     text-transform: unset !important;
 }
+.price-count{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* RESUME */
 .resume .detail-content{

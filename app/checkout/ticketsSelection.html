@@ -169,7 +169,7 @@
                     </div>
                 </div>
             
-                <div class="pt-3 pb-3">
+                <div class="pt-3 pb-3" style="margin-bottom: 130px">
 
                     <md-button class="text-notransform btn-block m-0 p-0 general" type="button" data-target="#codigo" data-toggle="collapse">
                         <div class="promo-div">
@@ -203,7 +203,12 @@
                                     <div class="circle">{{count + count1 + count2}}</div>
                                 </div>
                                 <div class="col-4 pl-0 text-left">
-                                    <h4 class="mb-0">Entradas</h4>
+                                    <h4 class="mb-0">
+                                        <ng-pluralize count="count + count1 + count2"
+                                                      when="{'1': 'Entrada',
+                                                  'other': 'Entradas'}">
+                                        </ng-pluralize>
+                                    </h4>
                                 </div>
                                 <div class="col-4 pr-0 text-right">
                                     <h4 class="mb-0"> ${{(count + count1 + count2)*320}},00</h4>
@@ -218,12 +223,60 @@
                     <div class="collapse" id="details">
                         <div class="detail-content">
                             <div class="col">
-                                <p ng-if="count > 1"><span class="font-700">{{count}}</span> Promociones Santander 2x1</p>
-                                <p ng-if="count === 1"><span class="font-700">{{count}}</span> Promoción Santander 2x1</p>
-                                <p ng-if="count1 > 1"><span class="font-700">{{count1}}</span> Promociones BBVA 2x1</p>
-                                <p ng-if="count1 === 1"><span class="font-700">{{count1}}</span> Promoción BBVA 2x1</p>
-                                <p ng-if="count2 > 1"><span class="font-700">{{count2}}</span> Promociones Clarín 365 2x1</p>
-                                <p ng-if="count2 === 1"><span class="font-700">{{count2}}</span> Promoción Clarín 365 2x1</p>
+                                <p ng-if="count >= 1" class="price-count" aria-hidden="true">
+                                    <span>
+                                        <span class="font-700 pr-2">{{count}}</span>
+                                        <ng-pluralize count="count"
+                                                      when="{'1': 'Promoción Santander 2x1',
+                                                      'other': 'Promociones Santander 2x1'}">
+                                        </ng-pluralize>
+                                    </span>
+                                    <span>${{count*320}},00</span>
+                                </p>
+                                <span class="sr-only">
+                                    {{count}}
+                                    <ng-pluralize count="count"
+                                                  when="{'1': 'Promoción Santander 2x1',
+                                                      'other': 'Promociones Santander 2x1'}">
+                                        </ng-pluralize>
+                                    <span>{{count*320}},00 pesos</span>
+                                </span>
+                                <p ng-if="count1 >= 1" class="price-count" aria-hidden="true">
+                                    <span>
+                                        <span class="font-700 pr-2">{{count1}}</span>
+                                        <ng-pluralize count="count1"
+                                                      when="{'1': 'Promoción BBVA 2x1',
+                                                      'other': 'Promociones BBVA 2x1'}">
+                                        </ng-pluralize>
+                                    </span>
+                                    <span>${{count1*320}},00</span>
+                                </p>
+                                <span class="sr-only">
+                                    {{count1}}
+                                    <ng-pluralize count="count1"
+                                                  when="{'1': 'Promoción BBVA 2x1',
+                                                      'other': 'Promociones BBVA 2x1'}">
+                                        </ng-pluralize>
+                                    <span>{{count1*320}},00 pesos</span>
+                                </span>
+                                <p ng-if="count2 >= 1" class="price-count" aria-hidden="true">
+                                    <span>
+                                        <span class="font-700 pr-2">{{count2}}</span>
+                                        <ng-pluralize count="count2"
+                                                      when="{'1': 'Promoción Clarín 365 2x1',
+                                                      'other': 'Promociones Clarín 365 2x1'}">
+                                        </ng-pluralize>
+                                    </span>
+                                    <span>${{count2*320}},00</span>
+                                </p>
+                                <span class="sr-only">
+                                    {{count2}}
+                                    <ng-pluralize count="count2"
+                                                  when="{'1': 'Promoción Clarín 365 2x1',
+                                                      'other': 'Promociones Clarín 365 2x1'}">
+                                        </ng-pluralize>
+                                    <span>{{count2*320}},00 pesos</span>
+                                </span>
                             </div>
                         </div>
                     </div>

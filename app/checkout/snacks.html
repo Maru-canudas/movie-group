@@ -25,7 +25,7 @@
                         <div class="item-colapse">
                             <div class="row align-items-center">
                                 <div class="col-4 pr-0">
-                                    <label class="m-0" for="pochoclo">Pochoclo grande</label>
+                                    <label class="m-0" for="pochoclo">Pochoclos grande</label>
                                 </div>
                                 <div class="col-3 pr-0">
                                     <p class="m-0 text-right">$250.00</p>
@@ -81,34 +81,39 @@
                         </div>
                     </div>
                 </section>
-                
-                <!-- COLLAPSED DETAILS -->
-                <div class="details">
-                    <md-button class="text-notransform detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
-                        <div class="">
-                            <div style="display: flex; align-items: center; justify-content: space-between;">
-                                <div class="flex-start">
-                                    <h4 class="mb-0">Subtotal <span class="violet">$100,00</span></h4>
-                                </div>
-                                <div class="">
-                                    <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
-                                    <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+
+                <div class="btn-sticky">
+                    <!-- COLLAPSED DETAILS -->
+                    <div class="details" ng-if="count >= 1 || count1 >= 1 || count2 >= 1">
+                        <md-button class="text-notransform detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
+                            <div class="">
+                                <div style="display: flex; align-items: center; justify-content: space-between;">
+                                    <div class="flex-start">
+                                        <h4 class="mb-0" aria-hidden="true">Subtotal <span class="violet">$ {{(count*250) + (count1*150) + (count2*100)}},00</span></h4>
+                                        <span class="sr-only">Subtotal: {{(count*250) + (count1*150) + (count2*100)}},00 pesos</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
+                                        <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </md-button>
-                    <div class="collapse" id="details">
-                        <div class="detail-content">
-                            <div class="row">
+                        </md-button>
+                        <div class="collapse" id="details">
+                            <div class="detail-content">
                                 <div class="col">
-                                    <p><span class="font-700">4</span> Gaseosas 500 ml.</p>
+                                    <p ng-if="count >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count}}</span> Pochoclos grande</span> <span>${{count*250}},00</span></p>
+                                    <span class="sr-only">Pochoclos grande {{count*250}},00 pesos</span>
+                                    <p ng-if="count1 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count1}}</span> Nachos con queso</span><span>${{count1*150}},00</span></p>
+                                    <span class="sr-only">Nachos con queso {{count1*150}},00 pesos</span>
+                                    <p ng-if="count2 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count2}}</span> Gaseosas 500 ml.</span><span>${{count2*100}},00</span></p>
+                                    <span class="sr-only">Gaseosas 500 ml. {{count2*100}},00 pesos</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
     
-                <div class="btn-sticky">
+
                     <div class="text-center" style="background-color: white;" ng-if="count === 0 && count1 === 0 && count2 === 0">
                         <md-button class="md-primary font-700 violet">
                             No quiero agregar comida 
