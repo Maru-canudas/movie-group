@@ -538,10 +538,10 @@ input.tickets::-webkit-inner-spin-button {
     background-size: contain;
 }
 .input-group.tickets .button-minus {
-    background: url("../images/minus.svg") center center no-repeat;
+    background: url("../images/minus.svg") left top no-repeat;
 }
 .input-group.tickets .button-minus:disabled {
-    background: url("../images/minus-disable.svg") center center no-repeat;
+    background: url("../images/minus-disable.svg") left top no-repeat;
 }
 .input-group.tickets .button-minus,
 .input-group.tickets .button-plus {
