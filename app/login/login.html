@@ -1,10 +1,10 @@
-<header class="text-center mt-5 pt-5">
+<header class="text-center mt-5 pt-5 pr-4 pl-4">
     <div class="container-fluid">
         <img src="assets/images/logo.svg" alt="Movie Group" class="mb-3">
     </div>
     <div class="row justify-content-center">
         <div class="col-7">
-            <p class="subtitle">Organiza tus salidas al cine en grupo</p>
+            <p class="subtitle">Organizá tus salidas al cine en grupo</p>
         </div>
     </div>
 </header>
@@ -12,41 +12,42 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-10">
-                <form name="loginForm">
+                <form name="loginForm" ng-submit="loginNext()">
+
                     <md-input-container class="md-block md-input-custom mb-4" flex-gt-sm>
                         <label for="usr">Usuario</label>
-                        <input id="usr" name="usr" type="text" required>
+                        <input id="usr" name="usr" type="text" required ng-model="name.usr">
 
                         <div ng-messages="loginForm.usr.$error" role="alert">
-                            <div ng-message-exp="['required']">
+                            <div ng-message="required">
                                 Usuario requerido
                             </div>
                         </div>
                     </md-input-container>
             
-                    <md-input-container class="md-block md-input-custom" flex-gt-sm>
+                    <md-input-container class="md-block md-input-custom mt-4" flex-gt-sm>
                         <label for="pwd">Contraseña</label>
-                        <input id="pwd" name="pwd" type="password" required>
+                        <input id="pwd" name="pwd" type="password" required ng-model="name.pwd">
                         <md-icon md-svg-src="assets/images/eye.svg" style="display:inline-block;"></md-icon>
 
                         <div ng-messages="loginForm.pwd.$error" role="alert">
-                                <div ng-message-exp="['required']">
-                                    Contraseña requerida
-                                </div>
+                            <div ng-message="required">
+                                Contraseña requerida
                             </div>
+                        </div>
                     </md-input-container>
                     <div class="text-center">
                         <a href="">Olvidé la contraseña</a>
                     </div>
                     <div class="text-center mt-5">
-                        <md-button type="submit" class="md-raised md-primary btn-custom-primary pl-5 pr-5 pt-1 pb-1" ng-click="loginNext()">
+                        <md-button type="submit" class="md-raised md-primary btn-custom-primary pl-5 pr-5 pt-1 pb-1">
                             Iniciar sesión
                         </md-button>
                     </div>
                 </form>
         
                 <div class="text-center">
-                    <md-button class="md-primary font-700">
+                    <md-button class="md-primary font-700 mt-3">
                         Crear cuenta
                     </md-button>
                 </div>

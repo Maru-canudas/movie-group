@@ -79,6 +79,9 @@ app.controller('appController', ['$scope', '$element',
         $scope.stepPaymentNext = function () {
             window.location.href = '#!/ticket';
         };
+        $scope.stepTicketNext = function () {
+            window.location.href = '#!/';
+        };
         $scope.goback = function () {
             window.history.back();
         };

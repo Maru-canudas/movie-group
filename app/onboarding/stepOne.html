@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center mt-4">
             <div class="col-3">
-                <div class="progress-step active"></div>
+                <div class="progress-step active" aria-label="paso 1 de 3"></div>
             </div>
             <div class="col-3">
                 <div class="progress-step"></div>
@@ -25,19 +25,25 @@
                                 <li class="day">
                                     <input type="checkbox" id="checkboxOne" value="Day" ng-model="moment.day">
                                     <label for="checkboxOne">
-                                        <span><b>De Día</b><br>12:00 a 16:00</span>
+                                        <span class="display-day">
+                                            <span><b>De Día</b></span><span>12:00 a 16:00</span>
+                                        </span>
                                     </label>
                                 </li>
                                 <li class="set">
                                     <input type="checkbox" id="checkboxTwo" value="Set" ng-model="moment.afternoon">
                                     <label for="checkboxTwo">
-                                        <span><b>De Tarde</b><br>16:00 a 20:00</span>
+                                        <span class="display-day">
+                                            <span><b>De Tarde</b></span><span>16:00 a 20:00</span>
+                                        </span>
                                     </label>
                                 </li>
                                 <li class="night">
                                     <input type="checkbox" id="checkboxThree" value="Night" ng-model="moment.night">
                                     <label for="checkboxThree">
-                                        <span><b>De Noche</b><br>20:00 a 00:00</span>
+                                        <span class="display-day">
+                                            <span><b>De Noche</b></span><span>20:00 a 00:00</span>
+                                        </span>
                                     </label>
                                 </li>
                             </ul>
