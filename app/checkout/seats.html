@@ -108,32 +108,32 @@
             </div>
 
             <!-- COLLAPSED DETAILS -->
-        <div class="details" ng-if="selected > 0">
-            <div class="detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
-                <div class="">
-                    <div style="display: flex; align-items: center; justify-content: space-between;">
-                        <div class="flex-start">
-                            <div class="circle mr-3">{{selected}}</div>
-                            <h4 class="mb-0">Asiento seleccionado</h4><!--ng-if="seats.lenght === 1"-->
-                            <h4 class="mb-0" ng-if="seats.lenght > 1 || seats.lenght === 0">Asientos seleccionados</h4>
+            <div class="details" ng-if="selected > 0">
+                <div class="detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
+                    <div class="">
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <div class="flex-start">
+                                <div class="circle mr-3">{{selected}}</div>
+                                <h4 class="mb-0">Asiento seleccionado</h4><!--ng-if="seats.lenght === 1"-->
+                                <h4 class="mb-0" ng-if="seats.lenght > 1 || seats.lenght === 0">Asientos seleccionados</h4>
+                            </div>
+                            <div class="">
+                                <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
+                                <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+                            </div>
                         </div>
-                        <div class="">
-                            <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
-                            <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+                    </div>
+                </div>
+                <div class="collapse" id="details">
+                    <div class="detail-content">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <p class="font-700">Asientos: {{seats}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="collapse" id="details">
-                <div class="detail-content">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <p class="font-700">Asientos: {{seats}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
             <div class="btn-sticky">
                 <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="stepSeatsNext()" ng-disabled="selected != 4">

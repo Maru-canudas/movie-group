@@ -34,7 +34,7 @@ a {
 
 /* COLOR */
 .violet {
-    color: #4A00BD;
+    color: #4A00BD !important;
 }
 .light-violet {
     color: #ABAAEA;
@@ -772,6 +772,11 @@ p.resume {
     margin: 0 16px 0 0;
 }
 
+/* ENTRADA */
+.ticket {
+    filter: drop-shadow(2px 4px 6px #e5e5e5);
+}
+
 
 /* MATERIAL */
 md-input-container.md-input-custom:not(.md-input-invalid).md-input-focused .md-input,
@@ -783,4 +788,34 @@ md-progress-linear.md-default-theme .md-bar, md-progress-linear .md-bar {
 }
 md-progress-linear.md-default-theme .md-container, md-progress-linear .md-container {
     background-color: rgb(229, 229, 229);
+}
+md-checkbox.md-default-theme.md-checked .md-ink-ripple, md-checkbox.md-checked .md-ink-ripple,
+md-radio-group.md-default-theme .md-checked .md-ink-ripple, md-radio-group .md-checked .md-ink-ripple {
+    color: rgba(74, 0, 189, 0.87);
+}
+md-checkbox.md-default-theme.md-checked .md-icon, md-checkbox.md-checked .md-icon,
+md-radio-button:not([disabled]).md-primary .md-on,
+md-radio-group:not([disabled]) .md-primary .md-on,
+md-radio-button.md-default-theme .md-on, md-radio-button .md-on{
+    background-color: rgba(74, 0, 189, 0.87);
+}
+md-radio-button.md-default-theme:not([disabled]).md-primary.md-checked .md-off,
+md-radio-button:not([disabled]).md-primary.md-checked .md-off,
+md-radio-button.md-default-theme:not([disabled]) .md-primary.md-checked .md-off,
+md-radio-button:not([disabled]) .md-primary.md-checked .md-off,
+md-radio-button.md-default-theme:not([disabled]).md-primary .md-checked .md-off,
+md-radio-button:not([disabled]).md-primary .md-checked .md-off,
+md-radio-button.md-default-theme:not([disabled]) .md-primary .md-checked .md-off,
+md-radio-button:not([disabled]) .md-primary .md-checked .md-off,
+md-radio-group.md-default-theme:not([disabled]).md-primary.md-checked .md-off,
+md-radio-group:not([disabled]).md-primary.md-checked .md-off,
+md-radio-group.md-default-theme:not([disabled]) .md-primary.md-checked .md-off,
+md-radio-group:not([disabled]) .md-primary.md-checked .md-off,
+md-radio-group.md-default-theme:not([disabled]).md-primary .md-checked .md-off,
+md-radio-group:not([disabled]).md-primary .md-checked .md-off,
+md-radio-group.md-default-theme:not([disabled]) .md-primary .md-checked .md-off,
+md-radio-group:not([disabled]) .md-primary .md-checked .md-off,
+md-radio-button.md-default-theme.md-checked .md-off,
+md-radio-button.md-checked .md-off{
+    border-color:  rgba(74, 0, 189, 0.87);
 }
