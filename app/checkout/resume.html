@@ -18,7 +18,7 @@
 <main>
     <div class="container-fluid">
         <section class="resume">
-            <div class="detail-content">
+            <div class="detail-content pt-0">
                 <div class="row align-items-center">
                     <div class="col-3">
                         <img src="assets/images/movies/img_joker.jpeg" alt="The Joker" width="100%">
@@ -36,7 +36,7 @@
                         <h3>Entradas</h3>
                     </div>
                     <div class="col text-right">
-                        <p class="m-0"><span>$720.00</span> $340.00</p>
+                        <p class="m-0" aria-label="Precio sin descuento: 720 pesos. Precio con descuento: 340 pesos"><span>$720.00</span> $340.00</p>
                     </div>
                 </div>
                 <p class="m-0 resume"><span class="font-700">2</span> Promociones BBVA 2x1</p>
@@ -54,30 +54,35 @@
                 <p class="m-0 resume"><span class="font-700">4</span> Gaseosas 500 ml.</p>
     
             </div>
-            <div class="creditcard-content">
+            <div class="total">
+                <p class="total-text"><span><b>Total a pagar</b></span> <span class="violet"><b>$760.00</span></b></p>
+            </div>
+            <div class="creditcard-content" style="margin-bottom: 50px">
                 <h3>Elegir medio de pago</h3>
-                <md-list>
-                    <md-list-item class="noright">
-                        <img alt="visa" src="assets/images/visa.svg" class="md-avatar"/>
-                        <p>BBVA ….5464</p>
-                        <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
-                    </md-list-item>
-                </md-list>
-                <md-list>
-                    <md-list-item class="noright">
-                        <img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/>
-                        <p>Galicia ….5464</p>
-                        <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
-                    </md-list-item>
-                </md-list>
+                <md-radio-group ng-model="card">
+                    <md-list class="pb-0">
+                        <md-list-item class="noright">
+                            <img alt="visa" src="assets/images/visa.svg" class="md-avatar"/>
+                            <p>BBVA ….5464</p>
+                            <md-radio-button class="md-secondary" value="visa" ng-model="card.selectedVisa"></md-radio-button>
+                        </md-list-item>
+                    </md-list>
+                    <md-list class="pb-0">
+                        <md-list-item class="noright">
+                            <img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/>
+                            <p>Galicia ….5464</p>
+                            <md-radio-button class="md-secondary" value="master" ng-model="card.selectedMaster"></md-radio-button>
+                        </md-list-item>
+                    </md-list>
+                </md-radio-group>
                 
-                <div class=" ">
+                <div class="mt-3">
                     <a href="">Agregar nueva tarjeta</a>
                 </div>
             </div>
         </section>
-        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" disabled=""
-                   ng-click="stepMoviesNext()">
+        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-disabled="!card"
+                   ng-click="stepResumeNext()">
             Pagar
         </md-button>
     </div>

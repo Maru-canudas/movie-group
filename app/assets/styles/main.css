@@ -532,7 +532,7 @@ input.tickets::-webkit-inner-spin-button {
     background: url("../images/minus.svg") center center no-repeat;
     background-size: contain;
 }
-.input-group.tickets .button-minus.disabled {
+.input-group.tickets .button-minus:disabled {
     background: url("../images/minus-disable.svg") center center no-repeat;
     background-size: contain;
 }
@@ -750,6 +750,10 @@ ul.seat-status li{
     margin-right: 10px;
 }
 
+/* SNACKS */
+.text-notransform{
+    text-transform: unset !important;
+}
 
 /* RESUME */
 .resume .detail-content{
@@ -780,6 +784,17 @@ p.resume {
 .creditcard-content md-list md-list-item .md-avatar, md-list-item .md-avatar-icon, md-list-item .md-list-item-inner .md-avatar, md-list-item .md-list-item-inner .md-avatar-icon {
     border-radius: 0;
     margin: 0 16px 0 0;
+}
+.total{
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px;
+}
+.total-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
 }
 
 /* ENTRADA */

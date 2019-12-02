@@ -73,6 +73,12 @@ app.controller('appController', ['$scope', '$element',
         $scope.stepSnacksNext = function () {
             window.location.href = '#!/resume';
         };
+        $scope.stepResumeNext = function () {
+            window.location.href = '#!/payment';
+        };
+        $scope.stepPaymentNext = function () {
+            window.location.href = '#!/ticket';
+        };
         $scope.goback = function () {
             window.history.back();
         };
@@ -87,6 +93,23 @@ app.controller('appController', ['$scope', '$element',
 
         $scope.groupName = 'Amigos';
 
+    }]);
+app.controller('snacksController', ['$scope',
+    function ($scope) {
+        $scope.count = 0;
+        $scope.plusCount = function(){
+            $scope.count = parseInt($scope.count) + 1;
+        };
+
+        $scope.count1 = 0;
+        $scope.plusCount1 = function(){
+            $scope.count1 = parseInt($scope.count1) + 1;
+        };
+
+        $scope.count2 = 0;
+        $scope.plusCount2 = function(){
+            $scope.count2 = parseInt($scope.count2) + 1;
+        };
     }]);
 
 app.controller('searchTown', ['$scope', '$element',
