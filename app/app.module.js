@@ -73,6 +73,9 @@ app.controller('appController', ['$scope', '$element',
         $scope.homeResultNext = function (){
             window.location.href = '#!/movies/results';
         };
+        $scope.homeTicketNext = function (){
+            window.location.href = '#!/ticket';
+        };
         $scope.newPollNext = function (){
             window.location.href = '#!/onboarding/1';
         };
