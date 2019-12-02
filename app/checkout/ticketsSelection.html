@@ -15,7 +15,7 @@
         </div>
     </div>
 </header>
-<main>
+<main ng-controller="ticketController">
     <div class="container-fluid">
         <form>
             <section>
@@ -36,18 +36,18 @@
                         <div class="item-colapse">
                             <div class="row align-items-center">
                                 <div class="col-4 pr-0">
-                                    <p class="m-0">Santander</p>
+                                    <label class="m-0" for="santander">Santander</label>
                                 </div>
                                 <div class="col-3 pr-0">
                                     <p class="m-0 text-right">$320.00</p>
                                 </div>
                                 <div class="col-5">
                                     <div class="input-group tickets">
-                                        <input type="button" value="" class="button-minus tickets"
-                                               data-field="quantity">
-                                        <input type="number" step="1" max="" value="1" name="quantity"
+                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                               data-field="quantity" data-ng-click='count = (count <= 0) ? 0 : count-1' ng-disabled="count === 0">
+                                        <input type="number" step="1" max="" value="1" name="quantity" ng-model="count" id="santander"
                                                class="quantity-field tickets">
-                                        <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount()'>
                                     </div>
                                 </div>
                             </div>
@@ -55,18 +55,18 @@
                         <div class="item-colapse">
                             <div class="row align-items-center">
                                 <div class="col-4 pr-0">
-                                    <p class="m-0">BBVA</p>
+                                    <label class="m-0" for="bbva">BBVA</label>
                                 </div>
                                 <div class="col-3 pr-0">
                                     <p class="m-0 text-right">$320.00</p>
                                 </div>
                                 <div class="col-5">
                                     <div class="input-group tickets">
-                                        <input type="button" value="" class="button-minus tickets"
-                                               data-field="quantity">
-                                        <input type="number" step="1" max="" value="1" name="quantity"
+                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                               data-field="quantity" data-ng-click='count1 = (count1 <= 0) ? 0 : count1-1' ng-disabled="count1 === 0">
+                                        <input type="number" step="1" max="" value="1" name="quantity" ng-model="count1" id="bbva"
                                                class="quantity-field tickets">
-                                        <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount1()'>
                                     </div>
                                 </div>
                             </div>
@@ -74,18 +74,18 @@
                         <div class="item-colapse">
                             <div class="row align-items-center">
                                 <div class="col-4 pr-0">
-                                    <p class="m-0">Clarin 365</p>
+                                    <label class="m-0" for="clarin">Clarin 365</label>
                                 </div>
                                 <div class="col-3 pr-0">
                                     <p class="m-0 text-right">$320.00</p>
                                 </div>
                                 <div class="col-5">
                                     <div class="input-group tickets">
-                                        <input type="button" value="" class="button-minus tickets"
-                                               data-field="quantity">
-                                        <input type="number" step="1" max="" value="1" name="quantity"
+                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                               data-field="quantity" data-ng-click='count2 = (count2 <= 0) ? 0 : count2-1' ng-disabled="count2 === 0">
+                                        <input type="number" step="1" max="" value="1" name="quantity" ng-model="count2" id="clarin"
                                                class="quantity-field tickets">
-                                        <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount2()'>
                                     </div>
                                 </div>
                             </div>
@@ -110,18 +110,18 @@
                         <div class="item-colapse">
                             <div class="row align-items-center">
                                 <div class="col-4 pr-0">
-                                    <p class="m-0">Adultos</p>
+                                    <label class="m-0" for="adultos">Adultos</label>
                                 </div>
                                 <div class="col-3 pr-0">
                                     <p class="m-0 text-right">$320.00</p>
                                 </div>
                                 <div class="col-5">
                                     <div class="input-group tickets">
-                                        <input type="button" value="" class="button-minus tickets"
-                                               data-field="quantity">
-                                        <input type="number" step="1" max="" value="1" name="quantity"
+                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                               data-field="quantity" data-ng-click='count3 = (count3 <= 0) ? 0 : count3-1' ng-disabled="count3 === 0">
+                                        <input type="number" step="1" max="" value="1" name="quantity" ng-model="count3" id="adultos"
                                                class="quantity-field tickets">
-                                        <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount3()'>
                                     </div>
                                 </div>
                             </div>
@@ -129,18 +129,18 @@
                         <div class="item-colapse">
                             <div class="row align-items-center">
                                 <div class="col-4 pr-0">
-                                    <p class="m-0">Niños</p>
+                                    <label class="m-0" for="niños">Niños</label>
                                 </div>
                                 <div class="col-3 pr-0">
-                                    <p class="m-0 text-right">$320.00</p>
+                                    <p class="m-0 text-right">$250.00</p>
                                 </div>
                                 <div class="col-5">
                                     <div class="input-group tickets">
-                                        <input type="button" value="" class="button-minus tickets"
-                                               data-field="quantity">
-                                        <input type="number" step="1" max="" value="1" name="quantity"
+                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                               data-field="quantity" data-ng-click='count4 = (count4 <= 0) ? 0 : count4-1' ng-disabled="count4 === 0">
+                                        <input type="number" step="1" max="" value="1" name="quantity" ng-model="count4" id="niños"
                                                class="quantity-field tickets">
-                                        <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount4()'>
                                     </div>
                                 </div>
                             </div>
@@ -148,18 +148,18 @@
                         <div class="item-colapse">
                             <div class="row align-items-center">
                                 <div class="col-4 pr-0">
-                                    <p class="m-0">Jubilados</p>
+                                    <label class="m-0" for="jubilados">Jubilados</label>
                                 </div>
                                 <div class="col-3 pr-0">
-                                    <p class="m-0 text-right">$320.00</p>
+                                    <p class="m-0 text-right">$250.00</p>
                                 </div>
                                 <div class="col-5">
                                     <div class="input-group tickets">
-                                        <input type="button" value="" class="button-minus tickets"
-                                               data-field="quantity">
-                                        <input type="number" step="1" max="" value="1" name="quantity"
+                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                               data-field="quantity" data-ng-click='count5 = (count5 <= 0) ? 0 : count5-1' ng-disabled="count5 === 0">
+                                        <input type="number" step="1" max="" value="1" name="quantity" ng-model="count5" id="jubilados"
                                                class="quantity-field tickets">
-                                        <input type="button" value="" class="button-plus tickets" data-field="quantity">
+                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount5()'>
                                     </div>
                                 </div>
                             </div>
@@ -188,41 +188,48 @@
                     </div>
                 </div>
             </section>
-            <!-- COLLAPSED DETAILS -->
-            <div class="details">
-                <div class="detail-header">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <div class="circle">4</div>
+
+            <div class="btn-sticky">
+                <!-- COLLAPSED DETAILS -->
+                <div class="details" ng-if="(count + count1 + count2) > 0">
+                    <md-button class="text-notransform detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
+                        <div class="">
+                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                <div class="col-2">
+                                    <div class="circle">{{count + count1 + count2}}</div>
+                                </div>
+                                <div class="col-4 pl-0 text-left">
+                                    <h4 class="mb-0">Entradas</h4>
+                                </div>
+                                <div class="col-4 pr-0 text-right">
+                                    <h4 class="mb-0"> ${{(count + count1 + count2)*320}},00</h4>
+                                </div>
+                                <div class="col-2">
+                                    <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
+                                    <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4 pl-0">
-                            <h4 class="mb-0">Entradas</h4>
-                        </div>
-                        <div class="col-4 pr-0 text-right">
-                            <h4 class="mb-0">$640.00</h4>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" data-target="#details" data-toggle="collapse">
-                                <img src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse" id="details">
-                    <div class="detail-content">
-                        <div class="row align-items-center">
+                    </md-button>
+                    <div class="collapse" id="details">
+                        <div class="detail-content">
                             <div class="col">
-                                <p><span class="font-700">2</span> Promociones BBVA 2x1</p>
+                                <p ng-if="count > 1"><span class="font-700">{{count}}</span> Promociones Santander 2x1</p>
+                                <p ng-if="count === 1"><span class="font-700">{{count}}</span> Promoción Santander 2x1</p>
+                                <p ng-if="count1 > 1"><span class="font-700">{{count1}}</span> Promociones BBVA 2x1</p>
+                                <p ng-if="count1 === 1"><span class="font-700">{{count1}}</span> Promoción BBVA 2x1</p>
+                                <p ng-if="count2 > 1"><span class="font-700">{{count2}}</span> Promociones Clarín 365 2x1</p>
+                                <p ng-if="count2 === 1"><span class="font-700">{{count2}}</span> Promoción Clarín 365 2x1</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-disabled="!count && !count1 && !count2"
+                           ng-click="stepSelectionNext()">
+                    Continuar
+                </md-button>
             </div>
-        
-            <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-disabled=""
-                       ng-click="stepSelectionNext()">
-                Continuar
-            </md-button>
         </form>
     </div>
 </main>

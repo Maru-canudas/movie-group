@@ -314,7 +314,7 @@ ul.time-checks li input[type="radio"]:checked + label span{
     bottom: 50px;
     left: 0;
     right: 0;
-    padding: 0 15px;
+    padding: 0;
     background: #FFFFFF;
     z-index: 12;
     box-shadow: 0 -2px 4px #E5E5EA;
@@ -332,11 +332,14 @@ ul.time-checks li input[type="radio"]:checked + label span{
     width: 30px;
     height: 30px;
     text-align: center;
-    padding: 3px 5px;
+    padding: 0;
     color: #ffffff;
     background: #4A00BD;
     border-radius: 100%;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .detail-content {
     border-top: 2px solid #e5e5e5;

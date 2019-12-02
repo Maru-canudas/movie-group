@@ -97,6 +97,39 @@ app.controller('appController', ['$scope', '$element',
         $scope.groupName = 'Amigos';
 
     }]);
+app.controller('ticketController', ['$scope',
+    function ($scope) {
+        $scope.count = 0;
+        $scope.plusCount = function(){
+            $scope.count = parseInt($scope.count) + 1;
+        };
+
+        $scope.count1 = 0;
+        $scope.plusCount1 = function(){
+            $scope.count1 = parseInt($scope.count1) + 1;
+        };
+
+        $scope.count2 = 0;
+        $scope.plusCount2 = function(){
+            $scope.count2 = parseInt($scope.count2) + 1;
+        };
+
+        $scope.count3 = 0;
+        $scope.plusCount3 = function(){
+            $scope.count3 = parseInt($scope.count3) + 1;
+        };
+
+        $scope.count4 = 0;
+        $scope.plusCount4 = function(){
+            $scope.count4 = parseInt($scope.count4) + 1;
+        };
+
+        $scope.count5 = 0;
+        $scope.plusCount5 = function(){
+            $scope.count5 = parseInt($scope.count5) + 1;
+        };
+    }]);
+
 app.controller('snacksController', ['$scope',
     function ($scope) {
         $scope.count = 0;
@@ -163,50 +196,4 @@ app.controller('seatsController', ['$scope', '$element', '$mdBottomSheet',
                 $(".available").prop('disabled', false);
             }
         });
-
-
-
-
-        /*$scope.updateTextArea = function() {
-
-            var numseats = 4;
-            if ($("input:checked").length == ($(numseats).val()))
-            {
-                $(".seatStructure *").prop("disabled", true);
-
-                var allNameVals = [];
-                var allNumberVals = [];
-                var allSeatsVals = [];
-
-                //Storing in Array
-                allNameVals.push($("#Username").val());
-                allNumberVals.push($("#Numseats").val());
-                $('#seatsBlock :checked').each(function() {
-                    allSeatsVals.push($(this).val());
-                });
-
-                //Displaying
-                $('#nameDisplay').val(allNameVals);
-                $('#NumberDisplay').val(allNumberVals);
-                $('#seatsDisplay').val(allSeatsVals);
-            }
-            else
-            {
-                alert("Please select " + ($("#Numseats").val()) + " seats")
-            }
-        };
-
-
-        $scope.myFunction = function() {
-            alert($("input:checked").length);
-        };
-
-        */
     }]);
-
-app.controller('ListBottomSheetCtrl', function ($scope, $mdBottomSheet) {
-
-    $scope.hideBottomSheet = function () {
-        $mdBottomSheet.hide();
-    };
-})
