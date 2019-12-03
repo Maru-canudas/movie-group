@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
-
+*:focus{
+    outline-color: rgb(212, 96, 229) !important;
+    outline-offset:0px !important;
+    outline-style:auto !important;
+    outline-width:5px !important;
+}
 body, html {
     font-family: 'Lato', sans-serif !important;
     text-rendering: optimizeLegibility !important;

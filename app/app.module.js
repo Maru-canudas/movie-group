@@ -37,6 +37,9 @@ app.run(['$locale', '$location', '$rootScope',
 
 app.controller('appController', ['$scope', '$element',
     function ($scope, $element) {
+        $scope.focus = function(){
+            window.scrollTo(0,0);
+        };
         $scope.loginNext = function () {
             window.location.href = '#!/';
         };
