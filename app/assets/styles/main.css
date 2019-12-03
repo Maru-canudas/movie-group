@@ -840,7 +840,7 @@ ul.seat-status li{
     color: #4A00BD;
     font-weight: 700;
 }
-.ticket-content .col p span {
+.ticket-content .col p .discount {
     text-decoration: line-through;
     color: #A09FA2;
     font-weight: 400;
