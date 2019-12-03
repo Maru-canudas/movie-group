@@ -223,6 +223,7 @@ app.controller('seatsController', ['$scope', '$element', '$mdBottomSheet',
             if ($("input:checked").length === seatsNumber) {
                 $(".available").prop('disabled', true);
                 $('.available:checked').prop('disabled', false);
+                $('.btn-seats').focus();
             }
             else {
                 $(".available").prop('disabled', false);
