@@ -24,20 +24,26 @@
                             <ul class="date-time-checks">
                                 <li class="day">
                                     <input type="checkbox" id="checkboxOne" value="Day" ng-model="moment.day">
-                                    <label for="checkboxOne">
-                                        <b>De Día</b> 12:00 a 16:00
+                                    <label for="checkboxOne" aria-label="De día. 12:00 a 16:00hs">
+                                        <span class="display-day">
+                                            De Día 12:00 a 16:00
+                                        </span>
                                     </label>
                                 </li>
                                 <li class="set">
                                     <input type="checkbox" id="checkboxTwo" value="Set" ng-model="moment.afternoon">
-                                    <label for="checkboxTwo">
-                                        <b>De Tarde</b>16:00 a 20:00
+                                    <label for="checkboxTwo" aria-label="De tarde. 16:00 a 20:00hs">
+                                        <span class="display-day">
+                                            <span><b>De Tarde</b></span><span>16:00 a 20:00</span>
+                                        </span>
                                     </label>
                                 </li>
                                 <li class="night">
                                     <input type="checkbox" id="checkboxThree" value="Night" ng-model="moment.night">
-                                    <label for="checkboxThree">
-                                        <b>De Noche</b>20:00 a 00:00
+                                    <label for="checkboxThree" aria-label="De día. 20:00 a 00:00hs">
+                                        <span class="display-day">
+                                            <span><b>De Noche</b></span><span>20:00 a 00:00</span>
+                                        </span>
                                     </label>
                                 </li>
                             </ul>
