@@ -111,6 +111,20 @@ app.controller('appController', ['$scope', '$element',
 
         $scope.groupName = 'Amigos';
 
+        $scope.day = {
+            nov: 'today',
+        };
+
+        $scope.movie = {
+            num: 'Malefica',
+        };
+
+        $scope.movieSelected = 0;
+
+        $scope.movieCount = function () {
+            $scope.movieSelected = $(".available:checked").length;
+        };
+
     }]);
 app.controller('ticketController', ['$scope',
     function ($scope) {
