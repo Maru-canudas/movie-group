@@ -1,9 +1,7 @@
-<header class="header-form">
-    <header class="header-form">
-        <ng-include src="'onboarding/header.html'" />
-    </header>
+<header class="header-form header-fix">
+    <ng-include src="'onboarding/header.html'" />
 </header>
-<main>
+<main class="mt-5 pt-2">
     <div class="container-fluid">
         <div class="row justify-content-center mt-4">
             <div class="col-3">
@@ -22,8 +20,8 @@
                     <h2 class="text-center mt-5">¿Querés ponerle un nombre a tu grupo?</h2>
                     <div class="mt-5">
                         <md-input-container class="md-block md-input-custom" flex-gt-sm>
-                            <label for="usr">Nombre del grupo</label>
-                            <input id="usr" type="text" placeholder="Amigos" ng-model="groupName">
+                            <label for="group">Nombre del grupo</label>
+                            <input id="group" type="text" placeholder="Amigos" ng-model="groupName">
                         </md-input-container>
                     </div>
                     <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" ng-click="step3Next()"ng-disabled="!groupName" || groupName = ''>

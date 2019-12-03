@@ -1,129 +1,129 @@
-<header class="header-form">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <button class="btn btn-icon" ng-click="goback()">
-                        <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
-                    </button>
-                </div>
-                <div class="col-8"><h1>Comida & Snacks</h1></div>
-                <div class="col-2">
-                    <button class="btn btn-icon">
-                        <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
-                    </button>
-                </div>
+<header class="header-form header-fix">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <button class="btn btn-icon" ng-click="goback()">
+                    <img src="assets/images/angle-left.svg" style="width: 100%;" alt="atrás">
+                </button>
+            </div>
+            <div class="col-8"><h1>Comida & Snacks</h1></div>
+            <div class="col-2">
+                <button class="btn btn-icon">
+                    <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
             </div>
         </div>
-    </header>
-    
-    <main style="margin-bottom: 120px;" ng-controller="snacksController">
-        <div class="container-fluid">
-            <form>
-                <section>
-                    <h2 class="text-center">¿Te gustaría agregar comida?</h2>
-                    <div class="mt-4">
-                        <div class="item-colapse">
-                            <div class="row align-items-center">
-                                <div class="col-4 pr-0">
-                                    <label class="m-0" for="pochoclo">Pochoclos grande</label>
-                                </div>
-                                <div class="col-3 pr-0">
-                                    <p class="m-0 text-right">$250.00</p>
-                                </div>
-                                <div class="col-5">
-                                    <div class="input-group tickets">
-                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
-                                               data-field="quantity" data-ng-click='count = (count <= 0) ? 0 : count-1' ng-disabled="count === 0">
-                                        <input type="number" step="1" max="" value="1" name="quantity" ng-model="count" id="pochoclo"
-                                               class="quantity-field tickets">
-                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount()'>
-                                    </div>
-                                </div>
+    </div>
+</header>
+
+<main class="mt-5 pt-2" style="margin-bottom: 120px;" ng-controller="snacksController">
+    <div class="container-fluid">
+        <form>
+            <section>
+                <h2 class="text-center">¿Te gustaría agregar comida?</h2>
+                <div class="mt-4">
+                    <div class="item-colapse">
+                        <div class="row align-items-center">
+                            <div class="col-4 pr-0">
+                                <label class="m-0" for="pochoclo">Pochoclos grande</label>
                             </div>
-                        </div>
-                        <div class="item-colapse">
-                            <div class="row align-items-center">
-                                <div class="col-4 pr-0">
-                                    <label class="m-0" for="nachos">Nachos con queso</label>
-                                </div>
-                                <div class="col-3 pr-0">
-                                    <p class="m-0 text-right">$150.00</p>
-                                </div>
-                                <div class="col-5">
-                                    <div class="input-group tickets">
-                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
-                                               data-field="quantity" data-ng-click='count1 = (count1 <= 0) ? 0 : count1-1' ng-disabled="count1 === 0">
-                                        <input type="number" step="1" max="" value="1" name="quantity"
-                                               class="quantity-field tickets" ng-model="count1" id="nachos">
-                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount1()'>
-                                    </div>
-                                </div>
+                            <div class="col-3 pr-0">
+                                <p class="m-0 text-right">$250.00</p>
                             </div>
-                        </div>
-                        <div class="item-colapse">
-                            <div class="row align-items-center">
-                                <div class="col-4 pr-0">
-                                    <label class="m-0" for="gaseosa">Gaseosa 500ml.</label>
-                                </div>
-                                <div class="col-3 pr-0">
-                                    <p class="m-0 text-right">$100.00</p>
-                                </div>
-                                <div class="col-5">
-                                    <div class="input-group tickets">
-                                        <input type="button" value="" aria-label="quitar" class="button-minus tickets"
-                                               data-field="quantity" data-ng-click='count2 = (count2 <= 0) ? 0 : count2-1' ng-disabled="count2 === 0">
-                                        <input type="number" step="1" max="" value="1" name="quantity"
-                                               class="quantity-field tickets" ng-model="count2" id="gaseosa">
-                                        <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount2()'>
-                                    </div>
+                            <div class="col-5">
+                                <div class="input-group tickets">
+                                    <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                           data-field="quantity" data-ng-click='count = (count <= 0) ? 0 : count-1' ng-disabled="count === 0">
+                                    <input type="number" step="1" max="" value="1" name="quantity" ng-model="count" id="pochoclo"
+                                           class="quantity-field tickets">
+                                    <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount()'>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <div class="btn-sticky">
-                    <!-- COLLAPSED DETAILS -->
-                    <div class="details" ng-if="count >= 1 || count1 >= 1 || count2 >= 1">
-                        <md-button class="text-notransform detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
-                            <div class="">
-                                <div style="display: flex; align-items: center; justify-content: space-between;">
-                                    <div class="flex-start">
-                                        <h4 class="mb-0" aria-hidden="true">Subtotal <span class="violet">$ {{(count*250) + (count1*150) + (count2*100)}},00</span></h4>
-                                        <span class="sr-only">Subtotal: {{(count*250) + (count1*150) + (count2*100)}},00 pesos</span>
-                                    </div>
-                                    <div class="col-2">
-                                        <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
-                                        <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
-                                    </div>
-                                </div>
+                    <div class="item-colapse">
+                        <div class="row align-items-center">
+                            <div class="col-4 pr-0">
+                                <label class="m-0" for="nachos">Nachos con queso</label>
                             </div>
-                        </md-button>
-                        <div class="collapse" id="details">
-                            <div class="detail-content">
-                                <div class="col">
-                                    <p ng-if="count >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count}}</span> Pochoclos grande</span> <span>${{count*250}},00</span></p>
-                                    <span class="sr-only">Pochoclos grande {{count*250}},00 pesos</span>
-                                    <p ng-if="count1 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count1}}</span> Nachos con queso</span><span>${{count1*150}},00</span></p>
-                                    <span class="sr-only">Nachos con queso {{count1*150}},00 pesos</span>
-                                    <p ng-if="count2 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count2}}</span> Gaseosas 500 ml.</span><span>${{count2*100}},00</span></p>
-                                    <span class="sr-only">Gaseosas 500 ml. {{count2*100}},00 pesos</span>
+                            <div class="col-3 pr-0">
+                                <p class="m-0 text-right">$150.00</p>
+                            </div>
+                            <div class="col-5">
+                                <div class="input-group tickets">
+                                    <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                           data-field="quantity" data-ng-click='count1 = (count1 <= 0) ? 0 : count1-1' ng-disabled="count1 === 0">
+                                    <input type="number" step="1" max="" value="1" name="quantity"
+                                           class="quantity-field tickets" ng-model="count1" id="nachos">
+                                    <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount1()'>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
-
-                    <div class="text-center" style="background-color: white;" ng-if="count === 0 && count1 === 0 && count2 === 0">
-                        <md-button class="md-primary font-700 violet">
-                            No quiero agregar comida 
-                        </md-button>
+                    <div class="item-colapse">
+                        <div class="row align-items-center">
+                            <div class="col-4 pr-0">
+                                <label class="m-0" for="gaseosa">Gaseosa 500ml.</label>
+                            </div>
+                            <div class="col-3 pr-0">
+                                <p class="m-0 text-right">$100.00</p>
+                            </div>
+                            <div class="col-5">
+                                <div class="input-group tickets">
+                                    <input type="button" value="" aria-label="quitar" class="button-minus tickets"
+                                           data-field="quantity" data-ng-click='count2 = (count2 <= 0) ? 0 : count2-1' ng-disabled="count2 === 0">
+                                    <input type="number" step="1" max="" value="1" name="quantity"
+                                           class="quantity-field tickets" ng-model="count2" id="gaseosa">
+                                    <input type="button" value="" aria-label="agregar" class="button-plus tickets" data-field="quantity" data-ng-click='plusCount2()'>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </section>
 
-                    <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="stepSnacksNext()" ng-disabled="count === 0 && count1 === 0 && count2 === 0">
-                        Continuar
+            <div class="btn-sticky">
+                <!-- COLLAPSED DETAILS -->
+                <div class="details" ng-if="count >= 1 || count1 >= 1 || count2 >= 1">
+                    <md-button class="text-notransform detail-header btn-block" type="button" data-target="#details" data-toggle="collapse">
+                        <div class="">
+                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                <div class="flex-start">
+                                    <h4 class="mb-0" aria-hidden="true">Subtotal <span class="violet">$ {{(count*250) + (count1*150) + (count2*100)}},00</span></h4>
+                                    <span class="sr-only">Subtotal: {{(count*250) + (count1*150) + (count2*100)}},00 pesos</span>
+                                </div>
+                                <div class="col-2">
+                                    <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
+                                    <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+                                </div>
+                            </div>
+                        </div>
+                    </md-button>
+                    <div class="collapse" id="details">
+                        <div class="detail-content">
+                            <div class="col">
+                                <p ng-if="count >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count}}</span> Pochoclos grande</span> <span>${{count*250}},00</span></p>
+                                <span class="sr-only">Pochoclos grande {{count*250}},00 pesos</span>
+                                <p ng-if="count1 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count1}}</span> Nachos con queso</span><span>${{count1*150}},00</span></p>
+                                <span class="sr-only">Nachos con queso {{count1*150}},00 pesos</span>
+                                <p ng-if="count2 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count2}}</span> Gaseosas 500 ml.</span><span>${{count2*100}},00</span></p>
+                                <span class="sr-only">Gaseosas 500 ml. {{count2*100}},00 pesos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="text-center" style="background-color: white;" ng-if="count === 0 && count1 === 0 && count2 === 0">
+                    <md-button class="md-primary font-700 violet">
+                        No quiero agregar comida
                     </md-button>
                 </div>
-            </form>
-        </div>
-    </main>
+
+                <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="stepSnacksNext()" ng-disabled="count === 0 && count1 === 0 && count2 === 0">
+                    Continuar
+                </md-button>
+            </div>
+        </form>
+    </div>
+</main>
