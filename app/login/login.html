@@ -1,5 +1,5 @@
 <header class="text-center mt-5 pt-5 pr-4 pl-4">
-    <div class="container-fluid">
+    <div class="">
         <img src="assets/images/logo.svg" alt="Movie Group" class="mb-3">
     </div>
     <div class="row justify-content-center">
@@ -18,7 +18,7 @@
                         <label for="usr">Usuario</label>
                         <input id="usr" name="usr" type="text" required ng-model="name.usr">
 
-                        <div ng-messages="loginForm.usr.$error" role="alert">
+                        <div ng-messages="loginForm.usr.$error">
                             <div ng-message="required">
                                 Usuario requerido
                             </div>
@@ -30,7 +30,7 @@
                         <input id="pwd" name="pwd" type="password" required ng-model="name.pwd">
                         <md-icon md-svg-src="assets/images/eye.svg" style="display:inline-block;"></md-icon>
 
-                        <div ng-messages="loginForm.pwd.$error" role="alert">
+                        <div ng-messages="loginForm.pwd.$error">
                             <div ng-message="required">
                                 Contraseña requerida
                             </div>
