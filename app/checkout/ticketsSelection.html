@@ -214,8 +214,8 @@
                                     <h4 class="mb-0"> ${{(count + count1 + count2)*320}},00</h4>
                                 </div>
                                 <div class="col-2">
-                                    <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
-                                    <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="cerrar">
+                                    <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="cerrar">
+                                    <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="ver más">
                                 </div>
                             </div>
                         </div>
@@ -233,7 +233,7 @@
                                     </span>
                                     <span>${{count*320}},00</span>
                                 </p>
-                                <span class="sr-only">
+                                <span ng-if="count >= 1" class="sr-only">
                                     {{count}}
                                     <ng-pluralize count="count"
                                                   when="{'1': 'Promoción Santander 2x1',
@@ -251,7 +251,7 @@
                                     </span>
                                     <span>${{count1*320}},00</span>
                                 </p>
-                                <span class="sr-only">
+                                <span ng-if="count1 >= 1" class="sr-only">
                                     {{count1}}
                                     <ng-pluralize count="count1"
                                                   when="{'1': 'Promoción BBVA 2x1',
@@ -269,7 +269,7 @@
                                     </span>
                                     <span>${{count2*320}},00</span>
                                 </p>
-                                <span class="sr-only">
+                                <span ng-if="count2 >= 1" class="sr-only">
                                     {{count2}}
                                     <ng-pluralize count="count2"
                                                   when="{'1': 'Promoción Clarín 365 2x1',
