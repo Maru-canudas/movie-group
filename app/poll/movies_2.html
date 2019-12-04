@@ -28,15 +28,15 @@
             </div>
             <div class="col-4">
                 <div class="pt-5">
-                    <button role="button">
+                    <md-button role="button" style="padding: 0">
                         <div class="float-left">
                             <div class="circle">3</div>
                         </div>
-                        <div class="float-left pl-3 pt-1 text-left">
+                        <div class="float-left pl-2 text-left" style="text-transform: lowercase;">
                             <span class="font-700">Filtros</span>
                         </div>
                         <div class="clearfix"></div>
-                    </button>
+                    </md-button>
                 </div>
             </div>
         </div>
@@ -48,14 +48,34 @@
                     <fieldset>
                         <ul class="date-radio">
                             <md-radio-group>
-                                <md-radio-button  class="movies-radios" id="op1" value="today" name="day" ng-model="day.nov">
-                                    <label for="op1">
-                                    <span><b>Hoy</b><span class="label-grey">25 Nov</span> </span>
+                                <md-radio-button class="movies-radios" value="today" name="day" ng-model="day.nov">
+                                    <label>
+                                    <b>Hoy</b><br><span class="label-grey">25 Nov</span>
                                     </label>
                                 </md-radio-button>
-                                <md-radio-button  class="movies-radios" id="op2" value="mañana" name="day" ng-model="day.nov">
-                                    <label for="op2">
-                                        <span><b>Mañana</b> <span class="label-grey">26 Nov</span></span>
+                                <md-radio-button class="movies-radios" value="mañana" name="day" ng-model="day.nov">
+                                    <label>
+                                       <b>Mañana</b> <br><span class="label-grey">26 Nov</span>
+                                    </label>
+                                </md-radio-button>
+                                <md-radio-button class="movies-radios" value="hi" name="day" ng-model="day.nov">
+                                    <label>
+                                        <b>Hoy</b><br><span class="label-grey">25 Nov</span>
+                                    </label>
+                                </md-radio-button>
+                                <md-radio-button class="movies-radios" value="12" name="day" ng-model="day.nov">
+                                    <label>
+                                        <b>Mañana</b> <br><span class="label-grey">26 Nov</span>
+                                    </label>
+                                </md-radio-button>
+                                <md-radio-button class="movies-radios" value="123" name="day" ng-model="day.nov">
+                                    <label>
+                                        <b>Hoy</b><br><span class="label-grey">25 Nov</span>
+                                    </label>
+                                </md-radio-button>
+                                <md-radio-button class="movies-radios" value="1323" name="day" ng-model="day.nov">
+                                    <label>
+                                        <b>Mañana</b> <br><span class="label-grey">26 Nov</span>
                                     </label>
                                 </md-radio-button>
                                 <!--input type="radio" id="op2" value="mañana" name="day" ng-model="day.nov">
