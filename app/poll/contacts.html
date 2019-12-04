@@ -22,7 +22,11 @@
                 <md-input-container class="md-block md-input-custom mt-4 mb-0" flex-gt-sm>
                     <label for="search">Buscar amigos</label>
                     <input id="search" type="text">
-                    <md-icon md-svg-src="assets/images/search.svg" style="display:inline-block;"></md-icon>
+                    <md-icon style="display:inline-block;" aria-label="Buscar">
+                        <button type="button" class="btn btn-icon">
+                            <img src="assets/images/search.svg" alt="Buscar" style="width: 100%">
+                        </button>
+                    </md-icon>
                 </md-input-container>
             </div>
             <div class="mb-3" ng-if="person">
