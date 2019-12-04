@@ -34,7 +34,7 @@
             <div class="row mt-2">
                 <div class="owl-carousel vote-carousel owl-theme">
                     <div class="item">
-                        <div class="feed" ng-click="homeResultNext()" role="button">
+                        <div class="feed" ng-click="homeResultNext()" role="link">
                             <div class="feed-card">
                                 <div class="detail-content">
                                     <div class="row">
@@ -47,7 +47,7 @@
                                             <p>3 contactos</p>
                                         </div>
                                         <div class="col-2 pl-0">
-                                            <button type="button" class="btn btn-icon"><img
+                                            <button type="button" class="btn btn-icon" ng-click="$event.stopPropagation();"><img
                                                     src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
                                             </button>
                                         </div>
