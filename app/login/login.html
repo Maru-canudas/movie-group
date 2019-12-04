@@ -28,7 +28,9 @@
                     <md-input-container class="md-block md-input-custom mt-4" flex-gt-sm>
                         <label for="pwd">Contraseña</label>
                         <input id="pwd" name="pwd" type="password" required ng-model="name.pwd">
-                        <md-icon md-svg-src="assets/images/eye.svg" style="display:inline-block;"></md-icon>
+                        <md-icon style="display:inline-block;">
+                            <button type="button" class="btn btn-icon"><img src="assets/images/eye.svg" alt="mostrar contraseña"></button>
+                        </md-icon>
 
                         <div ng-messages="loginForm.pwd.$error">
                             <div ng-message="required">
