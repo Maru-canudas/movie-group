@@ -49,6 +49,10 @@ angular.
           title: 'Enviar votación - Movie Group',
           templateUrl: 'poll/send.html'
         }).
+        when('/group-select', {
+            title: 'Elegir grupo - Movie Group',
+            templateUrl: 'poll/groupSelection.html'
+        }).
         when('/movies/results', {
           title: 'Resultados - Movie Group',
           templateUrl: 'poll/results.html'

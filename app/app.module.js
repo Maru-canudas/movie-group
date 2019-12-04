@@ -68,7 +68,7 @@ app.controller('appController', ['$scope', '$element',
             window.location.href = '#!/movies/send';
         };
         $scope.stepSendNext = function () {
-            window.location.href = '#!/movies/results';
+            window.location.href = '#!/';
         };
         $scope.stepSeatsNext = function () {
             window.location.href = '#!/snacks';
@@ -80,7 +80,7 @@ app.controller('appController', ['$scope', '$element',
             window.location.href = '#!/ticket';
         };
         $scope.newPollNext = function (){
-            window.location.href = '#!/onboarding/1';
+            window.location.href = '#!/group-select';
         };
         $scope.stepResultNext = function () {
             window.location.href = '#!/tickets-selection';
