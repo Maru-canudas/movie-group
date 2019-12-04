@@ -122,6 +122,10 @@ app.controller('appController', ['$scope', '$element',
             num: 'Malefica',
         };
 
+        $scope.movieRadio = {
+            win: 'joker',
+        };
+
         $scope.movieSelected = 0;
 
         $scope.movieCount = function () {
