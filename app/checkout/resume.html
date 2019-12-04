@@ -33,7 +33,7 @@
             <div class="ticket-content">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h3>Entradas</h3>
+                        <h2 class="mb-0">Entradas</h2>
                     </div>
                     <div class="col text-right">
                         <p class="m-0">
@@ -48,7 +48,7 @@
             <div class="snacks-content">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h3>Snacks</h3>
+                        <h2 class="mb-0">Snacks</h2>
                     </div>
                     <div class="col text-right">
                         <p class="m-0"><span aria-hidden="true">$400.00</span><span class="sr-only">400,00 pesos</span></p>
@@ -58,22 +58,20 @@
     
             </div>
             <div class="creditcard-content" style="margin-bottom: 50px">
-                <h3>Elegir medio de pago</h3>
-                <span class="sr-only">Se listan las tarjetas por su banco y sus últimos cuatro dígitos únicamente.</span>
+                <h2 class="mb-0">Elegir medio de pago</h2>
+                <span class="sr-only">Se listan las tarjetas por su banco y sus últimos cuatro dígitos únicamente por motivos de seguridad.</span>
                 <md-radio-group ng-model="card">
                     <md-list class="pb-0">
                         <md-list-item class="noright">
                             <md-radio-button class="" value="visa" id="santander" ng-model="card.selectedVisa">
-                                <img alt="visa" src="assets/images/visa.svg" class="md-avatar"/>
-                                <label for="santander">Santander ….5464</label>
+                                <label for="santander"><img alt="visa" src="assets/images/visa.svg" class="md-avatar"/> Santander ….5464</label>
                             </md-radio-button>
                         </md-list-item>
                     </md-list>
                     <md-list class="pb-0">
                         <md-list-item class="noright">
                             <md-radio-button class="" value="master" id="galicia" ng-model="card.selectedMaster">
-                                <img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/>
-                                <label for="galicia">Galicia ….5464</label>
+                                <label for="galicia"><img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/> Galicia ….5464</label>
                             </md-radio-button>
                         </md-list-item>
                     </md-list>

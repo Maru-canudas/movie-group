@@ -889,10 +889,14 @@ p.resume {
 .ticket-footer p {
     line-height: 18px;
 }
+
 .group-option md-radio-button{
     border-top: 1px solid #e5e5e5;
     padding: 20px 0;
     margin: 0;
+}
+md-radio-button{
+    margin-bottom: 0 !important;
 }
 
 
