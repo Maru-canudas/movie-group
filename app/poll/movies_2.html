@@ -1,0 +1,418 @@
+<header class="header-form header-fix">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-2">
+            </div>
+            <div class="col-8"><h1 class="m-0">Elegir funciones</h1></div>
+            <div class="col-2">
+                <button class="btn btn-icon" ng-click="stepTicketNext()">
+                    <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="mt-5 pt-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8">
+                <md-input-container class="md-block md-input-custom mt-5" flex-gt-sm>
+                    <label for="search">Buscar película</label>
+                    <input id="search" type="text">
+                    <md-icon style="display:inline-block;" aria-label="Buscar">
+                        <button type="button" class="btn btn-icon">
+                            <img src="assets/images/search.svg" alt="Buscar" style="width: 100%">
+                        </button>
+                    </md-icon>
+                </md-input-container>
+            </div>
+            <div class="col-4">
+                <div class="pt-5">
+                    <button role="button">
+                        <div class="float-left">
+                            <div class="circle">3</div>
+                        </div>
+                        <div class="float-left pl-3 pt-1 text-left">
+                            <span class="font-700">Filtros</span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <form>
+            <!-- DIA -->
+            <section class="movies pt-0">
+                <h2>¿Cuándo quieren ir al cine?</h2>
+                <div class="date-container">
+                    <fieldset>
+                        <ul class="date-radio">
+                            <md-radio-group>
+                                <md-radio-button  class="movies-radios" id="op1" value="today" name="day" ng-model="day.nov">
+                                    <label for="op1">
+                                    <span><b>Hoy</b><span class="label-grey">25 Nov</span> </span>
+                                    </label>
+                                </md-radio-button>
+                                <md-radio-button  class="movies-radios" id="op2" value="mañana" name="day" ng-model="day.nov">
+                                    <label for="op2">
+                                        <span><b>Mañana</b> <span class="label-grey">26 Nov</span></span>
+                                    </label>
+                                </md-radio-button>
+                                <!--input type="radio" id="op2" value="mañana" name="day" ng-model="day.nov">
+                                <label for="op2">
+                                    <span><b>Mañana</b> <span class="label-grey">26 Nov</span></span>
+                                </label-->
+                            </md-radio-group>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+        
+            <!-- PELICULA -->
+            <section class="movies pt-0">
+                <h2>¿Qué les gustaría ver?</h2>
+                <!-- carousel -->
+                <div class="movies-radio">
+                    <fieldset>
+                        <ul class="movies-radio">
+                            <li class="movie1">
+                                <input type="radio" id="movie1" value="Malefica" name="movie" ng-model="movie.num">
+                                <label for="movie1">
+                                    <span class="movie-elipsis">Maléfica 2: Dueña del mal</span>
+                                </label>
+                            </li>
+                            <li class="movie2">
+                                <input type="radio" id="movie2" value="Joker" name="movie" ng-model="movie.num">
+                                <label for="movie2">
+                                    <span>The Joker</span>
+                                </label>
+                            </li>
+                            <li class="movie3">
+                                <input type="radio" id="movie3" value="Terminator" name="movie" ng-model="movie.num">
+                                <label for="movie3">
+                                    <span>Terminator Destino Oculto</span>
+                                </label>
+                            </li>
+                            <li class="movie4">
+                                <input type="radio" id="movie4" value="Proyecto" name="movie" ng-model="movie.num">
+                                <label for="movie4">
+                                    <span>Proyecto Geminis</span>
+                                </label>
+                            </li>
+                            <li class="movie5">
+                                <input type="radio" id="movie5" value="Contra" name="movie" ng-model="movie.num">
+                                <label for="movie5">
+                                    <span>Contra lo imposible</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <!-- HORARIOS -->
+            <section class="pb-5 mb-4 movies pt-0">
+                <h2>Elegí una o más funciones</h2>
+                <!-- Cine -->
+                <div>
+                    <h3 class="mb-3">Showcase Belgrano</h3>
+                    <!-- carousel -->
+                    <p class="label-grey mb-0">2D Subtitulada</p>
+                    <div class="date-container">
+                        <fieldset>
+                            <ul class="date-radio">
+                                <li>
+                                    <input type="checkbox" class="available" id="o1" value="22" ng-model="movie.one"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o1">
+                                   <span>
+                                        <span class="font-700">20:00 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="available" id="o2" value="23" ng-model="movie.two"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o2">
+                                    <span>
+                                        <span class="font-700">22:00 hs.</span>
+                                        <span class="label-grey red">Pocos lugares</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="available" id="o3" value="24" ng-model="movie.three"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o3">
+                                    <span>
+                                        <span class="font-700">23:00 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="available" id="o4" value="25" ng-model="movie.four"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o4">
+                                    <span>
+                                        <span class="font-700">23:30 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <!-- carousel -->
+                    <p class="label-grey mb-0 mt-2">3D Subtituladas</p>
+                    <div class="date-container">
+                        <fieldset>
+                            <ul class="date-radio">
+                                <li>
+                                    <input type="checkbox" id="o5" value="26" ng-model="movie.five" class="available"
+                                           ng-click="movieCount()">
+                                    <label for="o5">
+                                   <span>
+                                       <span class="font-700">20:00 hs.</span>
+                                       <span class="label-grey red">Pocos lugares</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o6" value="27" ng-model="movie.six" class="available"
+                                           ng-click="movieCount()">
+                                    <label for="o6">
+                                    <span>
+                                        <span class="font-700">21:15 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h3 class="mb-3 mt-4">Multiplex Belgrano</h3>
+                    <!-- carousel -->
+                    <p class="label-grey mb-0">2D Subtituladas</p>
+                    <div class="date-container">
+                        <fieldset>
+                            <ul class="date-radio">
+                                <li>
+                                    <input type="checkbox" id="o7" value="28" ng-model="movie.seven" class="available"
+                                           ng-click="movieCount()">
+                                    <label for="o7">
+                                   <span>
+                                        <span class="font-700">20:15 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o8" value="29" ng-model="movie.eight" class="available"
+                                           ng-click="movieCount()">
+                                    <label for="o8">
+                                    <span>
+                                        <span class="font-700">21:20 hs.</span>
+                                        <span class="label-grey red">Pocos lugares</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o9" value="30" ng-model="movie.nine" class="available"
+                                           ng-click="movieCount()">
+                                    <label for="o9">
+                                    <span>
+                                        <span class="font-700">23:00 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o10" value="31" ng-model="movie.ten" class="available"
+                                           ng-click="movieCount()">
+                                    <label for="o10">
+                                    <span>
+                                        <span class="font-700">23:45 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <!-- carousel -->
+                    <p class="label-grey mb-0 mt-2">3D Subtitulada</p>
+                    <div class="date-container">
+                        <fieldset>
+                            <ul class="date-radio">
+                                <li>
+                                    <input type="checkbox" id="o11" value="32" ng-model="movie.eleven" class="available"
+                                           ng-click="movieCount()">
+                                    <label for="o11">
+                                   <span>
+                                       <span class="font-700">20:10 hs.</span>
+                                       <span class="label-grey red">Pocos lugares</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o12" value="33" ng-model="movie.twelve" class="available"
+                                           ng-click="movieCount()">
+                                    <label for="o12">
+                                    <span>
+                                        <span class="font-700">21:40 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h3 class="mb-3 mt-4">CinemaCity General Paz</h3>
+                    <!-- carousel -->
+                    <p class="label-grey mb-0">2D Subtitulada</p>
+                    <div class="date-container">
+                        <fieldset>
+                            <ul class="date-radio">
+                                <li>
+                                    <input type="checkbox" id="o13" value="34" ng-model="movie.thirteen"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o13">
+                                   <span>
+                                        <span class="font-700">20:10 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o14" value="35" ng-model="movie.fourteen"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o14">
+                                    <span>
+                                        <span class="font-700">21:50 hs.</span>
+                                        <span class="label-grey red">Pocos lugares</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o15" value="36" ng-model="movie.fifteen"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o15">
+                                    <span>
+                                        <span class="font-700">22:30 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o16" value="37" ng-model="movie.sixteen"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o16">
+                                    <span>
+                                        <span class="font-700">23:00 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <!-- carousel -->
+                    <p class="label-grey mb-0 mt-2">3D Subtitulada</p>
+                    <div class="date-container">
+                        <fieldset>
+                            <ul class="date-radio">
+                                <li>
+                                    <input type="checkbox" id="o17" value="38" ng-model="movie.seventeen"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o17">
+                                   <span>
+                                        <span class="font-700">20:00 hs.</span>
+                                    </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="o18" value="39" ng-model="movie.eighteen"
+                                           class="available" ng-click="movieCount()">
+                                    <label for="o18">
+                                    <span>
+                                        <span class="font-700">23:30 hs.</span>
+                                        <span class="label-grey red">Pocos lugares</span>
+                                    </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </div>
+                <hr>
+            </section>
+        
+            <div class="btn-sticky">
+                <!-- COLLAPSED DETAILS -->
+                <div class="details" ng-if="movieSelected > 0">
+                    <md-button class="text-notransform detail-header btn-block p-0 m-0" type="button"
+                               data-target="#details" data-toggle="collapse">
+                        <div class="">
+                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                <div class="col-2">
+                                    <div class="circle">{{movieSelected}}</div>
+                                </div>
+                                <div class="col-8 pl-0 text-left">
+                                    <h4 class="mb-0">
+                                        <ng-pluralize count="movieSelected"
+                                                      when="{'1': 'Función seleccionada',
+                                                      'other': 'Funciones seleccionadas'}">
+                                        </ng-pluralize>
+                                    </h4>
+                                </div>
+                                <div class="col-2">
+                                    <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;"
+                                         alt="cerrar">
+                                    <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;"
+                                         alt="ver más">
+                                </div>
+                            </div>
+                        </div>
+                    </md-button>
+                    <div class="collapse" id="details">
+                        <div class="detail-content">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/images/movies/img_joker.jpeg" alt="" width="100%">
+                                </div>
+                                <div class="col-7">
+                                    <p class="movie">The Joker</p>
+                                    <p>21 Nov 20:00 hs. - 2D SUB</p>
+                                    <p>Showcase Belgrano</p>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-icon"><img src="assets/images/delet.svg"
+                                                                                    style="width: 100%;" alt="eliminar">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-content">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/images/movies/img_joker.jpeg" alt="" width="100%">
+                                </div>
+                                <div class="col-7">
+                                    <p class="movie">The Joker</p>
+                                    <p>21 Nov 22:00 hs. - 2D SUB</p>
+                                    <p>Showcase Belgrano</p>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-icon"><img src="assets/images/delet.svg"
+                                                                                    style="width: 100%;" alt="eliminar">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0"
+                           ng-disabled="movieSelected < 1" ng-click="stepMoviesNext()">
+                    Continuar
+                </md-button>
+            </div>
+        </form>
+    </div>
+</main>

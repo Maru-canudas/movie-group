@@ -9,6 +9,10 @@ angular.
           title: 'Home - Movie Group',
           templateUrl: 'groups/home.html'
         }).
+        when('/2', {
+            title: 'Home - Movie Group',
+            templateUrl: 'poll/movies_2.html'
+        }).
         when('/login', {
           title: 'Login - Movie Group',
           templateUrl: 'login/login.html'
