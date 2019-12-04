@@ -402,6 +402,9 @@ md-list {
 md-list md-list-item p {
     line-height: 16px;
 }
+.contactListItem{
+    width: 100% !important;
+}
 .contactListItem .md-secondary-container{
     width: 100% !important;
     display: block !important;
