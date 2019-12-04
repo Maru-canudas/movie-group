@@ -51,7 +51,7 @@
                         <h3>Snacks</h3>
                     </div>
                     <div class="col text-right">
-                        <p class="m-0"> $400.00</p>
+                        <p class="m-0"><span aria-hidden="true">$400.00</span><span class="sr-only">400,00 pesos</span></p>
                     </div>
                 </div>
                 <p class="m-0 resume"><span class="font-700">4</span> Gaseosas 500 ml.</p>
@@ -63,16 +63,18 @@
                 <md-radio-group ng-model="card">
                     <md-list class="pb-0">
                         <md-list-item class="noright">
-                            <img alt="visa" src="assets/images/visa.svg" class="md-avatar"/>
-                            <label for="santander">Santander ….5464</label>
-                            <md-radio-button class="md-secondary" value="visa" id="santander" ng-model="card.selectedVisa"></md-radio-button>
+                            <md-radio-button class="" value="visa" id="santander" ng-model="card.selectedVisa">
+                                <img alt="visa" src="assets/images/visa.svg" class="md-avatar"/>
+                                <label for="santander">Santander ….5464</label>
+                            </md-radio-button>
                         </md-list-item>
                     </md-list>
                     <md-list class="pb-0">
                         <md-list-item class="noright">
-                            <img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/>
-                            <label for="galicia">Galicia ….5464</label>
-                            <md-radio-button class="md-secondary" value="master" id="galicia" ng-model="card.selectedMaster"></md-radio-button>
+                            <md-radio-button class="" value="master" id="galicia" ng-model="card.selectedMaster">
+                                <img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/>
+                                <label for="galicia">Galicia ….5464</label>
+                            </md-radio-button>
                         </md-list-item>
                     </md-list>
                 </md-radio-group>

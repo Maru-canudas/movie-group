@@ -895,6 +895,7 @@ p.resume {
     margin: 0;
 }
 
+
 /* MATERIAL */
 md-input-container.md-input-custom:not(.md-input-invalid).md-input-focused .md-input,
 md-select:not([disabled]):focus .md-select-value {
