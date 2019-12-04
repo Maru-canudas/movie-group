@@ -13,7 +13,7 @@
         <div class="row justify-content-center">
             <div class="col-10">
                 <form name="loginForm" ng-submit="loginNext()">
-
+ 
                     <md-input-container class="md-block md-input-custom mb-4" flex-gt-sm>
                         <label for="usr">Usuario</label>
                         <input id="usr" name="usr" type="text" required ng-model="name.usr">
@@ -28,8 +28,10 @@
                     <md-input-container class="md-block md-input-custom mt-4" flex-gt-sm>
                         <label for="pwd">Contraseña</label>
                         <input id="pwd" name="pwd" type="password" required ng-model="name.pwd">
-                        <md-icon style="display:inline-block;">
-                            <button type="button" class="btn btn-icon"><img src="assets/images/eye.svg" alt="mostrar contraseña"></button>
+                        <md-icon style="display:inline-block;"  role="img" aria-label="Mostrar contraseña">
+                            <button type="button" class="btn btn-icon">
+                                <img src="assets/images/eye.svg" alt="mostrar contraseña" style="width: 100%">
+                            </button>
                         </md-icon>
 
                         <div ng-messages="loginForm.pwd.$error">
