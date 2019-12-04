@@ -77,7 +77,7 @@ app.controller('appController', ['$scope', '$element',
             window.location.href = '#!/movies/results';
         };
         $scope.homeTicketNext = function (){
-            window.location.href = '#!/ticket';
+            window.location.href = '#!/show-ticket';
         };
         $scope.newPollNext = function (){
             window.location.href = '#!/group-select';

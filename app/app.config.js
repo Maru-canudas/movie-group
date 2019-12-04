@@ -81,6 +81,10 @@ angular.
           title: 'Entradas - Movie Group',
           templateUrl: 'checkout/ticket.html'
         }).
+        when('/show-ticket', {
+            title: 'Entradas - Movie Group',
+            templateUrl: 'checkout/showTicket.html'
+        }).
         when('/select-group', {
           title: 'Crear votación - Movie Group',
           templateUrl: 'poll/groupSelection.html'
