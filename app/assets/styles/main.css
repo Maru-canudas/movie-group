@@ -402,6 +402,17 @@ md-list {
 md-list md-list-item p {
     line-height: 16px;
 }
+.contactListItem .md-secondary-container{
+    width: 100% !important;
+    display: block !important;
+}
+.contactListItem .md-label img{
+    float: left;
+}
+.contactListItem .md-label p{
+    padding-top: 10px;
+    float: left;
+}
 
 /* NAVEGACION */
 .app-navbar .navbar-nav {
