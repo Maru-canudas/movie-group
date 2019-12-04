@@ -5,6 +5,9 @@
     outline-style:auto !important;
     outline-width:5px !important;
 }
+.btn-custom-primary{
+    font-size: 18px !important;
+}
 body, html {
     font-family: 'Lato', sans-serif !important;
     text-rendering: optimizeLegibility !important;
@@ -53,7 +56,7 @@ a {
     color: #ABAAEA;
 }
 .green {
-    color: #00A696;
+    color: #037c70;
 }
 .light-green {
     color: #8CD7D0;
@@ -76,7 +79,7 @@ a {
 }
 .btn-custom-primary {
     color: #FFFFFF !important;
-    background: #00A696 !important;
+    background: #037c70 !important;
     font-weight: 700 !important;
 }
 .btn-custom-primary:disabled {
@@ -114,7 +117,7 @@ a {
     width: 100%;
 }
 .progress-step.active {
-    background: #00A696;
+    background: #037c70;
 }
 .display-day{
     display: flex !important;
@@ -881,7 +884,7 @@ ul.seat-status li{
 }
 .ticket-content .col p .discount {
     text-decoration: line-through;
-    color: #A09FA2;
+    color: #757575;
     font-weight: 400;
 }
 p.resume {
@@ -942,7 +945,7 @@ md-radio-button{
 /* MATERIAL */
 md-input-container.md-input-custom:not(.md-input-invalid).md-input-focused .md-input,
 md-select:not([disabled]):focus .md-select-value {
-    border-color: #00A696;
+    border-color: #037c70;
 }
 md-progress-linear.md-default-theme .md-bar, md-progress-linear .md-bar {
     background-color: rgb(0, 166, 150);
