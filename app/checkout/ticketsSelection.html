@@ -24,7 +24,7 @@
                     <md-button class="text-notransform btn-block m-0 p-0 promo" type="button" data-target="#promo" data-toggle="collapse">
                         <div class="promo-div">
                             <div class="col-10 pl-0">
-                                <h3 class="mb-0 text-left">Promociones 2x1</h3>
+                                <h2 class="mb-0 text-left">Promociones 2x1</h2>
                             </div>
                             <div class="col-2 pr-0">
                                 <img class="carret-down text-right" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
@@ -99,7 +99,7 @@
                         <md-button class="text-notransform btn-block m-0 p-0 general" type="button" data-target="#general" data-toggle="collapse">
                             <div class="promo-div">
                                 <div class="col-10 pl-0">
-                                    <h3 class="mb-0 text-left">Generales</h3>
+                                    <h2 class="mb-0 text-left">Generales</h2>
                                 </div>
                                 <div class="col-2 pr-0">
                                     <img class="carret-down text-right" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
@@ -174,7 +174,7 @@
                     <md-button class="text-notransform btn-block m-0 p-0 general" type="button" data-target="#codigo" data-toggle="collapse">
                         <div class="promo-div">
                             <div class="col-10 pl-0">
-                                <h3 class="mb-0 text-left">Código de descuento</h3>
+                                <h2 class="mb-0 text-left">Código de descuento</h2>
                             </div>
                             <div class="col-2 pr-0">
                                 <img class="carret-down text-right" src="assets/images/carret-down.svg" style="width: 15px;" alt="ver más">
@@ -203,12 +203,12 @@
                                     <div class="circle">{{count + count1 + count2}}</div>
                                 </div>
                                 <div class="col-4 pl-0 text-left">
-                                    <h4 class="mb-0">
+                                    <p class="mb-0 selection">
                                         <ng-pluralize count="count + count1 + count2"
                                                       when="{'1': 'Entrada',
                                                   'other': 'Entradas'}">
                                         </ng-pluralize>
-                                    </h4>
+                                    </p>
                                 </div>
                                 <div class="col-4 pr-0 text-right">
                                     <h4 class="mb-0"> ${{(count + count1 + count2)*320}},00</h4>

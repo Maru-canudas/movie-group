@@ -49,13 +49,13 @@
                         <ul class="date-radio">
                             <li>
                                 <input type="radio" id="op1" value="today" name="day" ng-model="day.nov" aria-label="Hoy, 25 Nov">
-                                <label for="op1">
+                                <label for="op1"  aria-hidden="true">
                                     <span><b>Hoy</b><span class="label-grey">25 Nov</span> </span>
                                 </label>
                             </li>
                             <li>
-                                <input type="radio" value="mañana" name="day" ng-model="day.nov" aria-label="Mañana, 26 Nov">
-                                <label>
+                                <input type="radio" id="op2" value="mañana" name="day" ng-model="day.nov" aria-label="Mañana, 26 Nov">
+                                <label for="op2" aria-hidden="true">
                                     <span><b>Mañana</b> <span class="label-grey">26 Nov</span></span>
                                 </label>
                             </li>
@@ -66,26 +66,26 @@
                                 </label>
                             </li>
                             <li>
-                                <input type="radio" id="op4" value="jueves" name="day" ng-model="day.nov">
-                                <label for="op4">
+                                <input type="radio" id="op4" value="jueves" name="day" ng-model="day.nov" aria-label="Jueves, 28 Nov">
+                                <label for="op4"  aria-hidden="true">
                                     <span><span class="label-grey">Jueves</span> <b>28 Nov</b></span>
                                 </label>
                             </li>
                             <li>
-                                <input type="radio" id="op5" value="viernes" name="day" ng-model="day.nov">
-                                <label for="op5">
+                                <input type="radio" id="op5" value="viernes" name="day" ng-model="day.nov" aria-label="Viernes, 29 Nov">
+                                <label for="op5"  aria-hidden="true">
                                     <span><span class="label-grey">Viernes</span> <b>29 Nov</b></span>
                                 </label>
                             </li>
                             <li>
-                                <input type="radio" id="op6" value="sabado" name="day" ng-model="day.nov">
-                                <label for="op6">
+                                <input type="radio" id="op6" value="sabado" name="day" ng-model="day.nov" aria-label="Sábado, 30 Nov">
+                                <label for="op6"  aria-hidden="true">
                                     <span><span class="label-grey">Sábado</span> <b>30 Nov</b></span>
                                 </label>
                             </li>
                             <li>
-                                <input type="radio" id="op7" value="domingo" name="day" ng-model="day.nov">
-                                <label for="op7">
+                                <input type="radio" id="op7" value="domingo" name="day" ng-model="day.nov" aria-label="Domingo, 01 Dic">
+                                <label for="op7"  aria-hidden="true">
                                     <span><span class="label-grey">Domingo</span> <b>01 Dic</b></span>
                                 </label>
                             </li>
@@ -380,12 +380,12 @@
                                     <div class="circle">{{movieSelected}}</div>
                                 </div>
                                 <div class="col-8 pl-0 text-left">
-                                    <h4 class="mb-0">
+                                    <p class="mb-0 selection">
                                         <ng-pluralize count="movieSelected"
                                                       when="{'1': 'Función seleccionada',
                                                       'other': 'Funciones seleccionadas'}">
                                         </ng-pluralize>
-                                    </h4>
+                                    </p>
                                 </div>
                                 <div class="col-2">
                                     <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;"

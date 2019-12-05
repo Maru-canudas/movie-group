@@ -5,9 +5,6 @@
     outline-style:auto !important;
     outline-width:5px !important;
 }
-.btn-custom-primary{
-    font-size: 18px !important;
-}
 body, html {
     font-family: 'Lato', sans-serif !important;
     text-rendering: optimizeLegibility !important;
@@ -76,6 +73,9 @@ a {
     left: 0;
     right: 0;
     border-radius: 0 !important;
+}
+.btn-custom-primary, .btn-custom-secondary {
+    font-size: 18px !important;
 }
 .btn-custom-primary {
     color: #FFFFFF !important;
@@ -338,7 +338,7 @@ ul.date-radio li input[type="checkbox"]:checked + label span span.red {
     z-index: 12;
     box-shadow: 0 -2px 4px #E5E5EA;
 }
-.details h4 {
+.details .selection {
     font-size: 18px !important;
     padding-top: 3px;
 }
