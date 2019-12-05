@@ -43,9 +43,10 @@
         <form>
             <!-- DIA -->
             <section class="movies pt-0">
+                <h2>¿Cuándo quieren ir al cine?</h2>
                 <div class="date-container">
                     <fieldset>
-                        <legend>¿Cuándo quieren ir al cine?</legend>
+                        <legend class="sr-only">Elegí el día</legend>
                         <ul class="date-radio">
                             <li>
                                 <input type="radio" id="op1" value="today" name="day" ng-model="day.nov" aria-label="Hoy, 25 Nov">
@@ -96,10 +97,11 @@
         
             <!-- PELICULA -->
             <section class="movies pt-0">
+                <h2>¿Qué les gustaría ver?</h2>
                 <!-- carousel -->
                 <div class="movies-radio">
                     <fieldset>
-                        <legend>¿Qué les gustaría ver?</legend>
+                        <legend class="sr-only">Elegí película</legend>
                         <ul class="movies-radio">
                             <li class="movie1">
                                 <input type="radio" id="movie1" value="Malefica" name="movie" ng-model="movie.num">
@@ -142,9 +144,9 @@
                 <div>
                     <h3 class="mb-3">Showcase Belgrano</h3>
                     <!-- carousel -->
-                    <p class="label-grey mb-0">2D Subtitulada</p>
                     <div class="date-container">
                         <fieldset>
+                            <legend class="label-grey mb-0">2D Subtitulada</legend>
                             <ul class="date-radio">
                                 <li>
                                     <input type="checkbox" class="available" id="o1" value="22" ng-model="movie.one"
