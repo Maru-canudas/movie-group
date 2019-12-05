@@ -314,7 +314,7 @@ ul.date-radio li input[type="checkbox"]:checked + label span span.red {
 
 
 /* MOVIES */
-.date-container {
+.date-container, .movies-radio {
     white-space: nowrap;
     overflow: hidden;
     position: relative;
@@ -322,12 +322,6 @@ ul.date-radio li input[type="checkbox"]:checked + label span span.red {
 }
 .label-grey {
     font-size: 12px;
-}
-.movies-radio {
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    overflow-x: auto;
 }
 .movie-elipsis {
     display: -webkit-box !important;
@@ -476,8 +470,14 @@ md-list md-list-item p {
     padding: 15px;
     box-shadow: 0 0 4px 2px #e5e5e5;
     border-radius: 5px;
-    margin: 10px 20px 10px 0;
+    margin: 10px 0px 10px 15px;
+    display: inline-block;
+    width: 80%;
 }
+.tickets .feed-card {
+    width: 60%;
+}
+
 .vote-carousel.owl-carousel .owl-stage, .tickets-carousel.owl-carousel .owl-stage {
     padding-left: 15px !important;
 }
@@ -505,10 +505,7 @@ md-list md-list-item p {
     background: url("../images/ticket-bg.svg") center center no-repeat;
     background-size: contain;
 }
-a.feed {
-    color:#4a4a4a !important;
-    text-decoration: none !important;
-}
+
 
 /* RESULTADOS */
 .win-movie img {

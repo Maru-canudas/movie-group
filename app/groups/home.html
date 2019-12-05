@@ -31,98 +31,89 @@
         <!-- VOTACIONES -->
         <section class="vote mt-3">
             <h2>Mis votaciones en curso</h2>
-            <div class="row mt-2">
-                <div class="owl-carousel vote-carousel owl-theme">
-                    <div class="item">
-                        <div class="feed" ng-click="homeResultNext()" role="link">
-                            <div class="feed-card">
-                                <div class="detail-content">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <img src="assets/images/movies/img_joker.jpeg" alt="" width="100%">
-                                        </div>
-                                        <div class="col-7 pl-0">
-                                            <p class="movie">The Joker</p>
-                                            <p>Enviada a: <span class="font-700">Amigos</span></p>
-                                            <p>3 contactos</p>
-                                        </div>
-                                        <div class="col-2 pl-0">
-                                            <button type="button" class="btn btn-icon" ng-click="$event.stopPropagation();"><img
-                                                    src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
-                                            </button>
-                                        </div>
-                                    </div>
+            <div class="row">
+                <div class="mt-2 date-container">
+                    <div class="feed-card" ng-click="homeResultNext()" role="link">
+                        <div class="detail-content">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/images/movies/img_joker.jpeg" alt="" width="100%">
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="label-grey mb-2"><img src="assets/images/time.svg" alt=""
-                                                                        style="width: 20px;" class="float-left mr-2">
-                                            Tiempo restante: 0:05</p>
-                                        <md-progress-linear md-mode="determinate" value="85"></md-progress-linear>
-                                    </div>
+                                <div class="col-7 pl-0">
+                                    <p class="movie">The Joker</p>
+                                    <p>Enviada a: <span class="font-700">Amigos</span></p>
+                                    <p>3 contactos</p>
+                                </div>
+                                <div class="col-2 pl-0">
+                                    <button type="button" class="btn btn-icon" ng-click="$event.stopPropagation();">
+                                        <img
+                                                src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="feed" ng-click="homeResultNext()" role="button">
-                            <div class="feed-card">
-                                <div class="detail-content">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <img src="assets/images/movies/img_malefica.jpeg" alt="" width="100%">
-                                        </div>
-                                        <div class="col-7 pl-0">
-                                            <p class="movie">Maléfica</p>
-                                            <p>Enviada a: <span class="font-700">Facultad</span></p>
-                                            <p>5 contactos</p>
-                                        </div>
-                                        <div class="col-2">
-                                            <button type="button" class="btn btn-icon"><img
-                                                    src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="label-grey mb-2"><img src="assets/images/time.svg" alt=""
-                                                                        style="width: 20px;" class="float-left mr-2">
-                                            Tiempo restante: 10:05</p>
-                                        <md-progress-linear md-mode="determinate" value="65"></md-progress-linear>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="label-grey mb-2"><img src="assets/images/time.svg" alt=""
+                                                                style="width: 20px;" class="float-left mr-2">
+                                    Tiempo restante: 0:05</p>
+                                <md-progress-linear md-mode="determinate" value="85"></md-progress-linear>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="feed" ng-click="homeResultNext()" role="button">
-                            <div class="feed-card">
-                                <div class="detail-content">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <img src="assets/images/movies/img_gemini.jpeg" alt="" width="100%">
-                                        </div>
-                                        <div class="col-7 pl-0">
-                                            <p class="movie">Proyecto Géminis</p>
-                                            <p>Enviada a: <span class="font-700">Amigos</span></p>
-                                            <p>3 contactos</p>
-                                        </div>
-                                        <div class="col-2 pl-0">
-                                            <button type="button" class="btn btn-icon"><img
-                                                    src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
-                                            </button>
-                                        </div>
-                                    </div>
+            
+                    <div class="feed-card" ng-click="homeResultNext()" role="button">
+                        <div class="detail-content">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/images/movies/img_malefica.jpeg" alt="" width="100%">
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="label-grey mb-2"><img src="assets/images/time.svg" alt=""
-                                                                        style="width: 20px;" class="float-left mr-2">
-                                            Votación finalizada</p>
-                                        <md-progress-linear md-mode="determinate" value="100"></md-progress-linear>
-                                    </div>
+                                <div class="col-7 pl-0">
+                                    <p class="movie">Maléfica</p>
+                                    <p>Enviada a: <span class="font-700">Facultad</span></p>
+                                    <p>5 contactos</p>
                                 </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-icon"><img
+                                            src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="label-grey mb-2"><img src="assets/images/time.svg" alt=""
+                                                                style="width: 20px;" class="float-left mr-2">
+                                    Tiempo restante: 10:05</p>
+                                <md-progress-linear md-mode="determinate" value="65"></md-progress-linear>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="feed-card" ng-click="homeResultNext()" role="button">
+                        <div class="detail-content">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/images/movies/img_gemini.jpeg" alt="" width="100%">
+                                </div>
+                                <div class="col-7 pl-0">
+                                    <p class="movie">Proyecto Géminis</p>
+                                    <p>Enviada a: <span class="font-700">Amigos</span></p>
+                                    <p>3 contactos</p>
+                                </div>
+                                <div class="col-2 pl-0">
+                                    <button type="button" class="btn btn-icon"><img
+                                            src="assets/images/delet.svg" style="width: 100%;" alt="eliminar">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="label-grey mb-2"><img src="assets/images/time.svg" alt=""
+                                                                style="width: 20px;" class="float-left mr-2">
+                                    Votación finalizada</p>
+                                <md-progress-linear md-mode="determinate" value="100"></md-progress-linear>
                             </div>
                         </div>
                     </div>
@@ -132,40 +123,36 @@
         <!-- Entradas -->
         <section class="tickets pt-0">
             <h2>Mis entradas</h2>
-            <div class="row mt-2">
-                <div class="owl-carousel tickets-carousel owl-theme">
-                    <div class="item" ng-click="homeTicketNext()" role="button">
-                        <div class="feed-card">
-                            <div class="tickets-content">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <div class="ticket-number">
-                                            4 <span class="sr-only">entradas</span>
-                                        </div>
+            <div class="row">
+                <div class="mt-2 date-container tickets">
+                    <div class="feed-card" ng-click="homeTicketNext()" role="button">
+                        <div class="tickets-content">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="ticket-number">
+                                        4 <span class="sr-only">entradas</span>
                                     </div>
-                                    <div class="col-9 pl-0">
-                                        <p class="movie">The Joker</p>
-                                        <p>26 Nov - 22:00 hs.</p>
-                                        <p>Showcase Belgrano </p>
-                                    </div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <p class="movie">The Joker</p>
+                                    <p>26 Nov - 22:00 hs.</p>
+                                    <p>Showcase Belgrano </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item" ng-click="homeTicketNext()" role="button">
-                        <div class="feed-card">
-                            <div class="tickets-content">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <div class="ticket-number">
-                                            6 <span class="sr-only">entradas</span>
-                                        </div>
+                    <div class="feed-card"  ng-click="homeTicketNext()" role="button">
+                        <div class="tickets-content" >
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="ticket-number">
+                                        6 <span class="sr-only">entradas</span>
                                     </div>
-                                    <div class="col-9 pl-0">
-                                        <p class="movie">Proyecto géminis</p>
-                                        <p>21 Nov - 23:00 hs.</p>
-                                        <p>Multiplex Belgrano </p>
-                                    </div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <p class="movie">Proyecto géminis</p>
+                                    <p>21 Nov - 23:00 hs.</p>
+                                    <p>Multiplex Belgrano </p>
                                 </div>
                             </div>
                         </div>
