@@ -314,6 +314,9 @@ ul.date-radio li input[type="checkbox"]:checked + label span span.red {
 
 
 /* MOVIES */
+.filter-btn{
+    display: flex !important;
+}
 .date-container, .movies-radio {
     white-space: nowrap;
     overflow: hidden;
@@ -907,6 +910,9 @@ p.resume {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+}
+.new-card{
+    font-size: 16px !important;
 }
 
 /* ENTRADA */
