@@ -15,84 +15,82 @@
 </header>
 <main class="mt-5 pt-2">
     <div class="container-fluid">
-        <form>
-            <section>
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <p class="text-center">Presentá este código QR en el ATM o acercate  a la boletería para canjear tus entradas.</p>
-                    </div>
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <p class="text-center">Presentá este código QR en el ATM o acercate  a la boletería para canjear tus entradas.</p>
                 </div>
-                <div class="ticket mt-1">
-                    <div class="row">
-                        <div class="col">
-                            <div class="ticket-header">
-                                <div class="row align-items-center">
-                                    <div class="col-5">
-                                        <img src="assets/images/Bitmap.png" alt="qr" style="width: 100%;">
-                                    </div>
-                                    <div class="col-7">
-                                        <p class="label-grey m-0">Código</p>
-                                        <p class="font-700">
-                                            <span aria-hidden="true">XLSOTH</span>
-                                            <span class="sr-only">X L S O T H</span>
-                                        </p>
-                                        <p class="label-grey m-0">Película</p>
-                                        <p class="m-0 font-700">The Joker</p>
-                                    </div>
+            </div>
+            <div class="ticket mt-1">
+                <div class="row">
+                    <div class="col">
+                        <div class="ticket-header">
+                            <div class="row align-items-center">
+                                <div class="col-5">
+                                    <img src="assets/images/Bitmap.png" alt="qr" style="width: 100%;">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <img src="assets/images/crop.png" alt="" style="width: 100%">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="ticket-footer">
-                                <p class="label-grey m-0">Cine</p>
-                                <p class="violet">Multiplex Belgrano</p>
-                                <p class="label-grey m-0">Asiento</p>
-                                <p class="violet">4C, 5C, 6C, 7C</p>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <p class="label-grey m-0">Fecha</p>
-                                        <p class="violet">22 Nov</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <p class="label-grey m-0">Comienza</p>
-                                        <p class="violet">22:00 hs.</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <p class="label-grey m-0">Duración</p>
-                                        <p class="violet">2h 2min</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <p class="label-grey m-0">Formato</p>
-                                        <p class="violet m-0">2D</p>
-                                    </div>
-                                    <div class="col-4">
-                                        <p class="label-grey m-0">Idioma</p>
-                                        <p class="violet m-0">SUB</p>
-                                    </div>
+                                <div class="col-7">
+                                    <p class="label-grey m-0">Código</p>
+                                    <p class="font-700">
+                                        <span aria-hidden="true">XLSOTH</span>
+                                        <span class="sr-only">X L S O T H</span>
+                                    </p>
+                                    <p class="label-grey m-0">Película</p>
+                                    <p class="m-0 font-700">The Joker</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="btn-sticky">
-                <div class="text-center" style="background-color: white;">
-                    <md-button class="md-primary font-700 violet">
-                        Compartir entradas
-                    </md-button>
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/images/crop.png" alt="" style="width: 100%">
+                    </div>
                 </div>
-                
-                <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="stepTicketNext()">
-                    Finalizar
+                <div class="row">
+                    <div class="col">
+                        <div class="ticket-footer">
+                            <p class="label-grey m-0">Cine</p>
+                            <p class="violet">Multiplex Belgrano</p>
+                            <p class="label-grey m-0">Asiento</p>
+                            <p class="violet">4C, 5C, 6C, 7C</p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <p class="label-grey m-0">Fecha</p>
+                                    <p class="violet">22 Nov</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="label-grey m-0">Comienza</p>
+                                    <p class="violet">22:00 hs.</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="label-grey m-0">Duración</p>
+                                    <p class="violet">2h 2min</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="label-grey m-0">Formato</p>
+                                    <p class="violet m-0">2D</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="label-grey m-0">Idioma</p>
+                                    <p class="violet m-0">SUB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="btn-sticky">
+            <div class="text-center" style="background-color: white;">
+                <md-button class="md-primary font-700 violet">
+                    Compartir entradas
                 </md-button>
             </div>
-        </form>
+
+            <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" ng-click="stepTicketNext()">
+                Finalizar
+            </md-button>
+        </div>
     </div>
 </main>
