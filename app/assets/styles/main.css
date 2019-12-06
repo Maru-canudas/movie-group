@@ -538,10 +538,13 @@ md-list md-list-item p {
     background-repeat: no-repeat;
     background-position: top center;
     width: 70%;
-    height: 440px;
-    padding: 360px 15px 10px;
+    height: 430px;
+    padding: 340px 10px 10px;
     text-align: left;
     margin-bottom: 0;
+}
+.movie-carousel label li{
+    padding: 0 20px;
 }
 .win-movie label{
     background-image: url(../images/movies/img_joker.jpeg);
@@ -555,13 +558,13 @@ md-list md-list-item p {
     color: #FFFFFF;
     font-weight: 700;
     border-radius: 5px;
-    width: 40%;
+    width: 50%;
     padding: 5px;
     margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
-    top: 320px;
+    top: 305px;
     text-align: center;
     font-size: 14px;
 }

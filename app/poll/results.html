@@ -29,8 +29,8 @@
                     <!-- carousel -->
                     <div class="movie-carousel">
                         <fieldset>
-                            <ul class="movie-carousel" style="padding:0 65px;">
-                                <li class="item">
+                            <ul class="movie-carousel" style="padding:0 60px;">
+                                <li class="item" style="padding:0 20px;">
                                     <h2 class="mb-3">La función ganadora es</h2>
                                     <div class="win-movie">
                                         <input type="radio" id="movieWin" value="joker" name="movie" ng-model="movieRadio.win">
@@ -64,26 +64,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="date-container">
-            <fieldset>
-                <legend class="sr-only">Elegí el día</legend>
-                <ul class="date-radio">
-                    <li>
-                        <input type="radio" id="op1" value="today" name="day" ng-model="day.nov" aria-label="Hoy, 25 Nov">
-                        <label for="op1"  aria-hidden="true">
-                            <span><b>Hoy</b><span class="label-grey">25 Nov</span> </span>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="op2" value="mañana" name="day" ng-model="day.nov" aria-label="Mañana, 26 Nov">
-                        <label for="op2" aria-hidden="true">
-                            <span><b>Mañana</b> <span class="label-grey">26 Nov</span></span>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-        </div>
 
         <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" type="submit" ng-click="stepResultNext()">
             Comprar entradas
