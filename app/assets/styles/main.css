@@ -442,37 +442,58 @@ md-list md-list-item p {
     box-shadow: 0 -2px 4px 1px #e5e5ea;
     background: #f5f5f5;
 }
+.navbar-nav .nav-link {
+    padding-top: 30px;
+    font-size: 14px;
+}
 .nav-link.home {
-    width: 36px;
+    width: 60px;
     height: 50px;
-    background: url("../images/ticket.svg") no-repeat center center;
+    background: url("../images/ticket.svg") no-repeat top center;
+    background-size: 30px;
+    text-align: center;
+    color: #4a4a4a !important;
 }
 .nav-link.home.active, .nav-link.home:hover {
-    background: url("../images/ticket-active.svg") no-repeat center center;
+    background: url("../images/ticket-active.svg") no-repeat top center;
+    background-size: 30px;
+    color: #4A00BD !important;
 }
 .nav-link.group {
-    width: 36px;
+    width: 60px;
     height: 50px;
-    background: url("../images/group.svg") no-repeat center center;
+    background: url("../images/group.svg") no-repeat top center;
+    background-size: 30px;
+    text-align: center;
+    color: #4a4a4a !important;
 }
 .nav-link.group.active, .nav-link.group:hover {
-    background: url("../images/group-active.svg") no-repeat center center;
+    background: url("../images/group-active.svg") no-repeat top center;
+    background-size: 30px;
 }
 .nav-link.billboard {
-    width: 36px;
+    width: 60px;
     height: 50px;
-    background: url("../images/movies.svg") no-repeat center center;
+    background: url("../images/movies.svg") no-repeat top center;
+    background-size: 30px;
+    text-align: center;
+    color: #4a4a4a !important;
 }
 .nav-link.billboard.active, .nav-link.billboard:hover {
-    background: url("../images/movies-active.svg") no-repeat center center;
+    background: url("../images/movies-active.svg") no-repeat top center;
+    background-size: 30px;
 }
 .nav-link.account {
-    width: 36px;
+    width: 60px;
     height: 50px;
-    background: url("../images/config.svg") no-repeat center center;
+    background: url("../images/config.svg") no-repeat top center;
+    background-size: 30px;
+    text-align: center;
+    color: #4a4a4a !important;
 }
 .nav-link.account.active, .nav-link.account:hover {
-    background: url("../images/config-active.svg") no-repeat center center;
+    background: url("../images/config-active.svg") no-repeat top center;
+    background-size: 30px;
 }
 
 
