@@ -22,7 +22,7 @@
                     <div class="mt-5">
                         <md-input-container class="md-block md-input-custom mb-5" flex-gt-sm>
                             <label>Ciudad</label>
-                            <md-select ng-model="user.city">
+                            <md-select ng-model="user.city" required>
                                 <md-option ng-repeat="city in cities" ng-value="city">
                                     {{city}}
                                 </md-option>
@@ -33,7 +33,8 @@
                             <md-select ng-model="user.town"
                                        md-on-close="clearSearchTerm()"
                                        data-md-container-class="selectdemoSelectHeader"
-                                       multiple="">
+                                       multiple=""
+                                       required>
                                 <md-select-header class="demo-select-header">
                                     <input ng-model="searchTerm"
                                            type="search"

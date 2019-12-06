@@ -59,24 +59,24 @@
             </div>
         </section>
         <form>
-            <h3 class="mt-4">¿Cuánto va a durar la votación?</h3>
             <div class="time-checks">
                 <fieldset>
+                    <legend class="h3"><b>¿Cuánto va a durar la votación?</b></legend>
                     <ul class="time-checks">
                         <li class="day">
-                            <input type="radio" id="hour1" value="1hour" name="optradio" ng-model="timeValue">
+                            <input type="radio" id="hour1" value="1hour" name="optradio" ng-model="timeValue" required>
                             <label for="hour1">
                                 <span>1 hora</span>
                             </label>
                         </li>
                         <li class="set">
-                            <input type="radio" id="hour2" value="6hour" name="optradio" ng-model="timeValue">
+                            <input type="radio" id="hour2" value="6hour" name="optradio" ng-model="timeValue" required>
                             <label for="hour2">
                                 <span>6 horas</span>
                             </label>
                         </li>
                         <li class="night">
-                            <input type="radio" id="hour3" value="12hour" name="optradio" ng-model="timeValue">
+                            <input type="radio" id="hour3" value="12hour" name="optradio" ng-model="timeValue" required>
                             <label for="hour3">
                                 <span>12 horas</span>
                             </label>

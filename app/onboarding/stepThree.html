@@ -21,7 +21,7 @@
                     <div class="mt-5">
                         <md-input-container class="md-block md-input-custom" flex-gt-sm>
                             <label for="group">Nombre del grupo</label>
-                            <input id="group" type="text" placeholder="Amigos" ng-model="groupName">
+                            <input id="group" type="text" placeholder="Amigos" ng-model="groupName" required>
                         </md-input-container>
                     </div>
                     <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" type="submit" ng-click="step3Next()"ng-disabled="!groupName" || groupName = ''>
