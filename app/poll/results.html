@@ -8,7 +8,9 @@
             </div>
             <div class="col-8"><h1 class="m-0">Votación</h1></div>
             <div class="col-2">
-            
+                <button class="btn btn-icon" ng-click="stepTicketNext()">
+                    <img src="assets/images/close.svg" style="width: 100%;" alt="cerrar">
+                </button>
             </div>
         </div>
     </div>
@@ -18,48 +20,71 @@
         <section class="text-center">
             <div class="row mb-2 justify-content-center">
                 <div class="col-7">
-                    <p><img src="assets/images/time.svg" alt=""
+                    <p class="mb-2"><img src="assets/images/time.svg" alt=""
                             style="width: 20px;" class="float-left mr-2"> Tiempo restante: <strong>0:05</strong></p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 p-0">
                     <!-- carousel -->
-                    <div class="owl-carousel owl-theme movie-carousel">
+                    <div class="movie-carousel">
                         <fieldset>
-                            <div class="item">
-                                <h2 class="mb-3">La función ganadora es</h2>
-                                <div class="win-movie">
-                                    <input type="radio" id="movieWin" value="joker" name="movie" ng-model="movieRadio.win">
-                                    <label for="movieWin" class="text-center">
-                                        <b>The Joker</b><br>
-                                        <span>26 Nov 20:00 hs. - 2D SUB
-                                        Showcase Belgrano</span>
-                                    </label>
-                                    <div class="vote-number">
-                                        <p class="m-0">75% (3 votos)</p>
+                            <ul class="movie-carousel" style="padding:0 65px;">
+                                <li class="item">
+                                    <h2 class="mb-3">La función ganadora es</h2>
+                                    <div class="win-movie">
+                                        <input type="radio" id="movieWin" value="joker" name="movie" ng-model="movieRadio.win">
+                                        <label for="movieWin" class="text-center">
+                                            <b>The Joker</b><br>
+                                            <span>26 Nov - 20:00 hs. - 2D SUB<br>
+                                            Showcase Belgrano</span>
+                                        </label>
+                                        <div class="vote-number">
+                                            <p class="m-0">66% (2 votos)</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <h2 class="mb-3">Segunda opción</h2>
-                                <div class="win-movie">
-                                    <input type="radio" id="movie2" value="joker1" name="movie" ng-model="movieRadio.win">
-                                    <label for="movie2" class="text-center">
-                                        <b>The Joker</b><br>
-                                        <span>26 Nov 22:00 hs. - 2D SUB
-                                        Showcase Belgrano</span>
-                                    </label>
-                                    <div class="vote-number">
-                                        <p class="m-0">25% (1 voto)</p>
+                                </li>
+                                <li class="item">
+                                    <h2 class="mb-3">Segunda opción</h2>
+                                    <div class="win-movie">
+                                        <input type="radio" id="movie2" value="joker1" name="movie" ng-model="movieRadio.win">
+                                        <label for="movie2" class="text-center">
+                                            <b>The Joker</b><br>
+                                            <span>26 Nov - 22:00 hs. - 2D SUB<br>
+                                            Showcase Belgrano</span>
+                                        </label>
+                                        <div class="vote-number">
+                                            <p class="m-0">33% (1 voto)</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </fieldset>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="date-container">
+            <fieldset>
+                <legend class="sr-only">Elegí el día</legend>
+                <ul class="date-radio">
+                    <li>
+                        <input type="radio" id="op1" value="today" name="day" ng-model="day.nov" aria-label="Hoy, 25 Nov">
+                        <label for="op1"  aria-hidden="true">
+                            <span><b>Hoy</b><span class="label-grey">25 Nov</span> </span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="op2" value="mañana" name="day" ng-model="day.nov" aria-label="Mañana, 26 Nov">
+                        <label for="op2" aria-hidden="true">
+                            <span><b>Mañana</b> <span class="label-grey">26 Nov</span></span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+
         <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" type="submit" ng-click="stepResultNext()">
             Comprar entradas
         </md-button>

@@ -22,6 +22,7 @@ h1 {font-size: 20px !important;}
 h2 {font-size: 18px !important;}
 h3 {font-size: 16px !important;}
 h4 {font-size: 14px !important;}
+.h2 {font-size: 18px !important;}
 .h3 {font-size: 16px !important;}
 section {
     padding: 20px 0;
@@ -132,7 +133,8 @@ a {
 ul.date-time-checks,
 ul.date-radio,
 ul.movies-radio,
-ul.time-checks {
+ul.time-checks,
+ul.movie-carousel{
     list-style: none;
     padding: 0;
 }
@@ -142,10 +144,14 @@ ul.movies-radio li,
 ul.time-checks li{
     display: inline;
 }
+ul.movie-carousel li{
+    display: inline-block;
+}
 ul.date-time-checks li label,
 ul.date-radio li label,
 ul.movies-radio li label,
-ul.time-checks li label{
+ul.time-checks li label,
+ul.movie-carousel li label{
     display: inline-block;
     background-color: rgba(255, 255, 255, .9);
     border: 2px solid rgba(229, 229, 234, .9);
@@ -174,7 +180,8 @@ ul.time-checks li label{
 ul.date-time-checks li label::before,
 ul.date-radio li label::before,
 ul.movies-radio li label::before,
-ul.time-checks li label::before {
+ul.time-checks li label::before,
+ul.movie-carousel li label::before{
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     transition: transform .3s ease-in-out;
@@ -207,7 +214,7 @@ ul.date-time-checks li input[type="checkbox"]:checked + label,
 ul.date-radio li input[type="radio"]:checked + label,
 ul.date-radio li input[type="checkbox"]:checked + label,
 ul.movies-radio li input[type="radio"]:checked + label,
-ul.time-checks li input[type="radio"]:checked + label {
+ul.time-checks li input[type="radio"]:checked + label{
     border: 2px solid #4A00BD;
     background-color: #4A00BD;
     color: #fff;
@@ -318,7 +325,7 @@ ul.date-radio li input[type="checkbox"]:checked + label span span.red {
 .filter-btn{
     display: flex !important;
 }
-.date-container, .movies-radio {
+.date-container, .movies-radio, .movie-carousel{
     white-space: nowrap;
     overflow: hidden;
     position: relative;
@@ -530,7 +537,7 @@ md-list md-list-item p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-    width: 100%;
+    width: 70%;
     height: 440px;
     padding: 360px 15px 10px;
     text-align: left;
@@ -548,7 +555,7 @@ md-list md-list-item p {
     color: #FFFFFF;
     font-weight: 700;
     border-radius: 5px;
-    width: 50%;
+    width: 40%;
     padding: 5px;
     margin: 0 auto;
     position: absolute;
