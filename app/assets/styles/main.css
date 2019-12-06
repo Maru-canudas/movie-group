@@ -470,6 +470,7 @@ md-list md-list-item p {
 .nav-link.group.active, .nav-link.group:hover {
     background: url("../images/group-active.svg") no-repeat top center;
     background-size: 30px;
+    color: #4A00BD !important;
 }
 .nav-link.billboard {
     width: 60px;
@@ -482,6 +483,7 @@ md-list md-list-item p {
 .nav-link.billboard.active, .nav-link.billboard:hover {
     background: url("../images/movies-active.svg") no-repeat top center;
     background-size: 30px;
+    color: #4A00BD !important;
 }
 .nav-link.account {
     width: 60px;
@@ -494,6 +496,7 @@ md-list md-list-item p {
 .nav-link.account.active, .nav-link.account:hover {
     background: url("../images/config-active.svg") no-repeat top center;
     background-size: 30px;
+    color: #4A00BD !important;
 }
 
 

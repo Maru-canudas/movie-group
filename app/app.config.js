@@ -93,6 +93,10 @@ angular.
           title: 'Crear votación - Movie Group',
           templateUrl: 'poll/groupSelection.html'
         }).
+        when('/account', {
+          title: 'Cuenta - Movie Group',
+          templateUrl: 'groups/account.html'
+        }).
         otherwise('/');
     }
   ]);
