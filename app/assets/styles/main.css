@@ -519,6 +519,14 @@ md-list md-list-item p {
 
 
 /* RESULTADOS */
+.win-item {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+}
+.win-movie {
+    white-space: initial;
+}
 .win-movie img {
     border-radius: 5px;
 }
@@ -537,11 +545,12 @@ md-list md-list-item p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-    width: 70%;
-    height: 430px;
-    padding: 340px 10px 10px;
+    background-position-y: -30px;
+    height: 400px;
+    padding: 320px 10px 10px;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
+    line-height: 20px;
 }
 .movie-carousel label li{
     padding: 0 20px;
@@ -564,7 +573,7 @@ md-list md-list-item p {
     position: absolute;
     left: 0;
     right: 0;
-    top: 305px;
+    top: 285px;
     text-align: center;
     font-size: 14px;
 }

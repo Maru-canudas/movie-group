@@ -20,7 +20,7 @@
         <section class="text-center">
             <div class="row mb-2 justify-content-center">
                 <div class="col-7">
-                    <p class="mb-2"><img src="assets/images/time.svg" alt=""
+                    <p class="m-0"><img src="assets/images/time.svg" alt=""
                             style="width: 20px;" class="float-left mr-2"> Tiempo restante: <strong>0:05</strong></p>
                 </div>
             </div>
@@ -30,8 +30,8 @@
                     <div class="movie-carousel">
                         <fieldset>
                             <ul class="movie-carousel" style="padding:0 60px;">
-                                <li class="item" style="padding:0 20px;">
-                                    <h2 class="mb-3">La función ganadora es</h2>
+                                <li class="item">
+                                    <h2>La función ganadora es</h2>
                                     <div class="win-movie">
                                         <input type="radio" id="movieWin" value="joker" name="movie" ng-model="movieRadio.win">
                                         <label for="movieWin" class="text-center">
@@ -45,7 +45,7 @@
                                     </div>
                                 </li>
                                 <li class="item">
-                                    <h2 class="mb-3">Segunda opción</h2>
+                                    <h2>Segunda opción</h2>
                                     <div class="win-movie">
                                         <input type="radio" id="movie2" value="joker1" name="movie" ng-model="movieRadio.win">
                                         <label for="movie2" class="text-center">
@@ -64,9 +64,16 @@
                 </div>
             </div>
         </section>
-
-        <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" type="submit" ng-click="stepResultNext()">
-            Comprar entradas
-        </md-button>
+        <div class="btn-sticky">
+            <div class="text-center" style="background-color: white;">
+                <md-button class="md-primary font-700 violet">
+                    Cancelar votación
+                </md-button>
+            </div>
+            <md-button class="md-primary btn-custom-primary btn-block pt-2 pb-2 m-0" type="submit"
+                       ng-click="stepResultNext()">
+                Comprar entradas
+            </md-button>
+        </div>
     </div>
 </main>
