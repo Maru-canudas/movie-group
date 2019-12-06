@@ -60,21 +60,24 @@
             <div class="creditcard-content" style="margin-bottom: 50px">
                 <h2 class="mb-0">Elegir medio de pago</h2>
                 <span class="sr-only">Se listan las tarjetas por su banco y sus últimos cuatro dígitos únicamente por motivos de seguridad.</span>
-                <md-radio-group ng-model="card">
-                    <md-list class="pb-0">
-                        <md-list-item class="noright">
-                            <md-radio-button class="" value="visa" id="santander" ng-model="card.selectedVisa" required>
-                                <label for="santander"><img alt="visa" src="assets/images/visa.svg" class="md-avatar"/> Santander - Visa ….5464</label>
-                            </md-radio-button>
-                        </md-list-item>
-                    </md-list>
-                    <md-list class="pb-0">
-                        <md-list-item class="noright">
-                            <md-radio-button class="" value="master" id="galicia" ng-model="card.selectedMaster" required>
-                                <label for="galicia"><img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/>Galicia - Mastercard ….5464</label>
-                            </md-radio-button>
-                        </md-list-item>
-                    </md-list>
+                <md-radio-group ng-model="card" required>
+                    <fieldset>
+                        <legend class="sr-only">Medios de pago</legend>
+                        <md-list class="pb-0">
+                            <md-list-item class="noright">
+                                <md-radio-button class="" value="visa" id="santander" ng-model="card.selectedVisa">
+                                    <label for="santander"><img alt="visa" src="assets/images/visa.svg" class="md-avatar"/> Santander - Visa ….5464</label>
+                                </md-radio-button>
+                            </md-list-item>
+                        </md-list>
+                        <md-list class="pb-0">
+                            <md-list-item class="noright">
+                                <md-radio-button class="" value="master" id="galicia" ng-model="card.selectedMaster">
+                                    <label for="galicia"><img alt="mastercard" src="assets/images/mastercard.svg" class="md-avatar"/>Galicia - Mastercard ….5464</label>
+                                </md-radio-button>
+                            </md-list-item>
+                        </md-list>
+                    </fieldset>
                 </md-radio-group>
                 
                 <div class="mt-3">

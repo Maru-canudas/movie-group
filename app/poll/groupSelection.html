@@ -25,10 +25,13 @@
                     </div>
                 </div>
                 <div class="mt-4 group-option">
-                    <md-radio-group ng-model="data.group1">
-                        <md-radio-button value="Amigos" class="md-primary" required>Amigos (3 contactos)</md-radio-button>
-                        <md-radio-button value="Familia" required> Familia (8 contactos)</md-radio-button>
-                        <md-radio-button value="Bafici" required>Bafici (5 contactos)</md-radio-button>
+                    <md-radio-group ng-model="data.group1" required>
+                        <fieldset>
+                            <legend class="sr-only">Grupos</legend>
+                            <md-radio-button value="Amigos" class="md-primary">Amigos (3 contactos)</md-radio-button>
+                            <md-radio-button value="Familia"> Familia (8 contactos)</md-radio-button>
+                            <md-radio-button value="Bafici">Bafici (5 contactos)</md-radio-button>
+                        </fieldset>
                     </md-radio-group>
                 </div>
             </section>
