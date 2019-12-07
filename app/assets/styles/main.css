@@ -570,8 +570,8 @@ md-list md-list-item p {
     background-repeat: no-repeat;
     background-position: top center;
     background-position-y: -30px;
-    height: 400px;
-    padding: 320px 10px 10px;
+    height: 390px;
+    padding: 315px 10px 10px;
     text-align: left;
     margin-bottom: 0 !important;
     line-height: 20px;
@@ -597,7 +597,7 @@ md-list md-list-item p {
     position: absolute;
     left: 0;
     right: 0;
-    top: 285px;
+    top: 280px;
     text-align: center;
     font-size: 14px;
 }
