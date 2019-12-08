@@ -98,8 +98,8 @@
                         <div class="">
                             <div style="display: flex; align-items: center; justify-content: space-between;">
                                 <div class="flex-start">
-                                    <p class="mb-0 pl-3 selection" aria-hidden="true">Subtotal <span class="violet">$ {{(count*250) + (count1*150) + (count2*100)}},00</span></p>
-                                    <span class="sr-only">Subtotal: {{(count*250) + (count1*150) + (count2*100)}},00 pesos</span>
+                                    <p class="mb-0 pl-3 selection" aria-hidden="true">Subtotal <span class="violet">$ {{(count*250) + (count1*150) + (count2*100)}}.00</span></p>
+                                    <span class="sr-only">Subtotal: {{(count*250) + (count1*150) + (count2*100)}}.00 pesos</span>
                                 </div>
                                 <div class="col-2">
                                     <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="cerrar">
@@ -111,12 +111,12 @@
                     <div class="collapse" id="details">
                         <div class="detail-content">
                             <div class="col">
-                                <p ng-if="count >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count}}</span> Pochoclos grande</span> <span>${{count*250}},00</span></p>
-                                <span ng-if="count >= 1" class="sr-only">{{count}} Pochoclos grande {{count*250}},00 pesos</span>
-                                <p ng-if="count1 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count1}}</span> Nachos con queso</span><span>${{count1*150}},00</span></p>
-                                <span ng-if="count1 >= 1" class="sr-only">{{count1}} Nachos con queso {{count1*150}},00 pesos</span>
-                                <p ng-if="count2 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count2}}</span> Gaseosas 500 ml.</span><span>${{count2*100}},00</span></p>
-                                <span ng-if="count2 >= 1" class="sr-only">{{count2}} Gaseosas 500 ml. {{count2*100}},00 pesos</span>
+                                <p ng-if="count >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count}}</span> Pochoclos grande</span> <span>${{count*250}}.00</span></p>
+                                <span ng-if="count >= 1" class="sr-only">{{count}} Pochoclos grande {{count*250}}.00 pesos</span>
+                                <p ng-if="count1 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count1}}</span> Nachos con queso</span><span>${{count1*150}}.00</span></p>
+                                <span ng-if="count1 >= 1" class="sr-only">{{count1}} Nachos con queso {{count1*150}}.00 pesos</span>
+                                <p ng-if="count2 >= 1" class="price-count" aria-hidden="true"><span><span class="font-700">{{count2}}</span> Gaseosas 500 ml.</span><span>${{count2*100}}.00</span></p>
+                                <span ng-if="count2 >= 1" class="sr-only">{{count2}} Gaseosas 500 ml. {{count2*100}}.00 pesos</span>
                             </div>
                         </div>
                     </div>
