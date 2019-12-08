@@ -95,19 +95,32 @@
                 <!-- COLLAPSED DETAILS -->
                 <div class="details" ng-if="count >= 1 || count1 >= 1 || count2 >= 1">
                     <md-button class="text-notransform detail-header btn-block p-0 m-0" type="button" data-target="#details" data-toggle="collapse">
-                        <div class="">
-                            <div style="display: flex; align-items: center; justify-content: space-between;">
-                                <div class="flex-start">
-                                    <p class="mb-0 pl-3 selection" aria-hidden="true">Subtotal <span class="violet">$ {{(count*250) + (count1*150) + (count2*100)}}.00</span></p>
-                                    <span class="sr-only">Subtotal: {{(count*250) + (count1*150) + (count2*100)}}.00 pesos</span>
-                                </div>
-                                <div class="col-2">
-                                    <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="cerrar">
-                                    <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="ver más">
+                            <div class="">
+                                <div style="display: flex; align-items: center; justify-content: space-between;">
+                                    <div class="col-2">
+                                        <div class="circle">{{count + count1 + count2}}</div>
+                                    </div>
+                                    <div class="col-4 pl-0 text-left">
+                                        <p class="mb-0 selection">
+                                            <ng-pluralize count="count + count1 + count2"
+                                                        when="{'1': 'Snack seleccionado',
+                                                        'other': 'Snacks seleccionados'}">
+                                            </ng-pluralize>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 pr-0 text-right">
+                                        <p class="selection mb-0">
+                                            <span aria-hidden="true" class="violet">${{(count*250) +(count1*150) + (count2*100)}}.00</span>
+                                            <span class="sr-only">{{(count*250) +(count1*150) + (count2*100)}}.00 pesos</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <img class="carret-down" src="assets/images/carret-down.svg" style="width: 15px;" alt="cerrar">
+                                        <img class="carret-up" src="assets/images/carret-up.svg" style="width: 15px;" alt="ver más">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </md-button>
+                        </md-button>
                     <div class="collapse" id="details">
                         <div class="detail-content">
                             <div class="col">
