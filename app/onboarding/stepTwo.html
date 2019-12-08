@@ -49,7 +49,12 @@
                             </md-select>
                         </md-input-container>
     
-                        <md-chips class="movie-theme" ng-model="user.town" readonly="true" md-removable="true">
+                        <md-chips class="movie-theme" 
+                                  ng-model="user.town"
+                                  readonly="true"
+                                  md-removable="true"
+                                  delete-button-label="Eliminar barrio"
+                                  delete-hint="Presiona eliminar para borrar el barrio">
                         </md-chips>
                     </div>
                     <md-button class="md-primary btn-custom-primary btn-sticky btn-block pt-2 pb-2 m-0" type="submit" ng-click="step2Next()"
