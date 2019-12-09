@@ -218,11 +218,11 @@
                         <div class="">
                             <div style="display: flex; align-items: center; justify-content: space-between;">
                                 <div class="col-2">
-                                    <div class="circle">{{count + count1 + count2}}</div>
+                                    <div class="circle">{{(count*2) + (count1*2) + (count2*2)}}</div>
                                 </div>
                                 <div class="col-4 pl-0 text-left">
                                     <p class="mb-0 selection">
-                                        <ng-pluralize count="count + count1 + count2"
+                                        <ng-pluralize count="(count*2) + (count1*2) + (count2*2)"
                                                       when="{'1': 'Entrada',
                                                   'other': 'Entradas'}">
                                         </ng-pluralize>
